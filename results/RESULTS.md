@@ -129,8 +129,25 @@ cosmological constant by public 2025–2026 data in our pipeline. wCDM (1 extra 
 preferred over ΛCDM (BF < 1–3) — the data want *evolution* (wa), not a constant w≠−1.
 
 ## 7. Growth vs geometry (`growth_probe.py` → `growth_results.json`)
-TBD (running): adds the public 24-point fσ8 RSD/PV benchmark (with published WiggleZ/eBOSS
-covariance blocks) as an independent probe, σ8 as free nuisance.
+
+Adds the public 24-point fσ8 RSD/PV benchmark (published WiggleZ/eBOSS covariance blocks),
+σ8 as a free nuisance. w0wa vs ΛCDM:
+
+| combo | w0 | wa | s8 | Δχ² | σ | w0wa vs wCDM |
+|---|---|---|---|---|---|---|
+| BAO+SN+CMB (no growth, §1) | −0.872 ± 0.066 | −0.345 ± 0.303 | — | −6.34 | 1.73σ | −3.42 (1.52σ) |
+| **BAO+SN+CMB+fσ8** | −0.910 ± 0.06 | **−0.216** | 0.804 | −5.91 | 1.63σ | −2.49 (1.20σ) |
+| BAO+SN+fσ8 | −0.905 | **−0.080** | 0.823 | −6.12 | 1.68σ | **−0.001 (0.0σ)** |
+
+(bao_cmb_fs8, bao_fs8, fs8-only running.)
+
+**Reading — the growth probe is the first independent check that pushes back:** adding fσ8
+data moves wa from −0.35 toward 0 and in BAO+SN+fσ8 the w0wa model is *no better than wCDM*
+(Δχ² = 0.0): with growth included, a constant w ≈ −0.91 explains everything; the
+*evolution* (wa < 0) is not required. Geometry (BAO+SN distances) wants wa < 0, growth
+(fσ8) is consistent with constant w — a mild geometry-vs-growth tension, exactly the kind
+of cross-check that decides whether the 3σ hint is real. Combined with §8 (signal lives in
+z<0.1 SNe), the evolving-DE hint looks increasingly like a low-z SN calibration artifact.
 
 ## 8. Sampler stability, SN-sample and z-cut systematics (`session3.py seeds`, `sn_sys`, `zcut`)
 

@@ -126,8 +126,13 @@ def compare(res, combo_label, out, fname):
 
 
 def sn_sys_mode():
-    out = []
-    for sn in ["dovekie", "pantheonplus", "desy5"]:
+    only = sys.argv[2].split(",") if len(sys.argv) > 2 else None
+    try:
+        with open(os.path.join(RESULTS, "sn_sys_results.json")) as f:
+            out = json.load(f)
+    except Exception:
+        out = []
+    for sn in (["dovekie", "pantheonplus", "desy5"] if only is None else only):
         for use_bao, use_cmb in [(True, True), (True, False)]:
             label = f"{sn}_bao{'_cmb' if use_cmb else ''}"
             res = {}

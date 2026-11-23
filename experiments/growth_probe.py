@@ -107,8 +107,13 @@ def run(model, combo, nsteps=18000, burn=5000, seed=9):
 
 
 def main():
-    combos = ["bao_sn_cmb_fs8", "bao_sn_fs8", "bao_cmb_fs8", "bao_fs8", "fs8"]
-    out = []
+    combos = sys.argv[1:] if len(sys.argv) > 1 else \
+        ["bao_sn_cmb_fs8", "bao_sn_fs8", "bao_cmb_fs8", "bao_fs8", "fs8"]
+    try:
+        with open(os.path.join(RESULTS, "growth_results.json")) as f:
+            out = [e for e in json.load(f) if e["combo"] not in combos]
+    except Exception:
+        out = []
     for combo in combos:
         res = {}
         for model in ["lcdm", "wcdm", "w0wa"]:

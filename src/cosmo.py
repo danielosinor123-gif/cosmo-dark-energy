@@ -314,7 +314,9 @@ def load_desy5():
 
 
 def load_pantheonplus():
-    """Pantheon+ SH0ES: zCMB, mB, STAT+SYS covariance (cached to .npy)."""
+    """Pantheon+ SH0ES: zHD, m_b_corr, STAT+SYS covariance (inverse cached to .npy).
+    Note: the mB column does NOT give a sane chi2 with this covariance; m_b_corr + zHD
+    gives chi2/dof ~ 1.04 at a Planck fiducial (validated in session 3)."""
     d = os.path.join(DATA, "sn_data", "PantheonPlus")
     cache = os.path.join(d, "cov_statsys.npy")
     if os.path.exists(cache):
@@ -330,8 +332,8 @@ def load_pantheonplus():
         invC = np.linalg.inv(cov)
         np.save(cache, invC)
     raw = np.genfromtxt(os.path.join(d, "Pantheon+SH0ES.dat"), names=True, dtype=None, encoding="utf-8")
-    z = np.asarray(raw["zCMB"], float)
-    mB = np.asarray(raw["mB"], float)
+    z = np.asarray(raw["zHD"], float)
+    mB = np.asarray(raw["m_b_corr"], float)
     return z, mB, invC
 
 
