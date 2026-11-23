@@ -133,23 +133,42 @@ preferred over ΛCDM (BF < 1–3) — the data want *evolution* (wa), not a cons
 Adds the public 24-point fσ8 RSD/PV benchmark (published WiggleZ/eBOSS covariance blocks),
 σ8 as a free nuisance. w0wa vs ΛCDM:
 
-| combo | w0 | wa | s8 | Δχ² | σ | w0wa vs wCDM |
+| combo | w0 | wa | s8 | Δχ² (w0wa−ΛCDM) | σ | w0wa vs wCDM |
 |---|---|---|---|---|---|---|
 | BAO+SN+CMB (no growth, §1) | −0.872 ± 0.066 | −0.345 ± 0.303 | — | −6.34 | 1.73σ | −3.42 (1.52σ) |
-| **BAO+SN+CMB+fσ8** | −0.910 ± 0.06 | **−0.216** | 0.804 | −5.91 | 1.63σ | −2.49 (1.20σ) |
+| **BAO+SN+CMB+fσ8** | −0.910 | −0.216 | 0.804 | −5.91 | 1.63σ | −2.49 (1.20σ) |
 | BAO+SN+fσ8 | −0.905 | **−0.080** | 0.823 | −6.12 | 1.68σ | **−0.001 (0.0σ)** |
-
-(bao_cmb_fs8, bao_fs8, fs8-only running.)
+| BAO+CMB+fσ8 | −0.908 | −0.218 | 0.806 | −1.41 | 0.01σ | −1.25 (0.63σ) |
+| BAO+fσ8 | −0.893 | −0.060 | 0.828 | −1.94 | 0.31σ | −0.02 (0.0σ) |
+| fσ8 only | −0.573 | −0.629 | 0.835 | +0.03 | 0σ | +0.03 (prefers ΛCDM) |
 
 **Reading — the growth probe is the first independent check that pushes back:** adding fσ8
-data moves wa from −0.35 toward 0 and in BAO+SN+fσ8 the w0wa model is *no better than wCDM*
-(Δχ² = 0.0): with growth included, a constant w ≈ −0.91 explains everything; the
-*evolution* (wa < 0) is not required. Geometry (BAO+SN distances) wants wa < 0, growth
-(fσ8) is consistent with constant w — a mild geometry-vs-growth tension, exactly the kind
-of cross-check that decides whether the 3σ hint is real. Combined with §8 (signal lives in
-z<0.1 SNe), the evolving-DE hint looks increasingly like a low-z SN calibration artifact.
+moves wa from −0.35 toward 0; in BAO+SN+fσ8 and BAO+fσ8 the w0wa model is *no better than
+wCDM* (Δχ² ≈ 0): with growth included, a constant w ≈ −0.9 explains everything and the
+*evolution* (wa < 0) is not required. BAO+CMB+fσ8 and fσ8 alone show no w0wa preference at
+all. Geometry (BAO+SN distances) wants wa < 0; growth (fσ8) is consistent with constant w —
+a geometry-vs-growth tension. Combined with §8 (the distance signal lives in z < 0.1 SNe),
+the evolving-DE hint increasingly looks like a low-z SN calibration artifact rather than
+new physics.
 
 ## 8. Sampler stability, SN-sample and z-cut systematics (`session3.py seeds`, `sn_sys`, `zcut`)
+
+SN-sample swap (BAO+CMB fixed), w0wa vs ΛCDM:
+
+| SN sample | w0 | wa | Δχ² | σ |
+|---|---|---|---|---|
+| DES-Dovekie (1820, HD) | −0.864 ± 0.056 | −0.409 ± 0.213 | −6.34 | 1.73σ |
+| **Pantheon+ (1701, m_b_corr+zHD)** | −0.799 ± 0.064 | −0.546 ± 0.257 | **−17.51** | **3.60σ** |
+| DES-SN5YR (1829) | TBD (rerunning; covsys needs +diag(MUERR²) to be PD) |
+
+(Pantheon+ note: with the mB column the STAT+SYS covariance gives χ²/dof ≈ 2.6 — wrong
+column; m_b_corr + zHD gives χ²/dof ≈ 1.04. Also h is weakly pinned without full CMB, so
+Pantheon+ numbers carry a wider h posterior.) **The SN sample choice moves the significance
+from 1.7σ to 3.6σ — the headline number is sample-dependent.** DESI's own BAO+Pantheon+
+chain gives wa = −0.18 ± 0.45 (weak), so our Pantheon+ 3.6σ differs from DESI's — driven
+by our weaker CMB prior; documented as a caveat.
+
+Sampler stability (BAO+Dovekie+CMB, seeds 1/11/12/13):
 
 Multi-seed stability of the headline combo (BAO+Dovekie+CMB), seeds 1, 11, 12, 13:
 Δχ²(w0wa−ΛCDM) = −6.34, −6.48, −6.46, −6.47 (1.73–1.79σ); w0 = −0.87…−0.86 ± 0.06,

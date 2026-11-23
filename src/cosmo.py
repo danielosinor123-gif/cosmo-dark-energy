@@ -292,12 +292,15 @@ def load_dovekie():
 
 
 def load_desy5():
-    """DES-SN5YR Hubble diagram: zHD, MU, total covariance covsys_000.txt (inverse cached)."""
+    """DES-SN5YR Hubble diagram: zHD, MU, inverse total covariance (cached).
+    covsys_000.txt alone is NOT PD (832 negative eigenvalues) — it is the systematics
+    block; total cov = covsys + diag(MUERR_FINAL^2) (validated: PD, chi2/dof~1.1)."""
     d = os.path.join(DATA, "sn_data", "DESY5")
     cache = os.path.join(d, "covtot_inv.npy")
     raw = np.genfromtxt(os.path.join(d, "DES-SN5YR_HD.csv"), delimiter=",", names=True)
     z = np.asarray(raw["zHD"], float)
     mu = np.asarray(raw["MU"], float)
+    merr = np.asarray(raw["MUERR_FINAL"], float)
     if os.path.exists(cache):
         invC = np.load(cache)
     else:
@@ -308,6 +311,7 @@ def load_desy5():
         else:
             cov = raw_cov
         assert cov.shape == (len(z), len(z)), cov.shape
+        cov = cov + np.diag(merr ** 2)
         invC = np.linalg.inv(cov)
         np.save(cache, invC)
     return z, mu, invC
