@@ -113,7 +113,8 @@ def sigma_from_dchi2(dchi2, k):
     dchi2 < 0 means the more complex model is preferred; report |dchi2| significance."""
     from scipy.stats import chi2 as chi2dist, norm
     p = chi2dist.sf(abs(dchi2), k)
-    return float(norm.isf(p)) * np.sign(dchi2), float(p)
+    z = float(norm.isf(p)) if p < 0.5 else 0.0
+    return z * float(np.sign(dchi2)) if dchi2 != 0 else 0.0, float(p)
 
 
 def main_mode():

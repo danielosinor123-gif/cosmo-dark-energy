@@ -225,6 +225,28 @@ def load_dovekie():
     return z, mu, invC
 
 
+def load_desy5():
+    """DES-SN5YR Hubble diagram: zHD, MU, total covariance covsys_000.txt (inverse cached)."""
+    d = os.path.join(DATA, "sn_data", "DESY5")
+    cache = os.path.join(d, "covtot_inv.npy")
+    raw = np.genfromtxt(os.path.join(d, "DES-SN5YR_HD.csv"), delimiter=",", names=True)
+    z = np.asarray(raw["zHD"], float)
+    mu = np.asarray(raw["MU"], float)
+    if os.path.exists(cache):
+        invC = np.load(cache)
+    else:
+        raw_cov = np.loadtxt(os.path.join(d, "covsys_000.txt"))
+        if raw_cov.ndim == 1:
+            n = int(raw_cov[0])
+            cov = raw_cov[1:1 + n * n].reshape(n, n)
+        else:
+            cov = raw_cov
+        assert cov.shape == (len(z), len(z)), cov.shape
+        invC = np.linalg.inv(cov)
+        np.save(cache, invC)
+    return z, mu, invC
+
+
 def load_pantheonplus():
     """Pantheon+ SH0ES: zCMB, mB, STAT+SYS covariance (cached to .npy)."""
     d = os.path.join(DATA, "sn_data", "PantheonPlus")
@@ -232,9 +254,13 @@ def load_pantheonplus():
     if os.path.exists(cache):
         invC = np.load(cache)
     else:
-        cov = np.loadtxt(os.path.join(d, "Pantheon+SH0ES_STAT+SYS.cov"))
-        if cov.ndim == 1:
-            cov = np.diag(cov)
+        raw_cov = np.loadtxt(os.path.join(d, "Pantheon+SH0ES_STAT+SYS.cov"))
+        if raw_cov.ndim == 1:
+            # format: first entry = dimension n, then n*n matrix row-major
+            n = int(raw_cov[0])
+            cov = raw_cov[1:1 + n * n].reshape(n, n)
+        else:
+            cov = raw_cov
         invC = np.linalg.inv(cov)
         np.save(cache, invC)
     raw = np.genfromtxt(os.path.join(d, "Pantheon+SH0ES.dat"), names=True, dtype=None, encoding="utf-8")
