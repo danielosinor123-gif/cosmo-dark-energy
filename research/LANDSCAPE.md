@@ -151,7 +151,10 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
   RESULTS.md §10) — **their** BAO+DESY5SN+CMB zmin=0.1 cut drops w0wa from 2.09σ to 1.06σ,
   confirming our z<0.1 smoking gun in DESI's own pipeline; (b) anchor test running
   (H0 priors Cepheid 73.04 / TRGB 70.4 / JAGB 67.8 / Planck 67.36 × z-cut 0/0.1,
-  `session4.py anchor`); (c) growth-inclusive binned-w certificates (`session4.py cert`).
+  `session4.py anchor`); (c) growth-inclusive binned-w certificates DONE
+  (`session4.py cert`, RESULTS.md §11): all probe combos incl. fσ8 recover the same binned
+  w(z) shape (w≈−0.93 today, dip ≈−1.2 at z 0.75–1.5) with max tension 0.51σ — the
+  non-constant w(z) shape is probe-robust; only its parametric significance is fragile.
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.

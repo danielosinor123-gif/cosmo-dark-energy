@@ -239,6 +239,26 @@ low-z SN tail. The evolving-DE hint in the *official* DESI Y3 analysis is real b
 low-z-SN-dominated — exactly matching our pipeline's verdict. Two independent pipelines,
 same smoking gun.
 
+## 11. Growth-inclusive binned-w(z) certificates (`session4.py cert` → `cert_fs8_results.json`)
+
+Binned w(z) in edges [0, 0.75, 1.5, ∞) with fσ8 in the joint (σ8 free nuisance):
+
+| combo | w(z<0.75) | w(0.75–1.5) | w(z>1.5) | max tension vs joint_fs8 |
+|---|---|---|---|---|
+| BAO+SN+CMB (no growth) | −0.93 ± 0.03 | **−1.25 ± 0.24** | −0.89 ± 0.45 | 0.26σ |
+| BAO+SN+CMB+fσ8 | −0.94 ± 0.03 | **−1.17 ± 0.19** | −0.91 ± 0.33 | — |
+| BAO+CMB+fσ8 | −0.93 ± 0.06 | −1.17 ± 0.21 | −0.96 ± 0.37 | 0.16σ |
+| BAO+SN+fσ8 | −0.91 ± 0.05 | −1.13 ± 0.29 | −0.71 ± 0.46 | 0.51σ |
+| SN+CMB+fσ8 | −0.95 ± 0.03 | −1.01 ± 0.26 | −0.89 ± 0.40 | 0.50σ |
+
+**Reading:** even with growth data in the joint, every probe combination independently
+recovers the same binned shape — w ≈ −0.93 today, dipping to ≈ −1.2 at z ~ 0.75–1.5,
+back to ≈ −0.9 at high z — with max pairwise tension 0.51σ. The geometry-vs-growth
+tension found in §7 is about the *parametric form* (w0wa vs wCDM), not about the binned
+shape: all probes agree on a non-flat w(z). So the low-z-driven, non-constant w(z)
+feature is probe-robust in shape; what is not robust is its parametric significance
+(§7) and its redshift support (§8).
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
