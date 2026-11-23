@@ -1,0 +1,4 @@
+data/
+results/chain_*.npy
+__pycache__/
+*.pyc
