@@ -1,0 +1,27 @@
+{
+  "joint_all": {
+    "BF_binned_vs_lcdm_SD": 29.945120706298052,
+    "post_density_at_null": 1.1697312775897677,
+    "nsamples": 3000
+  },
+  "joint_fs8": {
+    "BF_binned_vs_lcdm_SD": 134.94000834744438,
+    "post_density_at_null": 5.271094076072046,
+    "nsamples": 3000
+  },
+  "bao_cmb_fs8": {
+    "BF_binned_vs_lcdm_SD": 69.98295631231822,
+    "post_density_at_null": 2.7337092309499305,
+    "nsamples": 3000
+  },
+  "bao_sn_fs8": {
+    "BF_binned_vs_lcdm_SD": 17.25711912723336,
+    "post_density_at_null": 0.6741062159075532,
+    "nsamples": 3000
+  },
+  "fs8_sn_cmb": {
+    "BF_binned_vs_lcdm_SD": 108.38310129352142,
+    "post_density_at_null": 4.23371489427818,
+    "nsamples": 3000
+  }
+}

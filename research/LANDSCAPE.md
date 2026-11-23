@@ -159,10 +159,12 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
   w0wa hint to 0.42 sigma; TRGB/JAGB leave it at 1.7-1.8 sigma; Planck H0=67.36 inflates it
   to 4.36 sigma (4.16 sigma even with z>0.1 SNe cut) — the hint is a composite of the
   low-z-SN-vs-Cepheid channel and the H0-tension channel (dH0~5 km/s/Mpc ~ wa~-0.7).
-- S5 (NEW quantitative discoveries, running): (a) free low-z magnitude step dM(z<z_step)
-  — how big a calibration step absorbs the whole w0wa signal; (b) cross-sample low-z
-  residual certificate (Dovekie vs Pantheon+ vs DESY5 at z<0.1); (c) H0<->w(z) equivalence
-  map (h0map); (d) nonparametric 3-bin-w Savage-Dickey BF (bfbin).
+- S5 results so far: (b) xres DONE (RESULTS.md §13) — all 3 SN samples show the SAME
+  coherent low-z excess vs BAO+CMB geometry (d=+0.033..0.048 mag, 3-4 sigma each) and
+  agree with each other (<1 sigma pairwise) => the hint is ONE common low-z offset
+  (shared Cepheid anchor), delta_mu~0.04 mag ~ delta_H0~1.1 km/s/Mpc; (d) bfbin DONE
+  (§14) — nonparametric BF(3-bin w vs LCDM) = 17-135, decisive in most combos.
+  Running: (a) low-z dM step size, (c) H0<->w(z) equivalence map.
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.

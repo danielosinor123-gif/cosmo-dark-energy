@@ -288,6 +288,50 @@ quantified here: ΔH₀ ≈ 5 km/s/Mpc (Planck vs SH0ES) is worth wa ≈ −0.7 
 relative to the Cepheid anchor and (b) the H₀ tension. Both are known systematics/tensions,
 not new physics — and each is independently falsifiable (non-Cepheid anchors, DR3).
 
+## 13. Cross-sample low-z residual certificate (`session5.py xres` → `xres_results.json`)
+
+Geometry-only ΛCDM from BAO+CMB (no SN): Ωm=0.299, **H₀=67.67**, r_d=149.8, χ²=10.35.
+Residuals of each SN sample against that geometry (per-sample constant offset
+marginalized analytically), binned:
+
+| sample | z<0.1 residual | n | low-z minus high-z step d | tension of d vs 0 |
+|---|---|---|---|---|
+| DES-Dovekie | +0.034 ± 0.011 mag | 201 | **+0.039 ± 0.012** | 3.1σ |
+| Pantheon+ | +0.022 ± 0.007 mag | 741 | **+0.033 ± 0.010** | 3.3σ |
+| DES-SN5YR | +0.041 ± 0.011 mag | 197 | **+0.048 ± 0.012** | 4.0σ |
+
+Pairwise agreement of the low-z step between samples: Dovekie–Pantheon+ 0.33σ,
+Dovekie–DESY5 0.53σ, Pantheon+–DESY5 0.92σ.
+
+**Reading — new and sharp:** all three SN samples show the *same coherent* +0.03…+0.05 mag
+excess at z<0.1 relative to the BAO+CMB geometry (3–4σ each), and they **agree with each
+other** (<1σ pairwise). So the "signal" is ONE feature — a common low-z offset of
+δμ ≈ 0.04 mag ≈ δH₀ ≈ 1.1 km/s/Mpc — not three independent confirmations. Since all
+samples share the same Cepheid-based distance-ladder anchor, a common calibration offset
+is exactly what a shared-anchor systematic looks like. This sharpens §8/§12: the w0wa
+hint is a single low-z SN-vs-BAO/CMB offset, common to all samples.
+
+## 14. Nonparametric Bayes factor: free 3-bin w(z) vs ΛCDM (`session5.py bfbin` → `bfbin_results.json`)
+
+Savage–Dickey with 3D KDE on the session-4 binned chains, null = w=(−1,−1,−1),
+prior-volume corrected (flat priors w0∈(−1.8,−0.2), w1,w2∈(−3,1)):
+
+| combo | BF(3-bin w vs ΛCDM) |
+|---|---|
+| BAO+SN+CMB | 29.9 |
+| BAO+SN+CMB+fσ8 | **135** |
+| BAO+CMB+fσ8 | 70 |
+| BAO+SN+fσ8 | 17.3 |
+| SN+CMB+fσ8 | 108 |
+
+**Reading:** model-independently (no w0wa parametrisation), non-constant w(z) is preferred
+at BF ≈ 17–135 — "strong" to "decisive" on the Jeffreys scale in most combos, larger than
+the parametric w0wa BF (≈10) because the extra freedom lets the data's preferred
+binned shape (dip at z 0.75–1.5, §11) count fully. Caveat: point-density KDE estimate in
+3D; treat as order-of-magnitude. So the *statement* "w(z) is not exactly −1 at all
+redshifts" is robustly supported by public data; what remains fragile (§7–§8, §12) is
+its interpretation — parametric significance, redshift support, and anchor dependence.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

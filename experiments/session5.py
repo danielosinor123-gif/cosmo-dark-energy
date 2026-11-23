@@ -232,8 +232,9 @@ def h0map_mode():
         for model in ["lcdm", "w0wa"]:
             logpost, names = make_logpost(model, 0.1, False, 0.1, h_fixed=float(h))
             best = None
-            for x0 in ([0.30, 0.045, 147.0] if model == "lcdm"
-                       else [0.31, 0.046, 143.5, -0.85, -0.3]):
+            starts = [[0.30, 0.045, 147.0]] if model == "lcdm" \
+                else [[0.31, 0.046, 143.5, -0.85, -0.3], [0.30, 0.045, 147.0, -1.0, 0.0]]
+            for x0 in starts:
                 x0 = np.array(x0, float)
                 res = minimize(lambda x: -logpost(x), x0, method="Nelder-Mead",
                                options={"maxiter": 4000, "xatol": 1e-5, "fatol": 1e-7})
