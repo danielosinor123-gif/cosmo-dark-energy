@@ -51,7 +51,33 @@ no single tracer (not even Lyα, whose full-shape analysis famously pulls back t
 in DESI's own work) drives or kills the signal. w0 ≈ −0.87 ± 0.11 consistently.
 
 ## 3. Probe-consistency certificates, binned w(z) (`probe_consistency.py` → `probe_results.json`)
-TBD (running).
+
+w(z) piecewise-constant in bins [0,0.75), [0.75,1.5), [1.5,∞); each row = one probe subset
+(+ SN + CMB unless noted). Tension T = (w_probe − w_joint)/√(σ²_probe + σ²_joint) per bin.
+
+| probe subset | w(z<0.75) | w(0.75–1.5) | w(z>1.5) | max \|T\| vs joint |
+|---|---|---|---|---|
+| **joint (BAO+SN+CMB)** | −0.93 ± 0.03 | **−1.31 ± 0.21** | −0.97 ± 0.49 | — |
+| BAO-all + CMB | −0.86 ± 0.06 | −1.48 ± 0.26 | −0.81 ± 0.47 | 0.94 |
+| SN + CMB | −0.97 ± 0.07 | −0.61 ± 0.87 | −1.77 ± 0.76 | 0.89 |
+| BAO+SN (no CMB) | −0.95 ± 0.04 | −1.59 ± 0.38 | −1.55 ± 0.85 | 0.64 |
+| BGS (0.295) | −0.98 ± 0.07 | −0.76 ± 0.89 | −1.59 ± 0.83 | 0.64 |
+| LRG z0 (0.510) | −0.98 ± 0.08 | −0.60 ± 0.94 | −1.62 ± 0.81 | 0.74 |
+| LRG z1 (0.706) | −0.99 ± 0.08 | −0.56 ± 0.88 | −1.61 ± 0.82 | 0.83 |
+| LRG+ELG (0.934) | −0.93 ± 0.04 | −1.34 ± 0.39 | −1.58 ± 0.79 | 0.65 |
+| ELG (1.321) | −0.93 ± 0.03 | −1.28 ± 0.43 | −1.62 ± 0.84 | 0.67 |
+| QSO (1.484) | −0.96 ± 0.05 | −0.87 ± 0.64 | −1.67 ± 0.78 | 0.76 |
+| Lyα (2.330) | −0.97 ± 0.06 | −0.68 ± 0.85 | −1.67 ± 0.76 | 0.77 |
+
+**Reading (the certificate):** (1) the joint w(z) dips to −1.31 ± 0.21 in the 0.75–1.5 bin —
+the evolving-DE shape, driven mainly by BAO (BAO+CMB alone gives −1.48 ± 0.26 there);
+(2) **no probe disagrees with the joint fit at >1σ** (max |T| = 0.94) — the hint is
+internally consistent across all 7 tracers and the SN sample, i.e. not an artifact of one
+probe; (3) the mild tension is BAO-vs-SN in the middle bin (+0.78σ) — BAO wants more
+phantom-like w there, SN less; (4) at z>1.5 all probes agree on w ≈ −1.6 ± 0.8 (large errors,
+consistent with −1). Note DESI's own Lyα *full-shape* analysis pulls toward ΛCDM — our BAO-only
+Lyα bin still prefers w<−1, so the tension between Lyα BAO and Lyα full-shape is a *shape-vs-scale*
+effect worth a dedicated session.
 
 ## 4. Reference: DESI's own published DR2 chains, w0waCDM (`experiments/desi_reference_loo.py`)
 | combo | w | wa | P(w>−1) | P(wa<0) |

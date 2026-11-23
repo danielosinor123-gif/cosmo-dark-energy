@@ -112,3 +112,20 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
   BAO-only, SN+CMB} + per-tracer leave-one-out; our own MCMC; outputs `results/*.json` + chains.
 - Physics sanity at Planck-fiducial: rs=150.5 Mpc (CAMB 147.1), BAO χ²=28.8/13, SN χ²=1936/1820,
   CMB(R,ωb) χ²=2.9; ~5 ms per likelihood eval.
+- Bug fixed: Ω_b prior range (0.010,0.040) capped the ω_b prior → pile-up at boundary and a
+  spurious wa>0 solution; widened to (0.005,0.10). After fix: BAO+SN+CMB w0wa = w0 −0.87±0.07,
+  wa −0.35±0.30 (1.73σ vs ΛCDM), matching DESI's BAO+DES-SN5YR chain within ~1σ.
+
+### S2 results (see results/RESULTS.md, repo danielosinor123-gif/cosmo-dark-energy)
+- w0wa preferred over ΛCDM in every combo (0.7–1.7σ), always w0>−1, wa<0; per-tracer LOO:
+  1.0–1.5σ each, w0≈−0.87±0.11 — no single tracer drives it.
+- Binned-w probe certificates (probe_consistency.py): joint w(z) dips to −1.31±0.21 in
+  z∈[0.75,1.5] (BAO-driven); max pairwise tension vs joint < 1σ — internally consistent.
+- Gap to DESI's 3.1σ is mostly CMB-prior strength (we use diagonal R,ω_b; DESI uses PR4
+  θ*,ω_b,ω_c compressed triple). SN sample choice also matters (Pantheon+ weakens wa).
+
+### S3+ candidates (open)
+- Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.
+- Growth-vs-geometry: add fσ8/RSD data (public compilations) as an independent w(z)-sensitive probe.
+- Bayesian evidence (not just Δχ²) for w0wa vs ΛCDM with our sampler + nested-sampling approx.
+- Emulator of distance integrals for cheap dense sampling; cross-check sampler with a second seed.
