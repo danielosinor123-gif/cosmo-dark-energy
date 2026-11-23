@@ -132,11 +132,21 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
 - Findings so far (results/RESULTS.md §5-6): BAO-only hint dies under 2× cov inflation, but
   BAO+SN+CMB survives 5× at ~1.2σ; **BF(w0wa/ΛCDM) ≈ 9–12 (strong, Jeffreys) for BAO+SN+CMB**,
   while wCDM is not preferred over ΛCDM → the data want *evolution* (wa≠0), not constant w.
-- Growth probe: public 24-pt fσ8 benchmark (AparajeetS/fsigma8-growth-consistency = Sagredo+2018
-  Table I + extensions, with published WiggleZ/eBOSS covariance blocks) added to
-  `data/fs8/`; exact growing-mode integral (Heath) for D(a), f(z) in `src/cosmo.py`
-  (validated vs ODE + Ωm^0.55; 19 ms/call). `experiments/growth_probe.py` running:
-  BAO+SN+CMB+fσ8 vs BAO+SN+CMB — does growth strengthen or kill the w0wa hint.
+- Growth probe DONE: public 24-pt fσ8 benchmark (AparajeetS/fsigma8-growth-consistency =
+  Sagredo+2018 Table I + extensions, WiggleZ/eBOSS covariance blocks) in `data/fs8/`; exact
+  growing-mode integral (Heath) for D(a), f(z) in `src/cosmo.py` (validated vs ODE +
+  Ωm^0.55; ~20 ms/call). Result: fσ8 kills the *evolution* (wa→0, w0wa=wcdm) and BAO+fσ8
+  shows no w0wa preference.
+- SN systematics DONE: Dovekie 1.73σ / Pantheon+ 3.60σ / DESY5 2.91σ (w0wa vs ΛCDM,
+  BAO+CMB) — same sign everywhere, significance swings with sample. Loader fixes:
+  Pantheon+ = m_b_corr + zHD (mB gives χ²/dof 2.6); DESY5 total cov = covsys +
+  diag(MUERR_FINAL²) (covsys alone not PD).
+- z-cut DONE: signal entirely in z<0.1 SNe (z>0.1 cut → Δχ² −0.01, 0σ).
+- Seeds DONE: Δχ² −6.34..−6.48 across 4 seeds — converged.
+- **Session-3 verdict (results/RESULTS.md §9): hint is real in data (BF≈10, probe-consistent)
+  but not robust — lives in low-z SNe, erased by growth, sample-dependent → most
+  parsimonious explanation is a low-z SN calibration systematic.** Falsifiable prediction:
+  DR3/full-shape + non-Cepheid low-z anchor should collapse the hint.
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.

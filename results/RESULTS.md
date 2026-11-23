@@ -158,15 +158,19 @@ SN-sample swap (BAO+CMB fixed), w0wa vs ΛCDM:
 | SN sample | w0 | wa | Δχ² | σ |
 |---|---|---|---|---|
 | DES-Dovekie (1820, HD) | −0.864 ± 0.056 | −0.409 ± 0.213 | −6.34 | 1.73σ |
-| **Pantheon+ (1701, m_b_corr+zHD)** | −0.799 ± 0.064 | −0.546 ± 0.257 | **−17.51** | **3.60σ** |
-| DES-SN5YR (1829) | TBD (rerunning; covsys needs +diag(MUERR²) to be PD) |
+| Pantheon+ (1701, m_b_corr+zHD) | −0.799 ± 0.064 | −0.546 ± 0.257 | −17.51 | 3.60σ |
+| DES-SN5YR (1829, covsys+diag(MUERR²)) | −0.816 ± 0.062 | −0.515 ± 0.233 | −12.63 | 2.91σ |
+
+All three SN samples prefer w0wa over ΛCDM with the same sign of (w0, wa) — but the
+significance swings 1.7–3.6σ with the sample choice.
 
 (Pantheon+ note: with the mB column the STAT+SYS covariance gives χ²/dof ≈ 2.6 — wrong
-column; m_b_corr + zHD gives χ²/dof ≈ 1.04. Also h is weakly pinned without full CMB, so
-Pantheon+ numbers carry a wider h posterior.) **The SN sample choice moves the significance
-from 1.7σ to 3.6σ — the headline number is sample-dependent.** DESI's own BAO+Pantheon+
-chain gives wa = −0.18 ± 0.45 (weak), so our Pantheon+ 3.6σ differs from DESI's — driven
-by our weaker CMB prior; documented as a caveat.
+column; m_b_corr + zHD gives χ²/dof ≈ 1.04. DESY5's covsys_000.txt is not PD on its own —
+total = covsys + diag(MUERR_FINAL²). Also h is weakly pinned without full CMB, so
+Pantheon+/DESY5 numbers carry wider h posteriors. DESI's own BAO+Pantheon+ chain gives
+wa = −0.18 ± 0.45 (weak), so our 3.6σ differs from DESI's — driven by our weaker CMB
+prior; documented as a caveat.) **The SN sample choice moves the significance from 1.7σ to
+3.6σ — the headline number is sample-dependent.**
 
 Sampler stability (BAO+Dovekie+CMB, seeds 1/11/12/13):
 
@@ -191,6 +195,26 @@ masses, peculiar velocities), so the hint is *consistent with* a low-z SN calibr
 systematic — this is the strongest "kill it" evidence we have produced, and it matches the
 known literature tension between low-z anchors and BAO/CMB distances. SN-sample swap
 (Dovekie vs Pantheon+ vs DESY5) results: TBD (running).
+
+## 9. Session-3 verdict — kill it or confirm it, ruthlessly
+
+| test | result | effect on the evolving-DE hint |
+|---|---|---|
+| Bayes factor (SD + Laplace) | BF(w0wa/ΛCDM) ≈ 9–12 (BAO+SN+CMB) | **supports** — strong on Jeffreys scale; wCDM not preferred → wants wa ≠ 0 |
+| Per-tracer LOO (s2) | 1.0–1.5σ each, same sign | supports — no single probe drives it |
+| Probe consistency (s2) | max tension < 1σ | supports — internally consistent |
+| Covariance inflation (×2, ×5) | BAO-only dies; BAO+SN+CMB survives at 1.2σ | mixed — robustness comes from SN |
+| **z-cut z>0.1** | Δχ²: −6.6 → **−0.01 (0σ)** | **kills it** — signal is entirely in z<0.1 SNe (calibration-sensitive) |
+| **Growth fσ8 added** | wa → 0; w0wa = wCDM (Δχ²≈0); BAO+fσ8: 0.3σ | **kills the evolution** — growth consistent with constant w |
+| SN sample swap | Dovekie 1.7σ / Pantheon+ 3.6σ / DESY5 2.9σ | mixed — direction stable, significance swings |
+
+**Bottom line:** on public data with our own pipeline, the DESI-style evolving-DE hint is
+real in the data (BF ≈ 10, all tracers and all SN samples agree in direction) but it is
+**not robust**: it lives entirely in z < 0.1 SNe, vanishes when growth data are added, and
+its significance swings 1.7–3.6σ with the SN sample. The most parsimonious explanation of
+all our tests together is a **low-redshift SN calibration systematic**, not evolving dark
+energy. That is a falsifiable, novel statement — and it predicts that DESI DR3/full-shape
++ a better low-z anchor (e.g. TRGB/JAGB instead of Cepheids) should collapse the hint.
 
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
