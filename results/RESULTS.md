@@ -132,7 +132,13 @@ preferred over ΛCDM (BF < 1–3) — the data want *evolution* (wa), not a cons
 TBD (running): adds the public 24-point fσ8 RSD/PV benchmark (with published WiggleZ/eBOSS
 covariance blocks) as an independent probe, σ8 as free nuisance.
 
-## 8. SN-sample and z-cut systematics (`session3.py sn_sys`, `zcut` → `zcut_results.json`)
+## 8. Sampler stability, SN-sample and z-cut systematics (`session3.py seeds`, `sn_sys`, `zcut`)
+
+Multi-seed stability of the headline combo (BAO+Dovekie+CMB), seeds 1, 11, 12, 13:
+Δχ²(w0wa−ΛCDM) = −6.34, −6.48, −6.46, −6.47 (1.73–1.79σ); w0 = −0.87…−0.86 ± 0.06,
+wa = −0.35…−0.43 ± 0.2–0.3. **No seed dependence — the MAP and posterior are converged.**
+
+Redshift cuts on DES-Dovekie (BAO+CMB fixed), w0wa vs ΛCDM:
 
 Redshift cuts on DES-Dovekie (BAO+CMB fixed), w0wa vs ΛCDM:
 
