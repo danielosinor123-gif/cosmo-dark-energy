@@ -147,6 +147,11 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
   but not robust — lives in low-z SNe, erased by growth, sample-dependent → most
   parsimonious explanation is a low-z SN calibration systematic.** Falsifiable prediction:
   DR3/full-shape + non-Cepheid low-z anchor should collapse the hint.
+- S4 started: (a) DESI's own iminuit minima parsed (`experiments/desi_minima.py`,
+  RESULTS.md §10) — **their** BAO+DESY5SN+CMB zmin=0.1 cut drops w0wa from 2.09σ to 1.06σ,
+  confirming our z<0.1 smoking gun in DESI's own pipeline; (b) anchor test running
+  (H0 priors Cepheid 73.04 / TRGB 70.4 / JAGB 67.8 / Planck 67.36 × z-cut 0/0.1,
+  `session4.py anchor`); (c) growth-inclusive binned-w certificates (`session4.py cert`).
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.

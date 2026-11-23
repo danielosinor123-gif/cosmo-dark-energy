@@ -11,7 +11,7 @@ for f in sorted(glob.glob(os.path.join(D, "*.txt"))):
     with open(f) as fh:
         lines = [l for l in fh if not l.startswith("#")]
     parts = lines[0].split()
-    hdr = open(f).readline().split()
+    hdr = [t for t in open(f).readline().split() if not t.startswith("#")]
     i_chi2 = hdr.index("chi2")
     i_mlp = hdr.index("minuslogpost")
     i_w = hdr.index("w") if "w" in hdr else None
@@ -31,11 +31,11 @@ for c in combos:
         sig = abs(norm.isf(p)) if p < 0.5 else 0.0
         w, wa = rows[(c, "base_w_wa")]["w"], rows[(c, "base_w_wa")]["wa"]
         print(f"{c:60s} {rows[(c,'base')]['chi2']:10.3f} {rows[(c,'base_w_wa')]['chi2']:10.3f} "
-              f"{d:+8.2f} {sig:6.2f}σ   ({w:+.3f}, {wa:+.3f})")
+              f"{d:+8.2f} {sig:6.2f}s  ({w:+.3f}, {wa:+.3f})")
     if (c, "base") in rows and (c, "base_w") in rows:
         d = rows[(c, "base_w")]["chi2"] - rows[(c, "base")]["chi2"]
         p = chi2d.sf(abs(d), 1)
         sig = abs(norm.isf(p)) if p < 0.5 else 0.0
         w = rows[(c, "base_w")]["w"]
         print(f"{c:60s} {rows[(c,'base')]['chi2']:10.3f} {rows[(c,'base_w')]['chi2']:10.3f} "
-              f"{d:+8.2f} {sig:6.2f}σ   (w={w:+.3f})  [wCDM]")
+              f"{d:+8.2f} {sig:6.2f}s  (w={w:+.3f})  [wCDM]")
