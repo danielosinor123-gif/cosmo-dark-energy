@@ -132,8 +132,23 @@ preferred over ΛCDM (BF < 1–3) — the data want *evolution* (wa), not a cons
 TBD (running): adds the public 24-point fσ8 RSD/PV benchmark (with published WiggleZ/eBOSS
 covariance blocks) as an independent probe, σ8 as free nuisance.
 
-## 8. SN-sample and z-cut systematics (`session3.py sn_sys`, `zcut`)
-TBD (running): Dovekie vs Pantheon+ vs DESY5; Dovekie z>0.1 / z>0.3 cuts.
+## 8. SN-sample and z-cut systematics (`session3.py sn_sys`, `zcut` → `zcut_results.json`)
+
+Redshift cuts on DES-Dovekie (BAO+CMB fixed), w0wa vs ΛCDM:
+
+| SN cut | w0 | wa | Δχ² | σ |
+|---|---|---|---|---|
+| z > 0.0 (all 1820) | −0.859 ± 0.053 | −0.411 ± 0.208 | −6.59 | **1.79σ** |
+| z > 0.1 | −0.936 ± 0.090 | −0.204 ± 0.280 | −0.01 | **0.00σ** |
+| z > 0.3 | −0.767 ± 0.133 | −0.640 ± 0.411 | −2.78 | 0.68σ |
+
+**Reading — this is the sharpest result of the session: the entire evolving-DE preference in
+BAO+SN+CMB comes from SNe at z < 0.1.** Removing them kills the signal completely (Δχ² = −0.01).
+Low-z SNe are exactly where calibration/anchor systematics live (SH0ES Cepheids, host
+masses, peculiar velocities), so the hint is *consistent with* a low-z SN calibration
+systematic — this is the strongest "kill it" evidence we have produced, and it matches the
+known literature tension between low-z anchors and BAO/CMB distances. SN-sample swap
+(Dovekie vs Pantheon+ vs DESY5) results: TBD (running).
 
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
