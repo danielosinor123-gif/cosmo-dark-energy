@@ -332,6 +332,32 @@ binned shape (dip at z 0.75–1.5, §11) count fully. Caveat: point-density KDE 
 redshifts" is robustly supported by public data; what remains fragile (§7–§8, §12) is
 its interpretation — parametric significance, redshift support, and anchor dependence.
 
+## 15. H₀ ↔ w(z) equivalence map (`session5.py h0map` → `h0map_results.json`)
+
+BAO + Dovekie(z>0.1) + CMB-compressed, h **fixed** on a grid, MAP-fit ΛCDM vs w0wa:
+
+| H₀ | χ² ΛCDM | χ² w0wa | w0 | wa | Δχ² |
+|---|---|---|---|---|---|
+| 66.0 | 1878.6 | 1456.6 | −0.449 | **−1.665** | −422 |
+| 67.0 | 1704.5 | 1445.9 | −0.581 | −1.236 | −259 |
+| 68.0 | 1572.5 | 1438.2 | −0.707 | −0.847 | −134 |
+| 69.0 | 1483.6 | 1433.7 | −0.826 | −0.493 | −50 |
+| 70.0 | 1438.4 | 1432.1 | −0.939 | −0.169 | −6 |
+| 71.0 | 1437.6 | 1433.5 | −1.048 | +0.131 | −4 |
+| 72.0 | 1481.3 | 1437.7 | −1.153 | +0.411 | −44 |
+| 73.0 | 1569.6 | 1444.6 | −1.255 | +0.673 | −125 |
+| 74.0 | 1702.2 | 1454.0 | −1.355 | +0.921 | −248 |
+
+**Reading — the cleanest discovery of the session:** (i) in ΛCDM the χ²(H₀) profile of
+BAO+SN(z>0.1)+CMB has a sharp minimum at **H₀ ≈ 70.5** and rises by Δχ² ≈ 440 from H₀=66
+to the minimum — that *is* the H₀ tension in this data combination, measured directly;
+(ii) w0wa absorbs the entire range H₀ = 66–74 at nearly constant χ² (1432–1456), with a
+smooth monotonic mapping **wa ≈ −0.17 + 0.32·(H₀ − 70)** (i.e. ΔH₀ = 1 km/s/Mpc ↔
+Δwa ≈ 0.32; the full Planck–SH0ES gap of 5.7 km/s/Mpc ↔ Δwa ≈ 1.8), and w0 sliding from
+−0.45 to −1.36. In other words: **"evolving dark energy" and "an H₀ offset" are the same
+curve — the w0wa preference is the H₀ tension wearing a w(z) costume**, quantified as a
+one-parameter equivalence map.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

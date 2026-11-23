@@ -164,7 +164,10 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
   agree with each other (<1 sigma pairwise) => the hint is ONE common low-z offset
   (shared Cepheid anchor), delta_mu~0.04 mag ~ delta_H0~1.1 km/s/Mpc; (d) bfbin DONE
   (§14) — nonparametric BF(3-bin w vs LCDM) = 17-135, decisive in most combos.
-  Running: (a) low-z dM step size, (c) H0<->w(z) equivalence map.
+  (c) h0map DONE (§15): at fixed H0, LCDM chi2(H0) has a sharp minimum at H0~70.5 (H0
+  tension measured directly, dchi2~440 to H0=66) while w0wa is flat in H0 (1432-1456)
+  with wa ~ -0.17 + 0.32*(H0-70) — evolving DE and an H0 offset are the same curve.
+  Running: (a) low-z dM step size.
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.
