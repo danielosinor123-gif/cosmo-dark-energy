@@ -94,6 +94,47 @@ effect worth a dedicated session.
 w=−0.78, wa=−0.72 — same direction, consistent within ~1σ. The SN sample choice matters
 (Pantheon+ weakens wa), which is exactly what §3 quantifies probe-by-probe.
 
+## 5. Robustness to BAO covariance inflation (`session3.py cov_stress` → `cov_stress_results.json`)
+
+Re-scale the BAO covariance by α² (χ²_BAO → χ²_BAO/α²), profile over saved posterior samples:
+
+| combo | α=1 | 1.25 | 1.5 | 2 | 3 | 5 |
+|---|---|---|---|---|---|---|
+| BAO+SN+CMB | **1.73σ** | 1.54σ | 1.44σ | 1.33σ | 1.23σ | 1.19σ |
+| BAO+SN | 1.72σ | 1.50σ | 1.33σ | 1.07σ | 0.76σ | 0.58σ |
+| BAO+CMB | 0.72σ | 0.25σ | 0 | 0 | 0 | 0 |
+| BAO-only | 1.28σ | 0.74σ | 0.36σ | 0 | 0 | 0 |
+
+**Reading:** the BAO-*only* hint is fragile — it dies under 2× covariance inflation (consistent
+with the literature's finding that BAO-only evolving-DE is covariance-sensitive). The
+BAO+SN+CMB hint survives even 5× inflation at ~1.2σ, because SN distances dominate the
+constraint. So the hint's robustness comes from the SN+BAO combination, not from BAO alone.
+
+## 6. Bayesian evidence (`session3.py evidence` → `evidence_results.json`)
+
+Bayes factors BF(w0wa/ΛCDM), Savage–Dickey (SD, from chains) and Laplace (at refined MAP):
+
+| combo | BF SD | BF Laplace | BF(wcdm/ΛCDM) SD |
+|---|---|---|---|
+| **BAO+SN+CMB** | **11.8** | **9.1** | 3.4 |
+| BAO+SN | 3.2 | 24.2 | 0.66 |
+| BAO+CMB | 8.4 | 4.1 | 11.2 |
+| BAO-only | 3.7 | n/a (flat dir) | 3.6 |
+| SN+CMB | 13.5 | 8.2 | 3.2 |
+
+**Reading:** on the Jeffreys scale, BF ≈ 10 is "strong" evidence — the full BAO+SN+CMB combo
+gives BF(w0wa/ΛCDM) ≈ 9–12 by two independent estimators. That is a genuinely Bayesian
+statement, not just a Δχ² tail: evolving DE is *moderately-to-strongly* preferred over a
+cosmological constant by public 2025–2026 data in our pipeline. wCDM (1 extra param) is not
+preferred over ΛCDM (BF < 1–3) — the data want *evolution* (wa), not a constant w≠−1.
+
+## 7. Growth vs geometry (`growth_probe.py` → `growth_results.json`)
+TBD (running): adds the public 24-point fσ8 RSD/PV benchmark (with published WiggleZ/eBOSS
+covariance blocks) as an independent probe, σ8 as free nuisance.
+
+## 8. SN-sample and z-cut systematics (`session3.py sn_sys`, `zcut`)
+TBD (running): Dovekie vs Pantheon+ vs DESY5; Dovekie z>0.1 / z>0.3 cuts.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

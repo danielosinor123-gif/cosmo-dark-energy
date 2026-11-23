@@ -114,6 +114,72 @@ class BackgroundBinned:
 
 
 # ----------------------------------------------------------------------------
+# Linear growth: D(a) and f = dlnD/dlna (radiation neglected in E^2)
+# ----------------------------------------------------------------------------
+
+def growth(Om, z_eval, w0=-1.0, wa=0.0, Ok=0.0, lnF=None):
+    """Return (D, f) at z_eval, D normalized to 1 at z=0, f = dlnD/dlna.
+    Uses the exact growing-mode integral (Heath 1977, radiation neglected):
+    D(a) = (5/2) Om E(a) ∫0^a da' / (a'^3 E(a')^3)."""
+    ag = np.geomspace(1e-4, 1.0, 4001)
+    zg = 1.0 / ag - 1.0
+    if lnF is None:
+        lnF_z = 3.0 * (1 + w0 + wa) * np.log1p(zg) - 3.0 * wa * zg / (1 + zg)
+    else:
+        lnF_z = lnF(zg)
+    Ode = 1.0 - Om - Ok
+    E = np.sqrt(Om * ag ** -3 + Ok * ag ** -2 + Ode * np.exp(lnF_z))
+    integ = 1.0 / (ag ** 3 * E ** 3)
+    I = np.concatenate([[0.0], np.cumsum(0.5 * (integ[1:] + integ[:-1]) * np.diff(ag))])
+    D = 2.5 * Om * E * I
+    D = D / D[-1]
+    x = np.log(ag)
+    f = np.gradient(np.log(np.maximum(D, 1e-300)), x)
+    xe = np.log(1.0 / (1.0 + np.asarray(z_eval, dtype=float)))
+    return np.interp(xe, x, D), np.interp(xe, x, f)
+
+
+def fs8_model(Om, s8, z, w0=-1.0, wa=0.0, Ok=0.0, lnF=None):
+    """f sigma8(z) = s8 * f(z) * D(z) with D(0)=1."""
+    D, f = growth(Om, z, w0, wa, Ok, lnF)
+    return s8 * f * D
+
+
+def load_fs8():
+    """Public f sigma8 benchmark (AparajeetS/fsigma8-growth-consistency, Sagredo+2018
+    Table I + extensions): z, fs8, inverse total covariance. Published covariance blocks
+    (WiggleZ 3x3, eBOSS DR14 QSO 4x4) replace the diagonal entries for those points."""
+    d = os.path.join(DATA, "fs8")
+    import csv
+    rows = list(csv.DictReader(open(os.path.join(d, "catalogue.csv"))))
+    rows = [r for r in rows if r["included_in_primary_vector"] == "True"]
+    z = np.array([float(r["z"]) for r in rows])
+    fs8 = np.array([float(r["fsigma8"]) for r in rows])
+    sig = np.array([float(r["sigma"]) for r in rows])
+    n = len(z)
+    cov = np.diag(sig ** 2)
+    blocks = {"wigglez_fs8": "wigglez_fsigma8_covariance.csv",
+              "eboss_dr14_qso_fs8": "eboss_dr14_qso_fsigma8_covariance.csv"}
+    for bid, fname in blocks.items():
+        idx = [i for i, r in enumerate(rows) if r["covariance_block_id"] == bid]
+        if not idx:
+            continue
+        idx = sorted(idx, key=lambda i: z[i])   # block rows are in ascending z
+        B = np.loadtxt(os.path.join(d, "covariance_blocks", fname), delimiter=",")
+        assert B.shape == (len(idx), len(idx)), (bid, B.shape, len(idx))
+        for a, i in enumerate(idx):
+            for b, j in enumerate(idx):
+                cov[i, j] = B[a, b]
+    invC = np.linalg.inv(cov)
+    return z, fs8, invC
+
+
+def fs8_chi2(Om, s8, z, fs8v, invC, w0=-1.0, wa=0.0, Ok=0.0, lnF=None):
+    r = fs8v - fs8_model(Om, s8, z, w0, wa, Ok, lnF)
+    return float(r @ invC @ r)
+
+
+# ----------------------------------------------------------------------------
 # Sound horizon (drag epoch), numerical
 # ----------------------------------------------------------------------------
 

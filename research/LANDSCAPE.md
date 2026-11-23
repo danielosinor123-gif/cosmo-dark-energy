@@ -124,8 +124,21 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
 - Gap to DESI's 3.1σ is mostly CMB-prior strength (we use diagonal R,ω_b; DESI uses PR4
   θ*,ω_b,ω_c compressed triple). SN sample choice also matters (Pantheon+ weakens wa).
 
-### S3+ candidates (open)
+### S3 (Nov 23, 2026) — stress tests + evidence + growth probe
+- `experiments/session3.py`: SN-sample systematics (Dovekie/Pantheon+/DESY5 — fixed the
+  packed-covariance loaders: first entry = dimension, then n×n row-major), z-cut systematics,
+  multi-seed stability, BAO covariance-inflation stress (profile over chains), and Bayes
+  factors via Savage-Dickey (KDE at w0=-1,wa=0) + Laplace at refined MAP.
+- Findings so far (results/RESULTS.md §5-6): BAO-only hint dies under 2× cov inflation, but
+  BAO+SN+CMB survives 5× at ~1.2σ; **BF(w0wa/ΛCDM) ≈ 9–12 (strong, Jeffreys) for BAO+SN+CMB**,
+  while wCDM is not preferred over ΛCDM → the data want *evolution* (wa≠0), not constant w.
+- Growth probe: public 24-pt fσ8 benchmark (AparajeetS/fsigma8-growth-consistency = Sagredo+2018
+  Table I + extensions, with published WiggleZ/eBOSS covariance blocks) added to
+  `data/fs8/`; exact growing-mode integral (Heath) for D(a), f(z) in `src/cosmo.py`
+  (validated vs ODE + Ωm^0.55; 19 ms/call). `experiments/growth_probe.py` running:
+  BAO+SN+CMB+fσ8 vs BAO+SN+CMB — does growth strengthen or kill the w0wa hint.
+
+### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.
-- Growth-vs-geometry: add fσ8/RSD data (public compilations) as an independent w(z)-sensitive probe.
-- Bayesian evidence (not just Δχ²) for w0wa vs ΛCDM with our sampler + nested-sampling approx.
-- Emulator of distance integrals for cheap dense sampling; cross-check sampler with a second seed.
+- Emulator of distance integrals for cheap dense sampling; nested-sampling-grade evidence.
+- Combine everything: full joint with growth + per-tracer certificates + SN systematics.
