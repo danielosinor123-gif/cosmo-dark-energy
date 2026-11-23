@@ -259,6 +259,35 @@ shape: all probes agree on a non-flat w(z). So the low-z-driven, non-constant w(
 feature is probe-robust in shape; what is not robust is its parametric significance
 (§7) and its redshift support (§8).
 
+## 12. H₀-anchor test — the hint decomposes into a low-z-SN channel and an H₀-tension channel (`session4.py anchor` → `anchor_results.json`)
+
+BAO+Dovekie+CMB, w0wa vs ΛCDM, under different external H₀ priors and SN redshift cuts:
+
+| SN cut | H₀ prior | Δχ² | σ | w0 | wa |
+|---|---|---|---|---|---|
+| all z | none | −6.29 | 1.72σ | −0.860 | −0.418 |
+| all z | **Cepheid/SH0ES 73.04±1.04** | **−2.18** | **0.42σ** | −0.911 | −0.268 |
+| all z | TRGB/CCHP 70.4±1.9 | −6.02 | 1.65σ | −0.869 | −0.400 |
+| all z | JAGB/CCHP 67.8±2.7 | −6.64 | 1.80σ | −0.858 | −0.424 |
+| all z | **Planck ΛCDM 67.36±0.54** | **−23.92** | **4.36σ** | −0.792 | −0.607 |
+| z>0.1 | none / Cepheid / TRGB / JAGB | −0.17 … −0.73 | **0.00σ** | — | — |
+| z>0.1 | Planck 67.36±0.54 | −22.14 | 4.16σ | −0.756 | −0.721 |
+
+**Reading — this is the sharpest decomposition of the hint we have:**
+(i) Anchoring to the **Cepheid** H₀=73 collapses the full-sample preference to **0.4σ** —
+if the local distance ladder's high H₀ is taken at face value, there is no evolving DE
+in BAO+SN+CMB. The 1.7σ "signal" without an anchor is exactly the statement that the
+low-z SN calibration sits *below* the Cepheid value.
+(ii) TRGB/JAGB (intermediate/low local anchors) leave it intact (1.7–1.8σ).
+(iii) Anchoring to **Planck's low H₀** inflates it to **4.4σ** — and even with all z<0.1 SNe
+removed it stays at **4.2σ**: the H₀ tension alone (low H₀ vs BAO/SN distances) drives
+w0wa with wa ≈ −0.6…−0.7. This is the classic "phantom DE from H₀ tension" channel,
+quantified here: ΔH₀ ≈ 5 km/s/Mpc (Planck vs SH0ES) is worth wa ≈ −0.7 at z>0.1.
+
+**Bottom line:** the 2025–26 evolving-DE hint is a composite of (a) the low-z SN tail
+relative to the Cepheid anchor and (b) the H₀ tension. Both are known systematics/tensions,
+not new physics — and each is independently falsifiable (non-Cepheid anchors, DR3).
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

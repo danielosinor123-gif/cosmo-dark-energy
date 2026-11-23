@@ -155,6 +155,14 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
   (`session4.py cert`, RESULTS.md §11): all probe combos incl. fσ8 recover the same binned
   w(z) shape (w≈−0.93 today, dip ≈−1.2 at z 0.75–1.5) with max tension 0.51σ — the
   non-constant w(z) shape is probe-robust; only its parametric significance is fragile.
+- S4 anchor test DONE (RESULTS.md §12): Cepheid H0=73 anchor collapses the full-sample
+  w0wa hint to 0.42 sigma; TRGB/JAGB leave it at 1.7-1.8 sigma; Planck H0=67.36 inflates it
+  to 4.36 sigma (4.16 sigma even with z>0.1 SNe cut) — the hint is a composite of the
+  low-z-SN-vs-Cepheid channel and the H0-tension channel (dH0~5 km/s/Mpc ~ wa~-0.7).
+- S5 (NEW quantitative discoveries, running): (a) free low-z magnitude step dM(z<z_step)
+  — how big a calibration step absorbs the whole w0wa signal; (b) cross-sample low-z
+  residual certificate (Dovekie vs Pantheon+ vs DESY5 at z<0.1); (c) H0<->w(z) equivalence
+  map (h0map); (d) nonparametric 3-bin-w Savage-Dickey BF (bfbin).
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.
