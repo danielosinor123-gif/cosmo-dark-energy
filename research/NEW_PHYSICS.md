@@ -64,7 +64,9 @@ of the SH0ES-vs-BAO/CMB H₀ gap. Caveat (important): at high H₀ the fit pushe
 prior boundary z_c ≈ 0.2, i.e. the "transition" the data want sits at z ≲ 0.2 — exactly
 where the low-z SN calibration step lives (§8, §13, §16). Physics-at-z~0.2 and a low-z
 calibration systematic are degenerate in current data; DR3/full-shape or a non-Cepheid
-anchor breaks the degeneracy. MCMC fits + Bayes factors vs ΛCDM: TBD (running).
+anchor breaks the degeneracy. **MCMC verdict (RESULTS.md §17): LDPT does not improve the
+full-sample fit at all (Δχ² = −0.34 no growth, −0.91 with fσ8) and is disfavoured by the
+Laplace evidence (BF = 0.11 with growth) — killed by Occam.**
 
 ---
 
@@ -96,7 +98,13 @@ because the phantom phase is confined to z ~ 0.6–1.6, the integrated effect on
 3. No H₀ absorption (pure background shape) — the χ²(H₀) profile stays ΛCDM-like;
    if the real driver is H₀ systematics, N2 alone won't fix it (contrast with N1).
 
-**Status:** implemented (`w_quintom`, `make_lnF_quintom`); fits running (TBD).
+**Status:** implemented (`w_quintom`, `make_lnF_quintom`); fitted (`session6_results.json`,
+RESULTS.md §17). Best fits: no-growth w_b=−0.92, A=−0.68, z_q≈1.0, Δ=0.14 (narrow deep
+phantom spike, w(1)≈−1.6 at MAP); with fσ8 z_q=1.93±0.51, A=−0.52±0.24 (broader dip).
+Δχ² vs ΛCDM: −8.06 (no growth, k=4), −7.70 (with growth); Laplace BF = 2.2 with growth —
+**consistent with the data but not required**: w0wa (BF 8–9, k=2) is the more
+parsimonious description. A confirmed double crossing would still be a discovery, but
+current public data do not demand it.
 
 ---
 
@@ -119,5 +127,15 @@ turns out to deviate from ΛCDM (our current data say it doesn't).
   tension) — that would be the first late-time dark-sector transition candidate
   consistent with both SH0ES and BAO/CMB.
 
-All numbers to be filled from `results/session6_results.json`, `h0map_s6_ldpt.json`,
-`predict_s6_*.json`.
+## Final verdict (session 6, RESULTS.md §16–§17)
+
+- No new-physics model beats plain w0wa on evidence; LDPT is rejected (BF 0.11),
+  quintom-dip is allowed but not required (BF 2.2 vs w0wa's 8.0).
+- The single most quotable number (§16): **a δM ≈ +0.02–0.03 mag step at z<0.1 absorbs
+  the entire evolving-DE preference (1.72σ → 0.00σ)** — same size as the coherent
+  low-z offset common to all three SN samples (§13).
+- Discovery bar (BF>10 AND survival of z>0.1 cut + anchor swap + δM step): met by
+  nothing. Predictions for DR3/non-Cepheid anchors stand as written above.
+
+All numbers in `results/session6_results.json`, `results/step_results.json`,
+`results/h0map_s6_ldpt.json`, `results/predict_s6_*.json`.

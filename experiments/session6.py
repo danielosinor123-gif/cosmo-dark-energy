@@ -149,13 +149,19 @@ def laplace_logZ(logpost, names, x_map):
             xpm = xm.copy(); xpm[i] += h[i]; xpm[j] -= h[j]
             xmp = xm.copy(); xmp[i] -= h[i]; xmp[j] += h[j]
             H[i, j] = H[j, i] = (f(xp) - f(xpm) - f(xmp) + f(xm_)) / (4 * h[i] * h[j])
-    H = 0.5 * (H + H.T)
-    ev, V = np.linalg.eigh(H)
-    flat = bool(ev.min() < 1e-6 * ev.max())
-    ev = np.clip(ev, max(ev.max() * 1e-12, 1e-12), None)
-    logdet = float(-np.log(ev).sum())
-    logprior = sum(np.log(PRIORS[n][1] - PRIORS[n][0]) for n in names)
-    logZ = float(lp_map + 0.5 * k * np.log(2 * np.pi) + 0.5 * logdet + logprior)
+    logZ = float("nan")
+    flat = True
+    if np.all(np.isfinite(H)):
+        try:
+            H = 0.5 * (H + H.T)
+            ev, V = np.linalg.eigh(H)
+            flat = bool(ev.min() < 1e-6 * ev.max())
+            ev = np.clip(ev, max(ev.max() * 1e-12, 1e-12), None)
+            logdet = float(-np.log(ev).sum())
+            logprior = sum(np.log(PRIORS[n][1] - PRIORS[n][0]) for n in names)
+            logZ = float(lp_map + 0.5 * k * np.log(2 * np.pi) + 0.5 * logdet + logprior)
+        except np.linalg.LinAlgError:
+            pass
     return logZ, flat, dict(zip(names, map(float, xm))), float(-2.0 * lp_map)
 
 
@@ -163,12 +169,19 @@ def fit_mode():
     combo = sys.argv[2] if len(sys.argv) > 2 else "bao_sn_cmb"
     try:
         with open(os.path.join(RESULTS, "session6_results.json")) as f:
-            out = [e for e in json.load(f) if e["combo"] != combo]
+            all_entries = json.load(f)
+        out = [e for e in all_entries if e["combo"] != combo]
+        prev = next((e for e in all_entries if e["combo"] == combo), None)
     except Exception:
-        out = []
-    entry = {"combo": combo, "models": {}}
+        out, prev = [], None
+    entry = prev if prev else {"combo": combo, "models": {}}
+    entry.setdefault("models", {})
     logZ = {}
     for model in ["lcdm", "w0wa", "ldpt", "quintom"]:
+        if model in entry["models"] and "logZ_laplace" in entry["models"][model]:
+            logZ[model] = entry["models"][model]["logZ_laplace"]
+            print(f"  [{combo}] {model}: already done, skipping", flush=True)
+            continue
         summ, logpost, names = run_mcmc(model, combo)
         lz, flat, mapd, chi2r = laplace_logZ(logpost, names,
                                              np.array([summ["map"][n] for n in names]))
@@ -186,11 +199,12 @@ def fit_mode():
         d = entry["models"][model]["chi2_map_refined"] - base
         k = len(MODEL_PARAMS[model]) - len(MODEL_PARAMS["lcdm"])
         sig, p = sigma_from_dchi2(d, k)
-        bf = float(np.exp(min(logZ[model] - logZ["lcdm"], 700)))
+        dlz = logZ[model] - logZ["lcdm"]
+        bf = float(np.exp(min(dlz, 700))) if np.isfinite(dlz) else None
         entry[f"{model}_vs_lcdm"] = {"dchi2": float(d), "sigma": float(sig), "p": float(p),
                                      "BF_laplace": bf}
         print(f"  >> [{combo}] {model} vs lcdm: dchi2={d:+.2f} ({abs(sig):.2f}s, k={k}) "
-              f"BF_laplace={bf:.3g}", flush=True)
+              f"BF_laplace={'n/a' if bf is None else format(bf, '.3g')}", flush=True)
     out.append(entry)
     with open(os.path.join(RESULTS, "session6_results.json"), "w") as f:
         json.dump(out, f, indent=2)

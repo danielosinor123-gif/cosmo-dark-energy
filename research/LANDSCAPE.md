@@ -167,7 +167,14 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
   (c) h0map DONE (§15): at fixed H0, LCDM chi2(H0) has a sharp minimum at H0~70.5 (H0
   tension measured directly, dchi2~440 to H0=66) while w0wa is flat in H0 (1432-1456)
   with wa ~ -0.17 + 0.32*(H0-70) — evolving DE and an H0 offset are the same curve.
-  Running: (a) low-z dM step size.
+- S5 (a) step DONE (§16): a dM=+0.02..0.03 mag step at z<0.1 absorbs the WHOLE w0wa
+  preference (1.72 sigma -> 0.00 sigma at z_step=0.1) — same size as the §13 common
+  low-z offset. THE quotable number of the project.
+- S6 NEW PHYSICS (research/NEW_PHYSICS.md, §17): N1 LDPT (late dark-sector phase
+  transition) — absorbs dchi2~105 at fixed H0=73 (h0map_s6_ldpt) but z_c->0.2 edge,
+  degenerate with the low-z step; killed by evidence on the full sample (BF 0.11).
+  N2 quintom phantom-dip — best raw chi2 (-8.06) but BF 2.2 < w0wa 8.0: allowed, not
+  required. No model meets the discovery bar (BF>10 AND robust to z>0.1/anchor/dM).
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.

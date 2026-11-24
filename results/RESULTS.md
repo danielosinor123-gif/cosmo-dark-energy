@@ -358,6 +358,48 @@ smooth monotonic mapping **wa ≈ −0.17 + 0.32·(H₀ − 70)** (i.e. ΔH₀ =
 curve — the w0wa preference is the H₀ tension wearing a w(z) costume**, quantified as a
 one-parameter equivalence map.
 
+## 16. The calibration-step size that kills the signal (`session5.py step` → `step_results.json`)
+
+Free magnitude step δM applied to SNe with z < z_step (BAO+Dovekie+CMB), w0wa vs ΛCDM:
+
+| z_step | Δχ² without δM | Δχ² with δM | σ with δM | δM (w0wa fit) | δM (ΛCDM fit) |
+|---|---|---|---|---|---|
+| 0.05 | −6.29 (1.72σ) | **−1.92** | **0.30σ** | +0.014 ± 0.015 mag | +0.030 ± 0.012 mag |
+| 0.10 | −6.29 (1.72σ) | **−0.07** | **0.00σ** | +0.022 ± 0.020 mag | +0.034 ± 0.012 mag |
+| 0.20 | −6.29 (1.72σ) | −2.58 | 0.60σ | −0.008 ± 0.021 mag | +0.022 ± 0.011 mag |
+
+**Reading — the single most quotable number of this project:** a magnitude step of only
+**δM ≈ +0.02…0.03 mag at z < 0.1 completely absorbs the entire w0wa preference**
+(1.72σ → 0.00σ). That step size is exactly the coherent low-z offset we measured across
+all three SN samples in §13 (+0.033…+0.048 mag, agreeing with each other to <1σ) and is
+~ΔH₀ ≈ 0.9 km/s/Mpc — the size of the known low-z calibration debates (Cepheid
+anchor vs BAO/CMB). The evolving-DE hint and a +0.03 mag low-z step are the same
+thing in current data.
+
+## 17. New-physics models vs ΛCDM (`session6.py fit` → `session6_results.json`, `src/models.py`, `research/NEW_PHYSICS.md`)
+
+Candidate models (see NEW_PHYSICS.md for mechanisms + predictions) fitted on the same
+data, Δχ² and Laplace BF vs ΛCDM:
+
+| combo | w0wa (k=2) | LDPT (k=3) | quintom dip (k=4) |
+|---|---|---|---|
+| BAO+SN+CMB | Δχ² −6.58 (1.78σ), **BF 9.1** | Δχ² −0.34 (0σ), BF n/a (flat) | Δχ² −8.06 (1.34σ), BF n/a |
+| BAO+SN+CMB+fσ8 | Δχ² −6.35 (1.73σ), **BF 8.0** | Δχ² −0.91 (0σ), **BF 0.11** | Δχ² −7.70 (1.26σ), **BF 2.2** |
+
+Quintom best fits: no-growth (w_b=−0.92, A=−0.68, z_q=0.99±, Δ=0.14 — a *narrow deep*
+phantom spike at z≈1); with growth (z_q=1.93±0.51, A=−0.52±0.24, Δ=0.99 — broader,
+shallower). LDPT best fit: f=0.34±0.23, z_c=2.7 — unconstrained, no improvement.
+
+**Verdict — the data judge the new physics:** (i) **LDPT is killed by the evidence**
+(BF 0.11 with growth): it does not improve the fit and the Occam penalty rejects it; its
+only power was at *fixed* high H₀ (§15, NEW_PHYSICS.md), where its z_c runs to the 0.2
+prior edge — degenerate with the §16 low-z step. (ii) **The quintom phantom dip gives
+the best raw χ² but not the best evidence** — BF 2.2 with growth vs w0wa's 8.0: the
+phantom crossing is *consistent* with the data but not required; CPL is the more
+parsimonious description. (iii) No proposed model survives the §8/§12/§16 battery
+(z>0.1 cut, anchor swap, δM step) — the discovery bar (BF>10 AND robust) is not met by
+anything, including w0wa itself.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
