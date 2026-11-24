@@ -1,0 +1,66 @@
+{
+  "setup": "BAO ALL cov scaled by f^-2; Dovekie+CMB fixed; dM step z<0.1 free in lcdm/w0wa",
+  "discovery_threshold_dchi2_k2_3sigma": -11.83,
+  "rows": [
+    {
+      "f_bao": 1.0,
+      "chi2_lcdm_dM": 1638.1591714785834,
+      "chi2_w0wa_dM": 1637.8058361167637,
+      "chi2_w0wa_nodM": 1638.898073737253,
+      "dchi2_w0wa_dM_vs_lcdm_dM": -0.35333536181974523,
+      "dchi2_w0wa_nodM_vs_lcdm_dM": 0.7389022586696683,
+      "wa_map": -0.1688346237306549,
+      "dm_map": 0.022987231434293896
+    },
+    {
+      "f_bao": 1.5,
+      "chi2_lcdm_dM": 1651.0420457284333,
+      "chi2_w0wa_dM": 1649.1906209213212,
+      "chi2_w0wa_nodM": 1649.509225877106,
+      "dchi2_w0wa_dM_vs_lcdm_dM": -1.8514248071121528,
+      "dchi2_w0wa_nodM_vs_lcdm_dM": -1.5328198513273037,
+      "wa_map": -0.31492193430839654,
+      "dm_map": 0.011595139922091938
+    },
+    {
+      "f_bao": 2.0,
+      "chi2_lcdm_dM": 1669.0434603050144,
+      "chi2_w0wa_dM": 1664.073493926767,
+      "chi2_w0wa_nodM": 1664.0752319758,
+      "dchi2_w0wa_dM_vs_lcdm_dM": -4.9699663782473635,
+      "dchi2_w0wa_nodM_vs_lcdm_dM": -4.968228329214298,
+      "wa_map": -0.4574085865376263,
+      "dm_map": 0.0008092561342651148
+    },
+    {
+      "f_bao": 3.0,
+      "chi2_lcdm_dM": 1720.4255836652399,
+      "chi2_w0wa_dM": 1703.2538623650732,
+      "chi2_w0wa_nodM": 1704.3280217278998,
+      "dchi2_w0wa_dM_vs_lcdm_dM": -17.17172130016661,
+      "dchi2_w0wa_nodM_vs_lcdm_dM": -16.09756193734006,
+      "wa_map": -0.7591971020699253,
+      "dm_map": -0.01871395997588676
+    },
+    {
+      "f_bao": 4.0,
+      "chi2_lcdm_dM": 1792.3344960534857,
+      "chi2_w0wa_dM": 1753.4171241772026,
+      "chi2_w0wa_nodM": 1758.1350057295888,
+      "dchi2_w0wa_dM_vs_lcdm_dM": -38.91737187628314,
+      "dchi2_w0wa_nodM_vs_lcdm_dM": -34.19949032389695,
+      "wa_map": -1.1112962441266352,
+      "dm_map": -0.0377726991050015
+    },
+    {
+      "f_bao": 6.0,
+      "chi2_lcdm_dM": 1997.7645458184043,
+      "chi2_w0wa_dM": 1881.185346939695,
+      "chi2_w0wa_nodM": 1900.349570309928,
+      "dchi2_w0wa_dM_vs_lcdm_dM": -116.57919887870935,
+      "dchi2_w0wa_nodM_vs_lcdm_dM": -97.41497550847635,
+      "wa_map": -1.7507426032143916,
+      "dm_map": -0.06942721271179969
+    }
+  ]
+}

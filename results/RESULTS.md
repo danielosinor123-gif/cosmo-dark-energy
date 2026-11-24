@@ -652,6 +652,27 @@ leaves it intact (−5.96). The signal is not driven by the high-z tracer — if
 Lyα vetoes it, consistent with the reported Lyα-vs-low-z counter-signal. The hint lives
 in the z<1.6 BAO + SN combination, i.e. still the low-z side.
 
+## 30. DR3 forecast — how much BAO precision breaks the w0wa ↔ δM degeneracy (`session18.py forecast` → `forecast_dr3.json`)
+
+ALL BAO covariance scaled by f⁻² (DR3-like precision gain f), Dovekie + CMB fixed,
+δM step at z<0.1 free in ΛCDM and w0wa; profile Δχ²(w0wa+δM vs ΛCDM+δM):
+
+| BAO gain f | Δχ² | δM_MAP | wa_MAP |
+|---|---|---|---|
+| 1.0 (DR2) | −0.35 | +0.023 | −0.17 |
+| 1.5 | −1.85 | +0.012 | −0.32 |
+| 2.0 | −4.97 | +0.001 | −0.46 |
+| **3.0** | **−17.2 (< −11.8 = 3σ)** | −0.019 | −0.76 |
+| 4.0 | −38.9 | −0.038 | −1.11 |
+| 6.0 | −116.6 | −0.069 | −1.75 |
+
+**Reading:** today the two explanations are degenerate (Δχ²=−0.35, §21). A **~3× BAO
+precision gain (between f=2 and f=3) is where evolving w becomes distinguishable from a
+low-z calibration step at 3σ** — a concrete, pre-registered number for DR3-era data. Note
+the SN sample is held fixed: if the low-z step is a real calibration offset, even
+perfect BAO will not create a w0wa preference — the forecast tells us the *resolution*,
+not the answer.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

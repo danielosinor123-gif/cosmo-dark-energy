@@ -15,7 +15,7 @@ import numpy as np
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir, "src"))
 import cosmo
-from cosmo import BackgroundBinned, lnF_binned, bao_chi2, sn_hd_chi2, \
+from cosmo import BackgroundBinned, lnF_binned, bao_chi2, sn_mB_chi2, \
     cmb_compressed_chi2, fs8_chi2, metropolis
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -56,7 +56,7 @@ def logpost(x):
     bg = BackgroundBinned(Om, wb, EDGES5)
     lnF = lambda z: lnF_binned(z, EDGES5, wb)
     H0 = 100.0 * h
-    chi2 = bao_chi2(bg, H0, rd, bao_all) + sn_hd_chi2(bg, H0, z_sn, mB_sn, invC_sn) \
+    chi2 = bao_chi2(bg, H0, rd, bao_all) + sn_mB_chi2(bg, H0, z_sn, mB_sn, invC_sn) \
         + cmb_compressed_chi2(Om, Ob, h, bg) \
         + fs8_chi2(Om, s8, z_f, fs8v, invC_f, lnF=lnF)
     return -0.5 * chi2
