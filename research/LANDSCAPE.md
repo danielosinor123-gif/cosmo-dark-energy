@@ -210,6 +210,12 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
 - S18 DONE (§30): DR3 forecast — w0wa vs dM-step degenerate at f=1 (-0.35), 3-sigma
   separable at ~3x BAO precision (f=3: -17.2).
 - S19 DONE: VERDICT.md + PAPER_DRAFT.md consolidated. DR3 not yet public (Nov 2026).
+- S20 DONE (§32): anchor-clean refit — quintom dip anchor-free (dchi2=-7.4), LDPT dead.
+- S21 DONE (§33): DESI DR2 Lya full-shape AP (arXiv:2607.27410, 1% at z=2.33,
+  DH/rd=8.600+-0.066, DM/rd=39.32+-0.33, rho=0.225) is LCDM-consistent alone
+  (chi2=0.97/2; Ly-a+BBN H0=66.5+-1.3) and WEAKENS the w0wa hint (-6.58->-5.56;
+  AP replacing Y3 Lya BAO: -5.30; AP-only+SN+CMB: -3.19 with wa=+0.05). 5-yr DESI
+  survey completed Apr 2026 (47M galaxies); DR3 still not public as of Nov 2026.
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.

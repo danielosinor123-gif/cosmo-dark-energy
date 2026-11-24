@@ -712,6 +712,30 @@ feature of the SN+BAO+CMB+growth data at ~1.6σ; the low-z step is the anchor.**
 dip's survival without calibrators raises its standing from "step leakage" to "the one
 feature worth DR3" — still below the discovery bar (BF>10 + robustness suite).
 
+## 33. DESI DR2 Lyα full-shape AP (arXiv:2607.27410) folded in (`session21.py lyaap` → `lyaap_results.json`)
+
+New 1%-precision high-z anchor at z=2.33 (2× tighter than the Y3 Lyα BAO rows):
+DH/rd = 8.600±0.066, DM/rd = 39.32±0.33, ρ=0.225. w0wa vs ΛCDM, Dovekie+CMB fixed:
+
+| BAO set | Δχ² | wa | w0 | H₀(w0wa) |
+|---|---|---|---|---|
+| ALL (13 rows, §29 baseline) | −6.58 | −0.40 | −0.86 | 69.3 |
+| ALL + Lyα DR2 AP (15) | **−5.56** | −0.33 | −0.88 | 69.4 |
+| ALL−Lyα + Lyα DR2 AP (AP replaces Y3 Lyα) | **−5.30** | −0.33 | −0.88 | 69.4 |
+| Lyα DR2 AP only + SN + CMB | **−3.19** | **+0.05** | −0.96 | 69.6 |
+
+And the direct test: Lyα AP alone vs the ΛCDM fiducial (Ωm=0.315, H₀=67.7, rd=147.1):
+**χ² = 0.97 for 2 dof — the new AP point sits exactly on ΛCDM.**
+
+**Reading:** the 2026 DR2 Lyα full-shape measurement — the most precise expansion anchor
+at z>1 — is ΛCDM-consistent to <1σ by itself, and *weakens* the evolving-DE hint when
+added (−6.58→−5.56; replacing the old Lyα BAO: −5.30). With the AP as the only BAO,
+w0wa's wa flips sign (+0.05, w0=−0.96): the high-z data want w→−1. This matches DESI's
+own paper: Lyα+BBN gives H₀=66.5±1.3 and Ωm=0.325±0.018 (1.4σ *above* the galaxy BAO),
+moving the high-z anchor toward ΛCDM/Planck and away from SH0ES. The 2025–26 hint did
+not survive the 2026 high-z data; what survives is the low-z calibrator step (§27) and the
+~1.6σ z~1 dip (§31–32), still below the discovery bar.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

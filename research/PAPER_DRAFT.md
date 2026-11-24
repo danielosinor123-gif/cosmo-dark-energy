@@ -57,8 +57,11 @@ a w(z) costume?
    low-z offset" is the diluted signature of these calibrators (§27, v_pec-robust §28).
 9c. Two separable features: the z<0.1 step is entirely the calibrators, but the z~1
    phantom dip is identical without them (−1.264±0.157 vs −1.257±0.159, §31) —
-   anchor-independent; Lyα alone shows no preference (§29); DR3 needs ~3× BAO precision
-   to break the w0wa↔δM degeneracy at 3σ (§30).
+   anchor-independent; the Y3 Lyα BAO shows no preference (§29); the 2026 DR2 Lyα
+   full-shape AP (arXiv:2607.27410, 1% at z=2.33) is ΛCDM-consistent alone (χ²=0.97/2,
+   Lyα+BBN H₀=66.5±1.3) and weakens w0wa when added (−6.6→−5.6, §33) — the high-z
+   anchor moved toward ΛCDM; DR3 needs ~3× BAO precision to break the w0wa↔δM
+   degeneracy at 3σ (§30).
 10. Harnessing caps: one-shot ≤1.6×10⁻¹⁰ J/m³, continuous ≤H₀ρ_Λc²≈1.2×10⁻²⁷ W/m³,
     tilt <0.01 mag/dex; EW vacuum 57 orders denser than Λ (§23, §26,
     HARNESS_N6_N10.md, HARNESS_LITERATURE.md).
