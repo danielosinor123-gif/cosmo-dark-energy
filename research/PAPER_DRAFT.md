@@ -54,7 +54,11 @@ a w(z) costume?
 9b. The H₀ tension is localized to the 77 Cepheid-calibrator SNe: they sit
    +0.20±0.03 mag (6.7σ) above BAO+CMB geometry — implying H₀=74.3±0.2 — while the 664
    other z<0.1 SNe agree at −0.012±0.007 mag (H₀=67.7). The full-sample "+0.03 mag
-   low-z offset" is the diluted signature of these calibrators (§27).
+   low-z offset" is the diluted signature of these calibrators (§27, v_pec-robust §28).
+9c. Two separable features: the z<0.1 step is entirely the calibrators, but the z~1
+   phantom dip is identical without them (−1.264±0.157 vs −1.257±0.159, §31) —
+   anchor-independent; Lyα alone shows no preference (§29); DR3 needs ~3× BAO precision
+   to break the w0wa↔δM degeneracy at 3σ (§30).
 10. Harnessing caps: one-shot ≤1.6×10⁻¹⁰ J/m³, continuous ≤H₀ρ_Λc²≈1.2×10⁻²⁷ W/m³,
     tilt <0.01 mag/dex; EW vacuum 57 orders denser than Λ (§23, §26,
     HARNESS_N6_N10.md, HARNESS_LITERATURE.md).

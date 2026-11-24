@@ -200,6 +200,16 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
   dipole <1 sigma (no bubble-wall sky pattern), N8 dust slope 0.8-0.9 sigma (no env
   coupling), N10 no sign alternation (T_TC >~ 3 Gyr), N9 cosine consistent with dip
   but prior-dominated at z>1.5. Verdict: dark energy is a probe, not a resource.
+- S14 DONE (§29): Ly-a BAO alone dchi2=+0.09 (wa=-0.12+-1.0) — high-z tracer vetoes;
+  ALL-minus-Lya -5.96 vs ALL -6.49. DR3 plan pre-registered (dr3_plan.json).
+- S15/S16 DONE (§27/§28): H0 tension localized to 77 Cepheid-calibrator SNe
+  (+0.20+-0.03 mag, 6.7s, implied H0=74.3+-0.2); other 664 low-z SNe at -0.012+-0.007;
+  vpec-robust across zHD/zCMB/zHEL.
+- S17 DONE (§31): z~1 dip survives calibrator removal identically (-1.264 vs -1.257) —
+  two separable features: low-z step = anchor, mid-z dip = anchor-independent.
+- S18 DONE (§30): DR3 forecast — w0wa vs dM-step degenerate at f=1 (-0.35), 3-sigma
+  separable at ~3x BAO precision (f=3: -17.2).
+- S19 DONE: VERDICT.md + PAPER_DRAFT.md consolidated. DR3 not yet public (Nov 2026).
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.

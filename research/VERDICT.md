@@ -18,6 +18,10 @@ Code: `src/cosmo.py`, `src/models.py`, `experiments/session*.py`. Repo: cosmo-da
 - H₀↔wₐ map: wₐ ≈ −0.17 + 0.32(H₀−70); Planck-vs-SH0ES ≡ Δwₐ≈1.8 — §15.
 - **Non-constant w is still Bayesianly robust** (3-bin BF 17–135; 5-bin dip
   w=−1.26±0.16 at z∈[0.75,1.5], w(0)=−0.93) — §14, §24. Allowed, not required.
+- **Two separable features:** the z<0.1 step is entirely the Cepheid calibrators (§27),
+  while the z~1 dip is **identical with and without them** (§31: −1.264±0.157 vs
+  −1.257±0.159) — the mid-z dip is anchor-independent and is the one thing DR3 must
+  confirm or kill.
 
 **Verdict:** Λ is not dead, but the 3–4σ headline is, in our quantification, the H₀
 anchor (localized to the Cepheid calibrators) plus a +0.03 mag low-z SN step wearing a
