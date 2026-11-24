@@ -205,3 +205,30 @@ One-liners:
 Common caps: one-shot ≤1.6×10⁻¹⁰ J/m³ (degenerate with δM step at z<0.1), continuous
 ≤1.2×10⁻²⁷ W/m³, static local tilt <0.01 mag/dex (§19). None solves the 10^120 problem;
 all are falsifiable with existing public data + one lab measurement each.
+
+---
+
+## N11 — EW false-vacuum catalysis bound (session 22 addition): the one dense vacuum that exists, and why it is not ours
+
+**Mechanism.** The Higgs quartic runs negative at μ ≳ 10¹⁰ GeV (3-loop SM + lattice 2024),
+reaching λ_min ≈ −0.013 near μ ~ 10¹⁷–10¹⁸ GeV: the electroweak vacuum is metastable.
+The energy density in the barrier is ΔE ≈ |λ_min| v⁴ ≈ 7.6×10⁴⁶ J/m³ — **1.5×10⁵⁷ × ρ_Λ**
+(§23). A catalyzed bubble would release that.
+
+**Why it is bounded by Higgs stability, not by our cosmology fits.**
+
+1. *Rate:* Coleman–de Luccia nucleation per unit 4-volume Γ/V ~ (100 GeV)⁴ exp(−8π²/(3|λ_min|))
+   ≈ 10¹⁰ GeV⁴ × e^(−2000) ≈ 10^(−858) GeV⁴ — per Hubble volume per Hubble time that is
+   ~10^(−790). No observed bubble has ever appeared; the universe is ~10¹⁰ yr old.
+   Any "catalyst" that lowered the action below ~O(100) would have nucleated a bubble
+   within the age of the universe — the observed absence of bubble walls in SN/CMB skies
+   (and our own §26 N7 angular test, <1σ) is the bound: B_eff ≳ O(100), i.e. no
+   engineering lever exists at B < 100 that has not already fired.
+2. *Not the dark vacuum:* if the cosmological vacuum were this one, ρ_Λ would be off by
+   57 orders of magnitude. So EW decay energy is a *separate* reservoir; our DE fits
+   (§17–§33) constrain the cosmological vacuum, and Higgs running constrains the EW one.
+   They never mix in the budget.
+3. *Harness verdict:* even if a bubble could be catalyzed at will, the wall releases
+   7.6×10⁴⁶ J/m³ once and destroys the light cone — a weapon, not a power source.
+   Combined with §23: dark energy is a probe, not a resource; the only denser vacuum
+   is off-limits by particle physics, not by cosmology.
