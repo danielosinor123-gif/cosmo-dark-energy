@@ -673,6 +673,25 @@ the SN sample is held fixed: if the low-z step is a real calibration offset, eve
 perfect BAO will not create a w0wa preference — the forecast tells us the *resolution*,
 not the answer.
 
+## 31. The z~1 dip survives calibrator removal (`session17.py cert5noc` → `cert5noc_results.json`)
+
+5-bin w(z)+growth on BAO + Pantheon+ **excluding all 77 Cepheid-calibrator SNe**
+(1624 SNe, proper covariance-submatrix marginalization) + CMB + fσ8, χ²_MAP=1477.5:
+
+| bin | full Pantheon+ (§24) | non-calibrator only |
+|---|---|---|
+| 0–0.3 | −0.925 ± 0.028 | −0.917 ± 0.029 |
+| 0.3–0.75 | −0.969 ± 0.041 | −0.938 ± 0.043 |
+| **0.75–1.5** | **−1.257 ± 0.159** | **−1.264 ± 0.157** |
+| 1.5–2.5 | −0.983 ± 0.375 | −0.805 ± 0.362 |
+| >2.5 | −1.248 ± 0.818 | −1.440 ± 0.792 |
+
+**Reading:** the phantom dip at z∈[0.75,1.5] is **identical with and without the
+Cepheid calibrators** — it is *not* anchor-driven and not part of the §27 low-z step.
+The data contain two separable features: a low-z (z<0.1) step that is entirely the
+calibrator/H₀ anchor, and a mid-z dip at z~1 that is SN-sample-robust. The dip remains
+~1.6σ phantom — allowed (N2-class), not required; its DR3 fate is pre-registered (§30).
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
