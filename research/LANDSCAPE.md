@@ -175,6 +175,10 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
   degenerate with the low-z step; killed by evidence on the full sample (BF 0.11).
   N2 quintom phantom-dip — best raw chi2 (-8.06) but BF 2.2 < w0wa 8.0: allowed, not
   required. No model meets the discovery bar (BF>10 AND robust to z>0.1/anchor/dM).
+- S7 (running, session7.py h0tension): harness the H0 tension as a probe — chi2(H0)
+  profiles with h fixed for lcdm vs +dNeff (extra radiation) vs +EDE bump near
+  recombination, on BAO+SN+CMB-compressed(R,wb): which hypothesis lets the data sit at
+  SH0ES H0=73.04 with minimal penalty? Key output: penalty_at_SH0ES per model.
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.
