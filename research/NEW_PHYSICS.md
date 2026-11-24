@@ -46,8 +46,25 @@ SH0ES says 73).
    signature is in late-time distances + growth, exactly where our data look.
 
 **Status:** implemented in `src/models.py` (`lnF_ldpt`, `BackgroundFn`); fit in
-`experiments/session6.py` — results TBD (running): Δχ² vs ΛCDM, Laplace BF, H₀
-posterior, χ²(H₀) profile.
+`experiments/session6.py`.
+
+χ²(H₀) profile on BAO+Dovekie(full)+CMB-compressed (`h0map_s6_ldpt.json`):
+
+| H₀ | χ² ΛCDM | χ² LDPT | Δχ² | LDPT best (f, z_c, Δ) |
+|---|---|---|---|---|
+| 66 | 2136.7 | 2133.3 | −3 | (0.73, 2.2, 0.03) |
+| 70 | 1647.4 | 1646.6 | −1 | (0.09, 0.9, 0.03) |
+| 72 | 1726.9 | 1690.4 | **−36** | (0.40, 0.2, 0.56) |
+| 73 | 1847.6 | 1742.1 | **−105** | (0.46, 0.2, 0.40) |
+| 74 | 2021.5 | 1796.8 | **−225** | (0.31, 0.2, 0.12) |
+
+**Reading:** LDPT eats a large and growing chunk of the high-H₀ misfit — at H₀=73 it
+removes Δχ² ≈ 105, at H₀=74 ≈ 225 — so a late dark-sector transition *can* absorb most
+of the SH0ES-vs-BAO/CMB H₀ gap. Caveat (important): at high H₀ the fit pushes z_c to the
+prior boundary z_c ≈ 0.2, i.e. the "transition" the data want sits at z ≲ 0.2 — exactly
+where the low-z SN calibration step lives (§8, §13, §16). Physics-at-z~0.2 and a low-z
+calibration systematic are degenerate in current data; DR3/full-shape or a non-Cepheid
+anchor breaks the degeneracy. MCMC fits + Bayes factors vs ΛCDM: TBD (running).
 
 ---
 
