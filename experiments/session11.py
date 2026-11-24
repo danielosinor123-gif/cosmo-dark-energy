@@ -37,6 +37,7 @@ MECH = [
     ("RVM channel", 0.008 * 1.0, HUBBLE_T, "nu=0.008+-0.005 (§22) -> releasable ~ nu*rho_vac"),
     ("Casimir cavity (lab, not cosmo)", None, None, "u = -pi^2 hbar c / (240 a^4), a=1um gap"),
     ("Dynamical Casimir (lab)", None, None, "P ~ hbar * omega^2 * ... order: 1 W/m^2 at GHz + mm gaps (estimate)"),
+    ("EW (Higgs) false-vacuum decay", None, None, "u ~ v_H^4 ~ (246 GeV)^4 ~ 1e44 J/m^3 (HARNESS_LITERATURE #cat); NOT dark energy; lab-nucleation bounded by Higgs stability, not by our cosmo fits"),
 ]
 
 HBAR = 1.0546e-34
@@ -62,6 +63,13 @@ for name, f, tau, note in MECH:
     if name.startswith("Dynamical"):
         rows.append({"mechanism": name, "u_J_m3": None,
                      "note": note + "; lab-scale, not cosmological", "kind": "lab-dce"})
+        continue
+    if name.startswith("EW"):
+        vH = 246e9 * 1.602e-19  # J
+        u = vH ** 4 / (HBAR * C) ** 3  # natural units -> J/m^3
+        rows.append({"mechanism": name, "u_J_m3": float(u),
+                     "ratio_vs_rho_vac": float(u / U_VAC), "note": note, "kind": "ew-decay"})
+        print(f"  {name}: u={u:.3e} J/m^3 = {u/U_VAC:.3e} x rho_Lambda   [{note}]")
         continue
     if name.startswith("RVM"):
         u = f * U_VAC

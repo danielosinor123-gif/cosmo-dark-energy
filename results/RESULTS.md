@@ -512,6 +512,14 @@ and humanity's use 6×10²⁰ J/yr:
 | N4 local tilt | < 1% per dex | 5.3×10⁻¹² | 1.2×10⁻²⁹ | 5.0×10⁴⁹ yr |
 | RVM matter channel | ν = 0.008 | 4.2×10⁻¹² | 9.5×10⁻³⁰ | 6.3×10⁴⁹ yr |
 | Casimir cavity, 1 µm gap (lab) | — | −1.3×10⁻³ (negative) | — | (negative energy) |
+| **EW (Higgs) false-vacuum decay** | v_H⁴ | **7.6×10⁴⁶** | — | = **1.5×10⁵⁷ × ρ_Λ** |
+
+The last row is the contrast that matters (HARNESS_LITERATURE.md): a decay of the
+*electroweak* vacuum would release ~10⁴⁶ J/m³ — 57 orders of magnitude denser than dark
+energy. If any vacuum is "harnessable," it is a high-scale false vacuum, not Λ — and
+lab-nucleated EW decay is bounded by Higgs-stability analyses and bubble/string searches,
+not by our cosmological fits (our LDPT bound f≲0.3, z_c≲0.2 applies only to a dark-sector
+transition at z≲0.2).
 
 **Reading — the quantitative kill for "harnessing":** even if a mechanism released
 *all* of the vacuum energy in a volume, the density is so low (5×10⁻¹⁰ J/m³) that 1 m³

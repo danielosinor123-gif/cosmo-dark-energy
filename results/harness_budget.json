@@ -64,6 +64,13 @@
       "u_J_m3": null,
       "note": "P ~ hbar * omega^2 * ... order: 1 W/m^2 at GHz + mm gaps (estimate); lab-scale, not cosmological",
       "kind": "lab-dce"
+    },
+    {
+      "mechanism": "EW (Higgs) false-vacuum decay",
+      "u_J_m3": 7.632469291566585e+46,
+      "ratio_vs_rho_vac": 1.452166105521389e+56,
+      "note": "u ~ v_H^4 ~ (246 GeV)^4 ~ 1e44 J/m^3 (HARNESS_LITERATURE #cat); NOT dark energy; lab-nucleation bounded by Higgs stability, not by our cosmo fits",
+      "kind": "ew-decay"
     }
   ]
 }
