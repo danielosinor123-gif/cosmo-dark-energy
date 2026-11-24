@@ -480,6 +480,23 @@ evolving-dark-energy hint is quantitatively equivalent to a +0.03 mag low-z SN
 calibration step (plus the H₀ anchor choice); with systematics marginalized, there is
 no residual evidence for evolving dark energy in public data.**
 
+## 22. Running-vacuum model (RVM, Λ ∝ ρ_m) — the "vacuum runs with matter" channel (`session10.py rvm` → `rvm_results.json`)
+
+RVM: ρ_DE(z) = ρ_Λ + ν·Ω_m(1+z)³ (vacuum density runs with matter; w_eff(z) = −1 +
+νΩ_m(1+z)³/ρ_DE), fit on BAO+Dovekie+CMB:
+
+| model | χ²_MAP | ν | w0 | wa | Δχ² vs ΛCDM |
+|---|---|---|---|---|---|
+| ΛCDM | 1645.51 | — | — | — | — |
+| w0wa | 1639.15 | — | −0.865 ± 0.055 | −0.402 ± 0.210 | −6.36 (1.73σ) |
+| **RVM** | 1645.53 | **+0.008 ± 0.005** | — | — | **+0.01 (0.00σ)** |
+
+**Reading:** the running-vacuum coupling is consistent with zero at 1.6σ and the model is
+*indistinguishable from ΛCDM* — there is no evidence of a vacuum↔matter energy channel in
+public data. (fs8 combo running.) Combined with §18–§19, every "tap-like" channel —
+early-universe (EDE/ΔN_eff), late transition (LDPT, BF 0.11), environmental tilt (N4,
+<0.01 mag/dex), matter-coupled vacuum (RVM, ν≈0) — is bounded to null.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
