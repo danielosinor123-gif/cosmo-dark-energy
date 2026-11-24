@@ -692,6 +692,26 @@ The data contain two separable features: a low-z (z<0.1) step that is entirely t
 calibrator/H₀ anchor, and a mid-z dip at z~1 that is SN-sample-robust. The dip remains
 ~1.6σ phantom — allowed (N2-class), not required; its DR3 fate is pre-registered (§30).
 
+## 32. Anchor-clean refit of the new-physics models (`session20.py fit bao_sn_cmb_fs8` → `session20_results.json`)
+
+lcdm / w0wa / LDPT / quintom on BAO + **non-calibrator Pantheon+ (1624 SNe)** + CMB + fσ8:
+
+| model | χ²_MAP | Δχ² vs ΛCDM | w(z=0, 0.5, 1, 1.5, 2, 3) |
+|---|---|---|---|
+| ΛCDM | 1484.93 | — | −1 throughout |
+| w0wa | 1479.71 | −5.22 (k=2) | −0.88, −0.99, −1.04, −1.07, −1.09, −1.12 |
+| LDPT | 1484.47 | −0.46 (k=3) | transition invisible |
+| **quintom** | **1477.54** | **−7.39 (k=4)** | −0.93, −0.94, **−1.19**, −1.00, −0.93, −0.93 |
+
+**Reading:** with the Cepheid calibrators removed entirely, the picture is unchanged in
+essence: LDPT stays dead (−0.46), w0wa keeps a modest preference (−5.22), and the
+quintom dip at z≈1 (w=−1.19, recovering to −0.93 by z=2 — a phantom-divide crossing)
+remains the best raw fit (−7.39; vs w0wa only −2.2 for 2 extra params, so not a
+*significant* improvement). Together with §31: **the z~1 dip is a real, anchor-free
+feature of the SN+BAO+CMB+growth data at ~1.6σ; the low-z step is the anchor.** The
+dip's survival without calibrators raises its standing from "step leakage" to "the one
+feature worth DR3" — still below the discovery bar (BF>10 + robustness suite).
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
