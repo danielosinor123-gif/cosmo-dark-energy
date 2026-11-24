@@ -1,0 +1,69 @@
+{
+  "rho_vac_kg_m3": 5.848e-27,
+  "u_vac_J_m3": 5.255920285252909e-10,
+  "solar_W_m2": 1361.0,
+  "global_use_J_yr": 6e+20,
+  "galaxy_vol_m3": 2.9389200056e+61,
+  "rows": [
+    {
+      "mechanism": "N5 vacuum battery (LDPT release)",
+      "f_bound": 0.3,
+      "u_J_m3": 1.5767760855758726e-10,
+      "energy_galaxy_vol_J": 4.634018782250589e+51,
+      "energy_earth_vol_J": 54366525216.47297,
+      "power_density_W_m3": 3.568658531540541e-28,
+      "power_density_vs_solar": 2.6220856219989277e-31,
+      "years_of_humanity_per_m3": 5.306195544527369e+55,
+      "tau_s": 4.4184e+17,
+      "note": "f<=0.3, z_c<=0.2 from BF 0.11 (\u00a717)"
+    },
+    {
+      "mechanism": "N5 optimistic trigger",
+      "f_bound": 1.0,
+      "u_J_m3": 5.255920285252909e-10,
+      "energy_galaxy_vol_J": 1.5446729274168633e+52,
+      "energy_earth_vol_J": 181221750721.57657,
+      "power_density_W_m3": 1.665373981385586e-26,
+      "power_density_vs_solar": 1.2236399569328331e-29,
+      "years_of_humanity_per_m3": 1.1370419023987217e+54,
+      "tau_s": 3.156e+16,
+      "note": "f=1 hypothetical, tau=1 Gyr"
+    },
+    {
+      "mechanism": "N4 screenable tilt (local)",
+      "f_bound": 0.01,
+      "u_J_m3": 5.2559202852529096e-12,
+      "energy_galaxy_vol_J": 1.5446729274168633e+50,
+      "energy_earth_vol_J": 1812217507.215766,
+      "power_density_W_m3": 1.1895528438468472e-29,
+      "power_density_vs_solar": 8.740285406663095e-33,
+      "years_of_humanity_per_m3": 1.5918586633582103e+57,
+      "tau_s": 4.4184e+17,
+      "note": "<0.01 mag/dex host mass (\u00a719); tilt fraction ~1%"
+    },
+    {
+      "mechanism": "RVM channel",
+      "f_bound": 0.008,
+      "u_J_m3": 4.2047362282023275e-12,
+      "energy_galaxy_vol_J": 1.2357383419334907e+50,
+      "energy_earth_vol_J": 1449774005.7726128,
+      "power_density_W_m3": 9.516422750774777e-30,
+      "power_density_vs_solar": 6.992228325330475e-33,
+      "years_of_humanity_per_m3": 1.9898233291977632e+57,
+      "tau_s": 4.4184e+17,
+      "note": "nu=0.008+-0.005 (\u00a722) -> releasable ~ nu*rho_vac"
+    },
+    {
+      "mechanism": "Casimir cavity (lab, not cosmo)",
+      "u_J_m3": -0.0013001605177766675,
+      "note": "u = -pi^2 hbar c / (240 a^4), a=1um gap (a=1e-06 m)",
+      "kind": "lab-casimir"
+    },
+    {
+      "mechanism": "Dynamical Casimir (lab)",
+      "u_J_m3": null,
+      "note": "P ~ hbar * omega^2 * ... order: 1 W/m^2 at GHz + mm gaps (estimate); lab-scale, not cosmological",
+      "kind": "lab-dce"
+    }
+  ]
+}

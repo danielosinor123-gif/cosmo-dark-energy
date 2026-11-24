@@ -491,11 +491,36 @@ RVM: ρ_DE(z) = ρ_Λ + ν·Ω_m(1+z)³ (vacuum density runs with matter; w_eff(
 | w0wa | 1639.15 | — | −0.865 ± 0.055 | −0.402 ± 0.210 | −6.36 (1.73σ) |
 | **RVM** | 1645.53 | **+0.008 ± 0.005** | — | — | **+0.01 (0.00σ)** |
 
-**Reading:** the running-vacuum coupling is consistent with zero at 1.6σ and the model is
-*indistinguishable from ΛCDM* — there is no evidence of a vacuum↔matter energy channel in
-public data. (fs8 combo running.) Combined with §18–§19, every "tap-like" channel —
+With growth added (BAO+Dovekie+CMB+fσ8): ΛCDM χ²=1659.86, w0wa 1653.93 (Δχ²=−5.94, 1.63σ,
+wa=−0.371±0.240), **RVM 1659.98, ν=+0.007±0.005, Δχ²=+0.12 (0.00σ)** — same null.
+
+**Reading:** the running-vacuum coupling is consistent with zero at ~1.5σ and the model is
+*indistinguishable from ΛCDM* with and without growth — there is no evidence of a
+vacuum↔matter energy channel in public data. Combined with §18–§19, every "tap-like" channel —
 early-universe (EDE/ΔN_eff), late transition (LDPT, BF 0.11), environmental tilt (N4,
 <0.01 mag/dex), matter-coupled vacuum (RVM, ν≈0) — is bounded to null.
+
+## 23. Harnessing feasibility — cosmological bounds converted to engineering numbers (`session11.py budget` → `harness_budget.json`)
+
+ρ_vac·c² = 5.26×10⁻¹⁰ J/m³. Max releasable power density u/τ vs. solar constant 1361 W/m²
+and humanity's use 6×10²⁰ J/yr:
+
+| mechanism | bound | u_max (J/m³) | power density (W/m³) | 1 m³ powers humanity for |
+|---|---|---|---|---|
+| N5 vacuum battery (LDPT) | f ≤ 0.3, z_c ≤ 0.2 (BF 0.11) | 1.6×10⁻¹⁰ | 3.6×10⁻²⁸ (τ=Hubble) | 1.7×10⁴⁸ yr |
+| N5 *optimistic* full release | f = 1, τ = 1 Gyr | 5.3×10⁻¹⁰ | 1.7×10⁻²⁶ | 3.6×10⁴⁶ yr |
+| N4 local tilt | < 1% per dex | 5.3×10⁻¹² | 1.2×10⁻²⁹ | 5.0×10⁴⁹ yr |
+| RVM matter channel | ν = 0.008 | 4.2×10⁻¹² | 9.5×10⁻³⁰ | 6.3×10⁴⁹ yr |
+| Casimir cavity, 1 µm gap (lab) | — | −1.3×10⁻³ (negative) | — | (negative energy) |
+
+**Reading — the quantitative kill for "harnessing":** even if a mechanism released
+*all* of the vacuum energy in a volume, the density is so low (5×10⁻¹⁰ J/m³) that 1 m³
+released over a Gyr yields ~10⁻²⁶ W — ~10²⁷ times below the solar flux per m². Harnessing
+dark energy is not blocked by no-go theorems at this point; it's blocked by **dilution**:
+there is ~10⁻¹⁰ J per m³ to get at. A galaxy-scale volume (10 kpc)³ holds ~10⁵² J
+(= 10⁷ M☉c²) total — the energy of a small asteroid spread over a galaxy. Lab Casimir
+energy at µm gaps is ~10⁻³ J/m³ and *negative*. Verdict: dark energy is a probe, not a
+resource, by ~26 orders of magnitude.
 
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
