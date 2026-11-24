@@ -436,6 +436,24 @@ mass-independent → global calibration (anchor), not local vacuum physics. Boun
 matter–vacuum coupling must produce < ~0.01 mag per dex of host mass at z<0.3 —
 locally "tilting" the vacuum at galaxy scales is excluded at this level by public data.
 
+## 20. DESI's own chains: BAO + full-shape (2pt) adds nothing to the w0wa hint (`desi_2pt.py` → `desi_2pt.json`)
+
+w, wa posteriors from DESI Y3 published cobaya chains (data.desi.lbl.gov, weight-normalized):
+
+| DESI combo | n | w | wa | P(w>−1) | P(wa<0) |
+|---|---|---|---|---|---|
+| BAO only | 29834 | −0.490 ± 0.271 | −1.625 ± 0.972 | 0.954 | 0.927 |
+| **BAO + 2pt full-shape** | 32645 | **−0.480 ± 0.268** | **−1.655 ± 0.970** | **0.956** | **0.927** |
+| BAO + DESY5 SN | 28634 | −0.782 ± 0.072 | −0.715 ± 0.472 | 1.000 | 0.937 |
+| BAO + Pantheon+ | 42062 | −0.887 ± 0.061 | −0.184 ± 0.454 | 0.977 | 0.653 |
+
+**Reading:** adding DESI's full galaxy **2pt** (shape/AP information, no SN calibration)
+leaves the w0wa posterior *statistically identical* to BAO-only — it neither sharpens nor
+moves it (wa stays ±0.97 broad). All the *precision* on w comes from the SN distances
+(σ_w: 0.27 → 0.07). So in DESI's own chains, the 3–4σ headline lives in the SN-calibrated
+low-z part, and the SN-independent geometry (BAO+2pt) alone gives only a weak ~1.7σ-ish
+preference — matching our pipeline's z-cut/step findings (§8, §16) from their data.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
