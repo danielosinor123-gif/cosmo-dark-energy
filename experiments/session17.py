@@ -30,7 +30,10 @@ IS_CAL = np.asarray(raw["IS_CALIBRATOR"], float)
 keep = IS_CAL <= 0.5
 z_sn = z_p[keep]
 mB_sn = mB_p[keep]
-invC_sn = invC_p[np.ix_(np.where(keep)[0], np.where(keep)[0])]
+# correct marginalization: submatrix of the COVARIANCE, then invert
+C_full = np.linalg.inv(invC_p)
+idx = np.where(keep)[0]
+invC_sn = np.linalg.inv(C_full[np.ix_(idx, idx)])
 z_f, fs8v, invC_f = cosmo.load_fs8()
 print(f"  Pantheon+ non-calibrator SNe: {keep.sum()} of {len(z_p)}", flush=True)
 
