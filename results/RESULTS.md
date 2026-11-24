@@ -522,6 +522,28 @@ there is ~10⁻¹⁰ J per m³ to get at. A galaxy-scale volume (10 kpc)³ holds
 energy at µm gaps is ~10⁻³ J/m³ and *negative*. Verdict: dark energy is a probe, not a
 resource, by ~26 orders of magnitude.
 
+## 24. 5-bin w(z) certificate with growth (`session10.py cert5` → `cert5_results.json`)
+
+Nonparametric 5-bin w(z), edges [0, 0.3, 0.75, 1.5, 2.5, ∞], on BAO+Dovekie+CMB+fσ8
+(χ²_MAP = 1652.23, vs w0wa 1653.93 and ΛCDM 1659.86 on the same combo):
+
+| bin | w |
+|---|---|
+| 0–0.3 | −0.925 ± 0.028 |
+| 0.3–0.75 | −0.969 ± 0.041 |
+| **0.75–1.5** | **−1.257 ± 0.159** |
+| 1.5–2.5 | −0.983 ± 0.375 |
+| >2.5 | −1.248 ± 0.818 |
+
+**Reading:** the shape is a localized dip below w=−1 at z≈0.75–1.5 (~1.6σ phantom
+excursion), not a monotonic ramp — the qualitative shape of the N2 quintom crossing
+(§17), with w(0) ≈ −0.93. 5-bin vs ΛCDM Δχ² = −7.6 (BF strongly favors non-constant w,
+consistent with §14), but 5-bin vs w0wa is only −1.7, so the parametric w0wa captures most
+of it. Growth stays Λ-like throughout (s8 free, fitted 0.78). Caveat: the z>1.5 bins are
+prior-dominated (±0.4–0.8). Falsification handle for DR3: the dip must stay centered at
+z≈1 with σ<0.1, and w must cross −1 twice (down at z~0.5, back up at z~2), else it's the
+low-z step leaking into the 0.3–0.75 bin.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
