@@ -178,3 +178,30 @@ low-z SN step — indistinguishable from calibration (§16).
 All numbers in `results/session6_results.json`, `results/step_results.json`,
 `results/h0tension_results.json`, `results/env_results.json`,
 `results/h0map_s6_ldpt.json`, `results/predict_s6_*.json`.
+
+---
+
+## N6–N10 — harnessing proposals (S10 subagent)
+
+Full write-up in **`research/HARNESS_N6_N10.md`** (mechanism Lagrangians, no-go evasion,
+energy budgets, public-data tests, 5–15 yr experiments, comparison table, references).
+One-liners:
+
+- **N6** vacuum-condensate phonon tap (ghost-condensate w=−1 with real phonon + F²φ/4
+  channel): continuous cap H0·ρ_Λc² ≈ 1.2×10⁻²⁷ W/m³; decisive test = fσ8 in the
+  z∈[0.75,1.5] dip bin (24-pt, Δχ²≈0).
+- **N7** local bubble-nucleation catalysis of the dark false vacuum: one-shot cap
+  f·ρ_Λc² ≲ 1.6×10⁻¹⁰ J/m³ (LDPT BF 0.11, z_c≤0.2); dead as power (0.17 W/m² of wall);
+  decisive test = angular spectrum of low-z SN residuals vs bubble template (§13: none).
+- **N8** Casimir negative-energy cavity "vacuum pump": QI caps sustained ρ_neg>ρ_Λ to
+  τ≲0.1 ms (drive must pay); Λ shows up as a constant −5.3×10⁻¹⁰ Pa offset at gaps
+  ≳40 μm — measurable; decisive test = low-z SN residual vs host dust A_V (cap
+  <0.01 mag/dex, §19).
+- **N9** axion-condensate stirring: resonant power ~10⁻⁵² W/m³ (dead at m~H0); explains
+  the z~1 dip shape (m~H(z~1)); decisive test = cert5 5-bin w(z)+fσ8 vs cosine template.
+- **N10** time-crystal vacuum: T_TC≳3 Gyr from smooth 5-bin w(z); A≲0.3; decisive test =
+  cert5 alternating-bin residuals + clock/21-cm modulation searches.
+
+Common caps: one-shot ≤1.6×10⁻¹⁰ J/m³ (degenerate with δM step at z<0.1), continuous
+≤1.2×10⁻²⁷ W/m³, static local tilt <0.01 mag/dex (§19). None solves the 10^120 problem;
+all are falsifiable with existing public data + one lab measurement each.

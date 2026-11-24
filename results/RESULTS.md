@@ -574,6 +574,28 @@ signature of either a first-order bubble wall (N4/N5) *or* a calibration thresho
 them, but it rules out smooth systematics (smooth versions need 10× the amplitude and
 fit worse). The discriminator remains the anchor swap (§12) + DR3.
 
+## 26. N6–N10 data tests (`session13.py` → `session13_results.json`; proposals in `research/HARNESS_N6_N10.md`)
+
+Geometry-only ΛCDM (BAO+CMB, H₀=67.7), Pantheon+ residuals, monopole marginalized:
+
+| test | proposal | result | verdict |
+|---|---|---|---|
+| Angular spectrum, z<0.1 (n=741) | N7 bubble wall | dipole Δχ²=+4.16 (3 dof), \|dip\|=0.040±0.049 mag (<1σ); quadrupole +8.92 (5 dof) | **no l≥1 structure** — single global monopole; bubble-wall directional signature absent |
+| Angular, z<0.3 (n=1207) | N7 | dipole +2.42, quadrupole +7.88, \|dip\|=0.036±0.043 | same — isotropic |
+| Dust regression, z<0.1 | N8 Casimir-environment | dr/dMWEBV = +0.147±0.193 mag/mag (0.76σ) | **no dust-environment coupling** (complements §19 host-mass 0.08σ) |
+| Dust, z<0.3 | N8 | +0.161±0.179 (0.90σ) | same |
+| cert5 shape vs cosine | N9 axion stirring | cosine A=0.32, P=0.68 (in z), z₀=0.69 fits bins at χ²=0.98 vs flat −1 at 10.5 (Δχ²=+9.5) | dip *consistent* with a cosine — but bins z>1.5 prior-dominated; not a detection |
+| cert5 sign alternation | N10 time-crystal | dev signs [+,+,−,0,−]: 1 change / 4 | **no alternation** — oscillation period ≳ several Gyr; T_TC≳3 Gyr bound holds |
+
+**Reading:** every N6–N10 mechanism's *cosmological* signature is either absent (N7
+angular, N8 dust, N10 alternation) or degenerate with the δM step (N5/N7 one-shot,
+§16/§25), and the continuous-tap cap is H₀ρ_Λc² ≈ 1.2×10⁻²⁷ W/m³ (§23). N9's cosine is
+the only shape-motivated survivor and it is indistinguishable from w0wa (cert5 vs w0wa
+Δχ²=−1.7, §24). Harnessing verdict unchanged and now quantified from both directions:
+**dark energy is a probe, not a resource** — one-shot ≤1.6×10⁻¹⁰ J/m³ (f≲0.3, BF 0.11),
+continuous ≤1.2×10⁻²⁷ W/m³, static tilt <0.01 mag/dex; the only denser vacuum is the
+EW false vacuum at 7.6×10⁴⁶ J/m³, bounded by Higgs stability, not by us.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

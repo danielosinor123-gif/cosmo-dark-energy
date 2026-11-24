@@ -188,9 +188,18 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
   SN distances carry all w precision (§20). CAPSTONE (§21): w0wa+{dM step + Cepheid
   anchor + fs8} vs LCDM+same: dchi2 = -0.26 (0.00 sigma), wa = -0.07+-0.13, dM=+0.034
   mag — the hint is fully absorbed by the low-z step.
-- S10 running: RVM (running vacuum Lambda~rho_m) fits; cert5 (5-bin w(z)+growth) queued.
-  Subagents: 2025-26 literature sweep for vacuum-energy extraction; N6-N10 harnessing
-  proposals (NEW_PHYSICS.md to be extended).
+- S10 DONE: RVM nu=0.008+-0.005 (dchi2 +0.01/+0.12 vs LCDM, with/without fs8) — no
+  vacuum-matter channel (§22). cert5: phantom dip w=-1.26+-0.16 at z 0.75-1.5 (§24).
+- S11 DONE: harness budget — f=1 vacuum release = 1.7e-26 W/m3; 1 m3 powers humanity
+  3.6e46 yr; EW false vacuum 7.6e46 J/m3 = 1.5e57 x rho_Lambda (§23).
+- S12 DONE: edge sharpness — sharpest step at z=0.1 preferred (dchi2=-7.3); smooth
+  systematics excluded (§25).
+- S13 DONE: HARNESS_LITERATURE.md (2025-26 extraction scan; no free vacuum energy;
+  no-go canon) + HARNESS_N6_N10.md (5 novel mechanisms, all capped: one-shot <=1.6e-10
+  J/m3, continuous <=1.2e-27 W/m3, tilt <0.01 mag/dex). Data tests (§26): N7 angular
+  dipole <1 sigma (no bubble-wall sky pattern), N8 dust slope 0.8-0.9 sigma (no env
+  coupling), N10 no sign alternation (T_TC >~ 3 Gyr), N9 cosine consistent with dip
+  but prior-dominated at z>1.5. Verdict: dark energy is a probe, not a resource.
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.
