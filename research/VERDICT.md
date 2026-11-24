@@ -28,6 +28,11 @@ Code: `src/cosmo.py`, `src/models.py`, `experiments/session*.py`. Repo: cosmo-da
   confirm or kill. On the anchor-clean sample the quintom crossing (w=−1.19 at z=1,
   back to −0.93 at z=2) is still the best raw fit (Δχ²=−7.4, §32) — ~1.6σ, below the
   discovery bar but the strongest surviving candidate.
+- **2026 update — the dip is sample-robust:** with the DR2 Lyα AP included, the
+  z∈[0.75,1.5] bin is −1.268±0.162 (Dovekie), −1.260±0.143 (DESY5), −1.276±0.143
+  (Pantheon+ non-calibrator) — the same dip in all three independent SN pipelines (§34).
+  Naive combination ~3σ phantom; honest ~2σ given shared systematics. This is now the
+  one feature that justifies "keep looking," and DR3 decides it.
 
 **Verdict:** Λ is not dead, but the 3–4σ headline is, in our quantification, the H₀
 anchor (localized to the Cepheid calibrators) plus a +0.03 mag low-z SN step wearing a

@@ -736,6 +736,27 @@ moving the high-z anchor toward ΛCDM/Planck and away from SH0ES. The 2025–26 
 not survive the 2026 high-z data; what survives is the low-z calibrator step (§27) and the
 ~1.6σ z~1 dip (§31–32), still below the discovery bar.
 
+## 34. The z~1 dip is present in ALL THREE SN samples (`session22.py dip` → `dip_persample_results.json`)
+
+5-bin w(z)+growth, each SN sample alone with BAO(ALL + Lyα DR2 AP) + CMB + fσ8:
+
+| sample | n | w(0–0.3) | w(0.3–0.75) | **w(0.75–1.5)** | w(1.5–2.5) | w(>2.5) |
+|---|---|---|---|---|---|---|
+| DES-Dovekie | 1820 | −0.916±0.030 | −0.953±0.046 | **−1.268±0.162** | −0.756±0.261 | −1.34±0.79 |
+| DESY5 | 1829 | −0.897±0.031 | −0.946±0.041 | **−1.260±0.143** | −0.760±0.265 | −1.19±0.80 |
+| Pantheon+ non-cal | 1624 | −0.916±0.030 | −0.939±0.044 | **−1.276±0.143** | −0.756±0.299 | −1.39±0.81 |
+
+**Reading:** the phantom dip at z∈[0.75,1.5] is **−1.26 to −1.28 in all three
+independent SN samples** (means agree to 0.016 mag-equivalent, ~1.6–1.8σ below w=−1
+each; naive combination ≈3σ but the samples share DES objects and the common
+BAO+CMB+fs8, so treat ~2σ as honest). w(0)≈−0.91 in all three as well. Combined with
+§31–32 (survives calibrator removal) and §33 (the new DR2 Lyα AP *at z=2.33 weakens
+the low-z-driven w0wa hint but sits beyond the dip*), the z~1 dip is now the **single
+most robust non-Λ feature in the public data**: anchor-free, sample-robust, and best
+described by a phantom-divide crossing (quintom, N2). It is still below the discovery
+bar (BF>10 + full robustness suite) — but it is exactly the feature DR3 full-shape must
+confirm or kill, and it is pre-registered (§30).
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

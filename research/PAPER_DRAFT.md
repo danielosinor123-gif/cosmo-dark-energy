@@ -61,7 +61,10 @@ a w(z) costume?
    full-shape AP (arXiv:2607.27410, 1% at z=2.33) is ΛCDM-consistent alone (χ²=0.97/2,
    Lyα+BBN H₀=66.5±1.3) and weakens w0wa when added (−6.6→−5.6, §33) — the high-z
    anchor moved toward ΛCDM; DR3 needs ~3× BAO precision to break the w0wa↔δM
-   degeneracy at 3σ (§30).
+   degeneracy at 3σ (§30). The z~1 dip is the same in all three SN samples
+   (−1.268±0.162 / −1.260±0.143 / −1.276±0.143 for Dovekie / DESY5 / Pantheon+
+   non-calibrator, §34) — sample-robust and anchor-free, the one feature DR3 must
+   confirm or kill.
 10. Harnessing caps: one-shot ≤1.6×10⁻¹⁰ J/m³, continuous ≤H₀ρ_Λc²≈1.2×10⁻²⁷ W/m³,
     tilt <0.01 mag/dex; EW vacuum 57 orders denser than Λ (§23, §26,
     HARNESS_N6_N10.md, HARNESS_LITERATURE.md).

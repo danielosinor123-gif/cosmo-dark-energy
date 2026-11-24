@@ -216,6 +216,11 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
   (chi2=0.97/2; Ly-a+BBN H0=66.5+-1.3) and WEAKENS the w0wa hint (-6.58->-5.56;
   AP replacing Y3 Lya BAO: -5.30; AP-only+SN+CMB: -3.19 with wa=+0.05). 5-yr DESI
   survey completed Apr 2026 (47M galaxies); DR3 still not public as of Nov 2026.
+- S22 DONE (§34): z~1 dip in ALL THREE SN samples with BAO+LyaAP+CMB+fs8 —
+  Dovekie -1.268+-0.162, DESY5 -1.260+-0.143, Pantheon+-nocal -1.276+-0.143
+  (means agree to 0.016); sample-robust, anchor-free; honest ~2s (shared systematics),
+  naive ~3s. Strongest surviving non-Lambda feature; DR3 decides. NEW_PHYSICS.md N11
+  (EW false-vacuum catalysis bound, f91687b).
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.
