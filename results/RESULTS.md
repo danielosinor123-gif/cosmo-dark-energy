@@ -454,6 +454,26 @@ moves it (wa stays ±0.97 broad). All the *precision* on w comes from the SN dis
 low-z part, and the SN-independent geometry (BAO+2pt) alone gives only a weak ~1.7σ-ish
 preference — matching our pipeline's z-cut/step findings (§8, §16) from their data.
 
+## 21. CAPSTONE — all systematics free at once (`session9.py capstone` → `capstone_results.json`)
+
+w0wa vs ΛCDM on BAO+Dovekie+CMB+fσ8, with **all** nuisance/systematic parameters free
+simultaneously: δM step at z<0.1, Cepheid H₀=73.04±1.04 prior, s8:
+
+| model | χ²_MAP | δM | s8 | w0 | wa | Δχ² |
+|---|---|---|---|---|---|---|
+| ΛCDM | 1658.48 | +0.034 ± 0.012 mag | 0.777 | — | — | — |
+| w0wa | 1658.22 | +0.035 ± 0.015 mag | 0.779 | −0.998 ± 0.040 | **−0.070 ± 0.126** | **−0.26 (0.00σ)** |
+
+**Reading — the capstone result:** once a low-z magnitude step, the Cepheid anchor, and
+growth are all free, the w0wa model has **zero preference** over ΛCDM (Δχ² = −0.26) and
+wa = −0.07 ± 0.13, consistent with 0. The entire evolving-DE hint is absorbed by a single
+**δM = +0.034 ± 0.012 mag step at z<0.1**. Combined with §13 (the same offset is common to
+all three SN samples), §15 (H₀↔wa map), §16 (step size), §20 (DESI's own BAO+2pt adds
+nothing): every independent line lands on the same statement — **the 2025–26
+evolving-dark-energy hint is quantitatively equivalent to a +0.03 mag low-z SN
+calibration step (plus the H₀ anchor choice); with systematics marginalized, there is
+no residual evidence for evolving dark energy in public data.**
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

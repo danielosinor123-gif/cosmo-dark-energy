@@ -184,6 +184,13 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
 - N5 "vacuum battery" (NEW_PHYSICS.md): energy budget computed; capped by same f<~0.3,
   z_c<~0.2 bounds as N1 (BF 0.11) — releasing vacuum energy is constrained by the same
   step that mimics calibration.
+- S9 DONE: DESI own chains — BAO+2pt full-shape identical to BAO-only (wa +-0.97);
+  SN distances carry all w precision (§20). CAPSTONE (§21): w0wa+{dM step + Cepheid
+  anchor + fs8} vs LCDM+same: dchi2 = -0.26 (0.00 sigma), wa = -0.07+-0.13, dM=+0.034
+  mag — the hint is fully absorbed by the low-z step.
+- S10 running: RVM (running vacuum Lambda~rho_m) fits; cert5 (5-bin w(z)+growth) queued.
+  Subagents: 2025-26 literature sweep for vacuum-energy extraction; N6-N10 harnessing
+  proposals (NEW_PHYSICS.md to be extended).
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.
