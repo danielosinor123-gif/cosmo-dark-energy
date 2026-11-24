@@ -137,5 +137,44 @@ turns out to deviate from ΛCDM (our current data say it doesn't).
 - Discovery bar (BF>10 AND survival of z>0.1 cut + anchor swap + δM step): met by
   nothing. Predictions for DR3/non-Cepheid anchors stand as written above.
 
+## N4 — "Screenable vacuum energy" (the harnessable-vacuum hypothesis)
+
+**Mechanism (novel extrapolation).** Treat ρ_vac not as a constant but as the energy of an
+order parameter (a condensate / false-vacuum field) that local matter density can tilt —
+unscreened in voids, shifted in massive halos. If so, the vacuum energy is *locally
+modifiable in principle* — the only route to "harnessing" it that doesn't violate energy
+conditions — and H₀/μ measured in different environments should differ.
+
+**Prediction.** Low-z SN distance residuals correlate with host-galaxy stellar mass.
+
+**Test + verdict (RESULTS.md §19, `env_results.json`).** Pantheon+ host masses: host-split
+Δμ = +0.0008 ± 0.0096 mag (0.08σ) at z<0.3; slope dr/dlogM = −0.0055 ± 0.0035 mag/dex
+(1.57σ, sign opposite to the z>0.3 control). **No environmental coupling detected.**
+Bound: matter–vacuum coupling < ~0.01 mag/dex in host mass at z<0.3. So: either the vacuum
+is not locally tiltable at galaxy scales, or the coupling is below this bound. The common
+low-z offset is global, not environmental.
+
+## N5 — "Metastable vacuum battery" (decay-triggered release)
+
+**Mechanism.** The dark sector sits in a false vacuum; a first-order transition (natural
+at z_c, or nucleated) converts a fraction f of ρ_vac into radiation/DM — a global "battery
+discharge". Cosmological signature = the LDPT step (N1).
+
+**Energy budget if harnessable.** ρ_vac c² ≈ 6×10⁻¹⁰ J/m³. With the data bound f ≲ 0.3
+(§17: LDPT disfavored, z_c ≲ 0.2), the releasable density is ≲ 2×10⁻¹⁰ J/m³; a
+galaxy-scale volume (~10⁶³ m³) holds ≲ 2×10⁵³ J ≈ 0.1 M☉c² — modest per volume, but a
+*global* transition would also change the expansion history, which our data already
+constrain (BF 0.11). Verdict: even as a "battery," current data cap f and pin z_c to the
+low-z SN step — indistinguishable from calibration (§16).
+
+## Session 7–8 harness summary
+
+- H₀-tension hypotheses tested quantitatively (RESULTS.md §18): early-universe fixes
+  (ΔN_eff, EDE) absorb **nothing** in public compressed data; only late-time freedom does
+  (w0wa flat in H₀; LDPT Δχ²≈105 at H₀=73, degenerate with the δM step).
+- "Harnessable vacuum" (local tilt, N4) excluded at <0.01 mag/dex host-mass level (§19);
+  "vacuum battery" (N5) capped by the same f ≲ 0.3, z_c ≲ 0.2 bounds as N1.
+
 All numbers in `results/session6_results.json`, `results/step_results.json`,
+`results/h0tension_results.json`, `results/env_results.json`,
 `results/h0map_s6_ldpt.json`, `results/predict_s6_*.json`.

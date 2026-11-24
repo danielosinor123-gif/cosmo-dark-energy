@@ -175,10 +175,15 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
   degenerate with the low-z step; killed by evidence on the full sample (BF 0.11).
   N2 quintom phantom-dip — best raw chi2 (-8.06) but BF 2.2 < w0wa 8.0: allowed, not
   required. No model meets the discovery bar (BF>10 AND robust to z>0.1/anchor/dM).
-- S7 (running, session7.py h0tension): harness the H0 tension as a probe — chi2(H0)
-  profiles with h fixed for lcdm vs +dNeff (extra radiation) vs +EDE bump near
-  recombination, on BAO+SN+CMB-compressed(R,wb): which hypothesis lets the data sit at
-  SH0ES H0=73.04 with minimal penalty? Key output: penalty_at_SH0ES per model.
+- S7 DONE (§18): h0tension — in public compressed data, dNeff/EDE absorb NOTHING of the
+  H0 tension (penalty at H0=73.04 = 219.7 for lcdm/neff/ede alike); only late-time freedom
+  (w0wa flat in H0; LDPT dchi2~105) does. CMB peak-side constraint not in our prior — caveat.
+- S8 DONE (§19): N4 environment test — Pantheon+ host-mass split of low-z residuals
+  0.08 sigma, slope <1.6 sigma -> vacuum NOT locally tiltable at galaxy scales
+  (<0.01 mag/dex); the low-z offset is global calibration, not environment.
+- N5 "vacuum battery" (NEW_PHYSICS.md): energy budget computed; capped by same f<~0.3,
+  z_c<~0.2 bounds as N1 (BF 0.11) — releasing vacuum energy is constrained by the same
+  step that mimics calibration.
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.

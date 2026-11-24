@@ -400,6 +400,42 @@ parsimonious description. (iii) No proposed model survives the §8/§12/§16 bat
 (z>0.1 cut, anchor swap, δM step) — the discovery bar (BF>10 AND robust) is not met by
 anything, including w0wa itself.
 
+## 18. Harnessing the H₀ tension — which hypotheses absorb it? (`session7.py h0tension` → `h0tension_results.json`)
+
+χ²(H₀) profiles (h fixed on a grid, all else MAP-fitted) on BAO+Dovekie(full)+CMB-compressed(R,ω_b),
+with radiation now included in DM(z*):
+
+| model | H₀ at χ² min | χ²_min | χ² at H₀=73.04 (SH0ES) | penalty at SH0ES |
+|---|---|---|---|---|
+| ΛCDM | 70.0 | 1646.4 | 1866.1 | **219.7** |
+| ΛCDM + ΔN_eff (0–3) | 70.0 | 1646.4 | 1866.1 | 219.7 (ΔN_eff→0) |
+| ΛCDM + EDE bump | 70.0 | 1646.3 | 1866.1 | 219.7 (bump→edge, no help) |
+
+**Reading:** in public compressed data, **early-universe fixes (extra radiation, EDE) do
+nothing** — the compressed (R, ω_b) prior re-absorbs them via Ω_m, and the H₀ pull here is
+entirely from BAO+SN distances (min H₀=70.0, penalty 220 at 73.04). Only *late-time*
+freedom absorbs it: w0wa is flat in H₀ (§15), LDPT eats Δχ²≈105 at H₀=73
+(NEW_PHYSICS.md) but degenerates with the low-z step. Caveat: the CMB's own H₀ constraint
+(peak positions/ℓ_A) is not in our compressed prior, so EDE/ΔN_eff effects visible only in
+full CMB are outside this test — documented limitation.
+
+## 19. Is the vacuum locally "harnessable"? Environment test (`session8.py env` → `env_results.json`)
+
+Hypothesis N4 (NEW_PHYSICS.md): if ρ_vac is an order parameter that matter can locally
+tilt, low-z SN residuals should depend on host-galaxy mass. Pantheon+ (1701 SNe,
+HOST_LOGMASS), geometry-only ΛCDM (BAO+CMB, H₀=67.67), global M marginalized:
+
+| bin | mean residual | host split Δ(highM−lowM) | slope dr/dlogM |
+|---|---|---|---|
+| z<0.3 (n=1207) | +0.005 ± 0.005 mag | +0.0008 ± 0.0096 mag (**0.08σ**) | −0.0055 ± 0.0035 (1.57σ) |
+| z>0.3 control (n=494) | −0.011 ± 0.008 mag | +0.0175 ± 0.0146 (1.20σ) | +0.0070 ± 0.0059 (1.19σ) |
+
+**Reading:** **no host-mass dependence of the low-z offset** (0.08σ split; slope <1.6σ
+and sign-inconsistent with the control). The common +0.03–0.05 mag low-z offset (§13) is
+mass-independent → global calibration (anchor), not local vacuum physics. Bound: any
+matter–vacuum coupling must produce < ~0.01 mag per dex of host mass at z<0.3 —
+locally "tilting" the vacuum at galaxy scales is excluded at this level by public data.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
