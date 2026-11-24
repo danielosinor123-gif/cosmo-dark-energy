@@ -544,6 +544,28 @@ prior-dominated (±0.4–0.8). Falsification handle for DR3: the dip must stay c
 z≈1 with σ<0.1, and w must cross −1 twice (down at z~0.5, back up at z~2), else it's the
 low-z step leaking into the 0.3–0.75 bin.
 
+## 25. Edge sharpness — sharp step beats smooth drift (`session12.py edge` → `edge_results.json`)
+
+Logistic step δM·sigmoid((0.1−z)/s_z) in the Dovekie HD residuals, BAO+CMB-compressed,
+width s_z scanned:
+
+| s_z | χ² | δM |
+|---|---|---|
+| **0.0001 (sharp)** | **1638.16** | **+0.0335** |
+| 0.02 | 1638.35 | +0.0362 |
+| 0.05 | 1639.02 | +0.0438 |
+| 0.1 | 1640.18 | +0.0500 |
+| 0.5 | 1642.28 | +0.0873 |
+| 2.0 (smooth ramp) | 1642.28 | +0.3094 |
+| no step | 1645.48 | 0 |
+
+**Reading:** χ² is monotonically minimized at the sharpest edge — the low-z feature is a
+**sharp step at z≈0.1** (Δχ²=−7.3 vs no step), not a smooth drift. A sharp edge is the
+signature of either a first-order bubble wall (N4/N5) *or* a calibration threshold
+(e.g. the switch to the Cepheid-anchored z<0.1 sample) — sharpness alone doesn't separate
+them, but it rules out smooth systematics (smooth versions need 10× the amplitude and
+fit worse). The discriminator remains the anchor swap (§12) + DR3.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
