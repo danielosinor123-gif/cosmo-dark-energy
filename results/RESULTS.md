@@ -446,13 +446,19 @@ w, wa posteriors from DESI Y3 published cobaya chains (data.desi.lbl.gov, weight
 | **BAO + 2pt full-shape** | 32645 | **−0.480 ± 0.268** | **−1.655 ± 0.970** | **0.956** | **0.927** |
 | BAO + DESY5 SN | 28634 | −0.782 ± 0.072 | −0.715 ± 0.472 | 1.000 | 0.937 |
 | BAO + Pantheon+ | 42062 | −0.887 ± 0.061 | −0.184 ± 0.454 | 0.977 | 0.653 |
+| BAO + DESY5 SN + 2pt | 30596 | −0.780 ± 0.071 | −0.722 ± 0.470 | 1.000 | 0.938 |
+| BAO + Pantheon+ + 2pt | 47673 | −0.887 ± 0.060 | −0.175 ± 0.458 | 0.976 | 0.649 |
+| BAO + Union3 + 2pt | 40665 | −0.696 ± 0.113 | −0.994 ± 0.576 | 0.998 | 0.957 |
 
 **Reading:** adding DESI's full galaxy **2pt** (shape/AP information, no SN calibration)
-leaves the w0wa posterior *statistically identical* to BAO-only — it neither sharpens nor
-moves it (wa stays ±0.97 broad). All the *precision* on w comes from the SN distances
-(σ_w: 0.27 → 0.07). So in DESI's own chains, the 3–4σ headline lives in the SN-calibrated
-low-z part, and the SN-independent geometry (BAO+2pt) alone gives only a weak ~1.7σ-ish
-preference — matching our pipeline's z-cut/step findings (§8, §16) from their data.
+leaves the w0wa posterior *statistically identical* — BAO-only vs BAO+2pt: wa −1.63±0.97 →
+−1.66±0.97; and, critically, **BAO+SN vs BAO+SN+2pt: wa −0.715→−0.722 (DESY5),
+−0.184→−0.175 (Pantheon+)** — 2pt does not move the SN-driven result at all. All the
+*precision* on w comes from the SN distances (σ_w: 0.27 → 0.07); the SN-independent
+geometry (BAO+2pt) alone gives only a weak ~1.7σ preference. So in DESI's own chains the
+3–4σ headline lives entirely in the SN-calibrated low-z part — matching our pipeline's
+z-cut/step findings (§8, §16) from their data. Union3 (third SN sample) gives the broadest
+wa (−0.99±0.58): the signal is SN-sample-dependent, not geometry-driven.
 
 ## 21. CAPSTONE — all systematics free at once (`session9.py capstone` → `capstone_results.json`)
 

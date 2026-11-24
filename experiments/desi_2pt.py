@@ -17,6 +17,9 @@ FILES = {
     "BAO + 2pt (full shape)": "w0wa__bao_all_desy3x2pt.txt",
     "BAO + DESY5 SN": "w0wa__desi-bao-all_desy5sn.txt",
     "BAO + Pantheon+": "w0wa__desi-bao-all_pantheonplus.txt",
+    "BAO + DESY5 SN + 2pt": "w0wa__desi-bao-all_desy5sn_desy3x2pt.txt",
+    "BAO + Pantheon+ + 2pt": "w0wa__desi-bao-all_pantheonplus_desy3x2pt.txt",
+    "BAO + Union3 + 2pt": "w0wa__desi-bao-all_union3_desy3x2pt.txt",
 }
 
 print(f"{'combo':28s} {'n':>8s} {'w mean+-sd':>18s} {'wa mean+-sd':>18s} "
