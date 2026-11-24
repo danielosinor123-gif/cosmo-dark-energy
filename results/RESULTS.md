@@ -620,6 +620,21 @@ low-z offset" in the full samples is the diluted signature of these calibrators
 in μ even after the zHD correction — a residual v_pec systematics in the calibrator
 hosts cannot be excluded from public data alone.
 
+## 28. Peculiar-velocity sensitivity of the calibrator offset (`session16.py vpec` → `vpec_results.json`)
+
+Calibrator-minus-noncalibrator low-z offset under different redshift columns:
+
+| column | z<0.1 | z<0.3 |
+|---|---|---|
+| zHD (v_pec-corrected, default) | +0.203 ± 0.030 (6.7σ) | +0.213 ± 0.030 (7.2σ) |
+| zCMB (no v_pec) | +0.159 ± 0.030 (5.3σ) | +0.177 ± 0.030 (6.0σ) |
+| zHEL (heliocentric) | +0.391 ± 0.030 (12.9σ) | +0.415 ± 0.030 (14.0σ) |
+
+**Reading:** the offset is present and significant in every column; the v_pec correction
+(zHD) changes it by ~0.04 mag, not to zero. The +0.20 mag Cepheid-calibrator offset is
+**not a peculiar-velocity artifact** — the §27 caveat is addressed: with the proper
+zHD redshifts the 6.7σ localization of the H₀ tension to the 77 calibrators stands.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
