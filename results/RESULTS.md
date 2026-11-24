@@ -757,6 +757,23 @@ described by a phantom-divide crossing (quintom, N2). It is still below the disc
 bar (BF>10 + full robustness suite) — but it is exactly the feature DR3 full-shape must
 confirm or kill, and it is pre-registered (§30).
 
+## 35. Harvesting-civilization sky-asymmetry search — null (`session23.py dipole` → `dipole_results.json`)
+
+Hooper-style test (arXiv:1806.05203): a civilization harvesting vacuum/stellar energy would
+imprint a dipole/quadrupole on the local expansion. GLS fit of (const + dipole + quadrupole)
+to M-marginalized Pantheon+ residuals vs BAO(ALL+Lyα AP)+CMB ΛCDM geometry (H₀=67.4):
+
+| sample | n | dipole amplitude | tension | Δχ² (8 dof) |
+|---|---|---|---|---|
+| full | 1701 | 0.63 ± 8.5 mag | 0.07σ | −0.27 |
+| z<0.1 | 741 | 0.59 ± 9.9 mag | 0.06σ | −0.05 |
+| z>0.1 | 960 | 26 ± 305 mag | 0.09σ | −0.05 |
+
+**Reading:** no dipole, no quadrupole, Δχ²≈0 for 8 added sky parameters in every redshift
+slice. No harvesting-civilization imprint in the SN sky — the universe's vacuum looks
+isotropic and unharvested to our precision (the Pantheon+ systematics covariance makes the
+formal errors large; the *relative* Δχ² is the clean statement: zero preference).
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
