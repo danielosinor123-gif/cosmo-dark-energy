@@ -51,6 +51,10 @@ a w(z) costume?
    (§21).
 9. New physics judged by data: LDPT BF 0.11 (killed); quintom BF 2.2 (allowed, not
    required); RVM ν=0.008±0.005 (null) (§17, §22).
+9b. The H₀ tension is localized to the 77 Cepheid-calibrator SNe: they sit
+   +0.20±0.03 mag (6.7σ) above BAO+CMB geometry — implying H₀=74.3±0.2 — while the 664
+   other z<0.1 SNe agree at −0.012±0.007 mag (H₀=67.7). The full-sample "+0.03 mag
+   low-z offset" is the diluted signature of these calibrators (§27).
 10. Harnessing caps: one-shot ≤1.6×10⁻¹⁰ J/m³, continuous ≤H₀ρ_Λc²≈1.2×10⁻²⁷ W/m³,
     tilt <0.01 mag/dex; EW vacuum 57 orders denser than Λ (§23, §26,
     HARNESS_N6_N10.md, HARNESS_LITERATURE.md).

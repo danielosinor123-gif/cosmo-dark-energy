@@ -596,6 +596,30 @@ the only shape-motivated survivor and it is indistinguishable from w0wa (cert5 v
 continuous ≤1.2×10⁻²⁷ W/m³, static tilt <0.01 mag/dex; the only denser vacuum is the
 EW false vacuum at 7.6×10⁴⁶ J/m³, bounded by Higgs stability, not by us.
 
+## 27. The H₀ tension localized to the Cepheid-calibrator hosts (`session15b.py calib` → `calib_results.json`)
+
+Pantheon+ split by `IS_CALIBRATOR` (77 SNe, z=0.001–0.017, median 0.0068) vs
+non-calibrators, against BAO+CMB geometry (H₀=67.67), one global monopole M
+marginalized over the whole z<0.3 sample:
+
+| z cut | calibrator resid | non-calibrator resid | Δ(cal−noncal) |
+|---|---|---|---|
+| z<0.1 (m_b_corr) | +0.190 ± 0.029 (n=77) | −0.012 ± 0.007 (n=664) | **+0.203 ± 0.030 mag (6.7σ)** |
+| z<0.3 (m_b_corr) | +0.208 ± 0.029 | −0.005 ± 0.004 (n=1130) | +0.213 ± 0.030 (7.2σ) |
+| z<0.3 (raw mB) | +0.192 ± 0.029 | −0.006 ± 0.004 | +0.199 ± 0.030 (6.7σ) |
+
+Not an artifact of bias corrections (raw mB gives the same). **Implied H₀ per group:**
+calibrators → H₀ = 74.3–74.7 ± 0.2 km/s/Mpc (i.e. SH0ES); non-calibrators → consistent
+with the geometry H₀ = 67.7. The `USED_IN_SH0ES_HF` flag (234 SNe) shows NO offset
+(−0.014±0.010) — the tension is specific to the 77 Cepheid-calibrated hosts, not to the
+broader SH0ES Hubble-flow sample. **Reading:** the entire Planck-vs-SH0ES gap is
+concentrated in the Cepheid-calibrator subsample; the 664 other z<0.1 SNe agree with
+BAO+CMB geometry at −0.012±0.007 mag. This sharpens §13/§15/§16: the "common +0.03 mag
+low-z offset" in the full samples is the diluted signature of these calibrators
+(77/741 of z<0.1 × 0.2 mag ≈ 0.02 mag). Caveat: at z~0.007 peculiar velocities are large
+in μ even after the zHD correction — a residual v_pec systematics in the calibrator
+hosts cannot be excluded from public data alone.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
