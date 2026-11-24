@@ -635,6 +635,23 @@ Calibrator-minus-noncalibrator low-z offset under different redshift columns:
 **not a peculiar-velocity artifact** — the §27 caveat is addressed: with the proper
 zHD redshifts the 6.7σ localization of the H₀ tension to the 77 calibrators stands.
 
+## 29. Lyα BAO: the high-z tracer is the most Λ-consistent (`session14.py lya` → `lya_results.json`)
+
+w0wa vs ΛCDM (Dovekie SN + CMB-compressed always on, BAO varied):
+
+| BAO set | Δχ² (w0wa−ΛCDM) | wa |
+|---|---|---|
+| Lyα only (2 rows @ z=2.33, no SN) | **+0.09** | −0.12 ± 1.01 |
+| Lyα + SN + CMB | −3.78 | −0.64 ± 0.44 |
+| ALL minus Lyα + SN + CMB | −5.96 | −0.50 ± 0.23 |
+| ALL + SN + CMB | −6.49 | −0.50 ± 0.20 |
+
+**Reading:** Lyα alone has *no* evolving-DE preference (wa consistent with 0 at ±1.0);
+swapping Lyα in for the low-z BAO *weakens* the hint (−6.49→−3.78), and dropping Lyα
+leaves it intact (−5.96). The signal is not driven by the high-z tracer — if anything
+Lyα vetoes it, consistent with the reported Lyα-vs-low-z counter-signal. The hint lives
+in the z<1.6 BAO + SN combination, i.e. still the low-z side.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
