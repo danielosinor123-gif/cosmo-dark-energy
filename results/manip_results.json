@@ -1,0 +1,39 @@
+{
+  "rho_Lambda_c2": 5.25322922603598e-10,
+  "fake_lowz_step": {
+    "delta_mu_mag": 0.03,
+    "delta_DL_over_DL": 0.013815510557964275,
+    "delta_H_over_H": -0.013815510557964275,
+    "delta_rhoLambda_over_rhoLambda": 0.02763102111592855,
+    "z<0.1_sphere_radius_Mpc": 444.7959317507419,
+    "volume_m3": 1.0829855538240346e+76,
+    "energy_that_must_be_injected_J": 1.571976140555402e+65,
+    "note": "a ~2.8% local change of Lambda inside a 430-Mpc sphere, with NO mechanism (equivalence principle: Lambda cannot be concentrated); N4 bound <0.01 mag/dex in host mass is far tighter"
+  },
+  "fake_wa": {
+    "w_needed": -1.5,
+    "rho_z1_over_rho0": 0.3535533905932738,
+    "growth_z1_to_now_vs_const": 1.8284271247461898,
+    "note": "phantom w=-1.5 means the vacuum density grows by a factor 2.8 from z=1 to today; a GLOBAL field change visible at ALL z \u2014 our data cap |w+1| in the dip bin at 0.27+-0.16 (1.7s)"
+  },
+  "n4_bound": {
+    "delta_mu_per_dex_mag": 0.01,
+    "delta_rho_over_rho_per_dex": 0.009210340371976183,
+    "note": "astrophysical environments cannot tilt Lambda beyond ~0.9%/dex (\u00a719)"
+  },
+  "casimir_over_sphere": {
+    "gap_m": 3.966338302557784e-05,
+    "plate_area_m2": 2.730441710243543e+80,
+    "plate_area_vs_observable_universe_area": 1.1534541682046206e+27,
+    "note": "shielding a cosmological volume is absurd; lab-scale cavities only affect the gap volume (zero-sum, N12)"
+  },
+  "analytic_steering": {
+    "Planck_anchor_sigma": 4.36,
+    "Cepheid_anchor_sigma": 0.42,
+    "TRGB": 1.65,
+    "JAGB": 1.8,
+    "z>0.1_cut": "-6.6 -> -0.0",
+    "deltaM_step": "1.72s -> 0.00s",
+    "note": "the '3-4 sigma evolving DE' reading is steered ENTIRELY by analysis choices (anchor, z-cut, step) \u2014 which is why dr3_plan.json pre-registers the cuts"
+  }
+}

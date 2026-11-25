@@ -825,6 +825,22 @@ Every mechanism ends at one-shot ≤5.3×10⁻¹⁰ J/m³ / continuous ≤~10⁻
 corroborate the dip; nobody's chain shows w(2.33) below −1 at >2.5σ (the new Lyα AP,
 §33, sits at w=−1). DR3 full-shape remains the arbiter.
 
+## 38. Can we manipulate the dark-energy reading? (`session25.py manip` → `manip_results.json`, `research/MANIPULATE.md`)
+
+- **Analytically: yes** — the 3–4σ "evolving DE" reading moves 4.36σ→0.42σ with the
+  H₀ anchor, −6.6→−0.0 with the z>0.1 cut, 1.72σ→0.00σ with a δM step (§15/§21/§27).
+  That is why `dr3_plan.json` pre-registers the cuts.
+- **Physically: no.** Faking the +0.03 mag step needs δρ_Λ/ρ_Λ ≈ **2.8% inside the
+  whole z<0.1 sphere** (R≈445 Mpc; 1.6×10⁶⁵ J injected, no mechanism — EP forbids
+  concentrating Λ; N4 bound <0.9%/dex in host mass, §19). Faking wa=−0.5 needs the
+  vacuum density to grow ×2.8 from z=1 to now — a *global* change visible at all z
+  (excluded by the z>0.1 data agreeing with Λ, §8). Casimir-shielding that sphere
+  would need 1.2×10²⁷× the observable universe's area in plates. Unruh-style
+  "observation" pays its own energy bill (2nd law, §37).
+
+**Reading:** the probe can be aimed by pre-registered choices of what to look at;
+it cannot be aimed by doing things to the vacuum. Λ reads the universe as it is.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
