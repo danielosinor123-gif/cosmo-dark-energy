@@ -122,6 +122,15 @@ calibration point. **E3** expansion tether forces ≤10⁻¹³ N even at 1 Mpc; 
 3.44×10⁻²⁷ W/m³ (1 W = 1.3×10⁷ Moon volumes). **P5** phantom rudder only if DR3 dip
 ≥5σ, and even then 8×10⁻²⁸ W/m³. **N20** vacuum prism: θ~10⁻⁵² rad, dead.
 
+## Moving bigger objects — dissected and closed (`research/BIGGER_OBJECTS_DISSECTION.md`, §45)
+
+Holding mass m at gap d needs A=m g d⁴/K with flatness δd=d/40: 1 kg needs 0.75 cm² at
+10 nm (0.25 nm flatness — impossible), 0.75 m² at 100 nm (2.5 nm, 750k actuators),
+7500 m² at 1 μm, and **1.9×10¹⁰ m² at the Λ gap d\*=40 μm** with R=7×10²⁴. Λ’s own
+gravity reaches g only at 2×10¹⁰× the observable radius; a vacuum balloon needs ~0.8M
+Moon volumes for 1 kg. **Conclusion: large-object levitation must use ordinary EM/
+diamagnetic/electrostatic/acoustic forces; dark energy cannot move bigger objects.**
+
 ## Pre-registered DR3 falsification plan (`dr3_plan.json`, §30) — bar raised to 5σ (2026-11-25)
 
 1. w0wa must reach BF>10 **with z<0.1 SNe excluded**, and the dip must reach

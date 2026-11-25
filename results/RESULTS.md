@@ -933,6 +933,21 @@ power, push, shield, or alter the sky.**
 - **P5 phantom rudder (DR3 ≥5σ gate):** 8.08×10⁻²⁸ W/m³; 1 W = 1.24×10²⁷ m³ (side 1.07×10⁹ m) — worse than expansion; probe only. Kills: DR3 cuts + host-mass tilt <0.01 mag/dex.
 - **N20 vacuum prism:** deflection θ~(8πG/c⁴)(ρ_Λc²)L ~1e-52 rad for L=1 m — dead by 52 orders + material cost R≥1e9.
 
+## 45. "Move bigger objects" dissected (`session32.py scale` → `bigger_objects.json`, `research/BIGGER_OBJECTS_DISSECTION.md`)
+
+Master law for holding mass m at gap d: A = m g d⁴/K, with gap tolerance δd=d/40 for
+±10% force. For **1 kg**: 10 nm → 0.75 cm² but δd=0.25 nm; 100 nm → 0.75 m², δd=2.5 nm,
+7.5×10⁵ 1-mm actuators, plate mass 4 g, collapse energy 3×10⁻⁷ J; 1 μm → 7.5×10³ m²,
+δd=25 nm, 7.5×10⁹ actuators, 40 kg plates; **d\*=40 μm → 1.9×10¹⁰ m² (~19,000 km²),
+1.9×10¹⁶ actuators, 1×10⁸ kg plates, R=7×10²⁴**. Breaks: area ∝ m d⁴, flatness ∝ d,
+actuator count ∝ A, pull-in instability, zero-sum energy, material cost. Dark energy
+cannot lift: Λ acceleration reaches g only at r=3.0×10³⁶ m ≈ 2×10¹⁰× observable radius;
+vacuum balloon needs 1.7×10²⁵ m³ (~0.8M Moon volumes) for 1 kg + shell R≥10⁹; horizon
+piston theory 3.7×10⁵² W needs a shell at the horizon (unphysical), per m³ still
+3.4×10⁻²⁷ W. **Bigger objects are moved by ordinary EM/diamagnetic/electrostatic/
+acoustic forces; dark energy adds nothing. S2 remains milligram-scale; G1 remains the
+40 μm Λ gauge.**
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
