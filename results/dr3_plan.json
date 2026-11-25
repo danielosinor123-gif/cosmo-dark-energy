@@ -7,7 +7,8 @@
     "4sigma_k2": 18.42,
     "5sigma_k2": 25.0
   },
-  "wbin_dip Requirement": "5-bin w(z) dip at z in [0.75,1.5] must reach |w+1|/sigma > 3 (now 1.8, per-sample 1.6-1.8, all three SN samples) with z>1.5 bins data-dominated (now prior-dominated, +-0.4-0.8)",
+  "bar_raised_2026_11_25": "Discovery bar MOVED UP from 3s to 5s (k=2: Delta-chi2 >= 25.0; dip |w+1|/sigma >= 5). 3s is now the 'evidence' tier only. Rationale: per-sample dip is 1.6-1.8s and SN samples share systematics, so 3s was reachable by correlated noise; 5s requires the dip to be unambiguous.",
+  "wbin_dip Requirement": "5-bin w(z) dip at z in [0.75,1.5] must reach |w+1|/sigma > 5 (now 1.8 per-sample mean, 1.8-3.1 over the inter-sample correlation scan rho=1..0, union fit pending s28) with z>1.5 bins data-dominated (now prior-dominated, +-0.4-0.8)",
   "fullshape_requirement": "DR3 BAO+2pt(+SN) must MOVE wa by >1 sigma of its Y3 error (Y3: 2pt did not move it, §20)",
   "anchor_requirement": "signal must survive TRGB (70.4) / JAGB (67.8) anchors (§12: Cepheid 0.42s, TRGB 1.65s, JAGB 1.80s)",
   "dm_requirement": "w0wa preference must survive a free dM step at z<0.1 (now: 1.72s -> 0.00s, §16/§21)",
@@ -22,10 +23,11 @@
       "5. apply verdict map below"
     ],
     "verdict_map": {
-      "dip>=3s AND survives z>0.1 cut + anchors + dM + 2pt": "PHANTOM REAL -> N14 door OPEN: dark sector is a dynamical phantom field (N2); run N14 coupling/rudder study; report",
+      "dip>=5s AND survives z>0.1 cut + anchors + dM + 2pt": "PHANTOM REAL at the raised 5s discovery bar -> N14 door OPEN: dark sector is a dynamical phantom field (N2); run N14 coupling/rudder study; report",
+      "dip 3-5s and survives cuts": "EVIDENCE TIER: dynamical DE likely but not discovery; N14 stays closed; DR3 decides",
       "w0wa BF>10 survives cuts but dip<3s": "DYNAMICAL NON-PHANTOM (quintessence-like) -> N14 closed; still new physics",
       "nothing survives": "LAMBDA CONFIRMED -> N12/N14 doors closed IN PRINCIPLE (Lovelock+NEC+passivity+QI); 2025-26 hint was the Cepheid-calibrator step (§27)"
     },
-    "watcher": "automation 'dr3-watch' polls data.desi.lbl.gov daily; fires when a dr3/ or new yN papers dir appears"
+    "watcher": "removed 2026-11-25 by user request (no passive watcher); DR3 checked manually at session time"
   }
 }

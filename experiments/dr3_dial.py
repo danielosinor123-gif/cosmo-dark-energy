@@ -62,20 +62,20 @@ def read_mode():
     s = [e["w_bins_std"][2] for e in dip["samples"].values()]
     dip_sig = abs(np.mean(w) + 1) / np.mean(s)
     print(f"  dip z in [0.75,1.5]: w = {np.mean(w):.3f} +- {np.mean(s):.3f} "
-          f"-> |w+1|/sigma = {dip_sig:.2f} (need >= 3)")
+          f"-> |w+1|/sigma = {dip_sig:.2f} (DISCOVERY bar now >= 5; 3-5 = evidence tier)")
     print(f"  w0wa dchi2 (all data): ~ -6.3, BF 9-12; z>0.1 cut: -0.01 (s8/s29)")
     print(f"  capstone (anchors+dM+fs8 free): dchi2 = -0.26, wa = -0.07+-0.13 (s21)")
     print(f"  2pt: does not move wa (s20); Ly-a AP: LCDM-consistent alone, chi2=0.97/2 (s33)")
     print(f"  discovery thresholds (k=2): 3s={plan['thresholds']['3sigma_k2']}, "
           f"4s={plan['thresholds']['4sigma_k2']}, 5s={plan['thresholds']['5sigma_k2']}")
-    if dip_sig >= 3:
-        verdict = "PHANTOM REAL -> N14 vacuum-rudder door OPEN (phantom sector exists)"
-    elif dip_sig >= 2:
-        verdict = "dip tantalizing (2-3s) but below bar -> door CLOSED pending DR3"
+    if dip_sig >= 5:
+        verdict = "PHANTOM REAL at discovery bar -> N14 vacuum-rudder door OPEN"
+    elif dip_sig >= 3:
+        verdict = "evidence tier (3-5s) -> door NOT open; needs DR3 or more data"
     else:
-        verdict = ("dip below 2s -> Lambda favored; door CLOSED unless DR3 pushes the "
-                   "dip past 3s (then N14 opens)")
-    print(f"  DIAL VERDICT TODAY: dip at {dip_sig:.2f}s < 3 -> {verdict}")
+        verdict = ("below 3s -> Lambda favored; door CLOSED unless DR3 pushes the "
+                   "dip past 5s (then N14 opens)")
+    print(f"  DIAL VERDICT TODAY: dip at {dip_sig:.2f}s -> {verdict}")
     print("  -> the dial turns when DR3 full-shape lands; watcher automation is set.")
     print("DIAL READ DONE", flush=True)
 
