@@ -860,6 +860,27 @@ it cannot be aimed by doing things to the vacuum. Λ reads the universe as it is
   bounded by the <1%/dex tilt. DR3 decides if the vacuum is a moving field; even
   then we read it, we can't turn it.
 
+## 40. Conceptual physical steering — the two rudders (`session26.py rudder` → `rudder_results.json`, `research/STEERING_N14_N15.md`)
+
+- **N14 Vacuum Rudder** (steer Λ_eff locally via the phantom sector): requires the z~1
+  dip to be real (w<−1, NEC violation — DR3 gate). Posterior phantom fraction
+  |1+w| = 0.27 (0.11–0.48); local energy-creation 8×10⁻²⁸ W/m³; max local tilt
+  0.6 mag/e-fold if fully coupled — but any astrophysical tilt is bounded <0.01
+  mag/dex (§19). Best case = a **lab-scale Λ_eff modulator**; it can never steer the
+  cosmological reading (needs coherence over 10⁷⁶ m³).
+- **N15 Optical Rudder** (steer the reading via an engineered line-of-sight medium —
+  no new physics): faking δμ=0.03 mag at z=0.05 needs δt~3×10¹⁴ s → DM~2×10²⁸
+  pc/cm³ (10²⁶× the whole IGM) or a refractive index −1.4% over 200 Mpc (~10¹⁷× IGM
+  density); both are frequency-dependent (Δt∝1/ν²) → caught by multi-band SN + radio
+  BAO + Lyα AP + CMB all reading the same geometry.
+- **Door 3 (global Λ, unimodular boundary condition):** changing it changes the
+  universe at all z — excluded by z>0.1 agreement and Lyα AP (χ²=0.97/2, §33).
+
+**Reading:** best-case physical steering is the N14 phantom rudder, gated on DR3. If
+the dip dies, all doors close in principle (Lovelock+NEC+passivity+QI). If it lives,
+we get a local lever — but the universe's reading stays unfakeable due to
+multi-tracer averaging.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

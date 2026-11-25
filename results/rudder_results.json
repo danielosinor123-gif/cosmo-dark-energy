@@ -1,0 +1,39 @@
+{
+  "rho_Lambda_c2": 5.25322922603598e-10,
+  "N14_vacuum_rudder": {
+    "requires": "z~1 dip real (w<-1: phantom sector, NEC violation) \u2014 DR3 gate",
+    "phantom_fraction_|1+w|_mean": 0.27109993896175055,
+    "phantom_fraction_p16_p84": [
+      0.10890463750454826,
+      0.4802984424247039
+    ],
+    "local_energy_creation_Wm3_mean": 8.082320983263925e-28,
+    "local_energy_creation_p16_p84": [
+      5.454548471709918e-28,
+      1.0238612366171813e-27
+    ],
+    "max_local_tilt_mag_per_efold_mean": 0.6120691008762099,
+    "data_bound_on_local_tilt": "<0.01 mag/dex host mass = <0.9% rho per dex (\u00a719)",
+    "verdict": "even if the dip is real, a phantom-coupled rudder can only tilt its OWN lab volume; the cosmological probe averages 1e76 m^3 \u2014 unsteerable globally"
+  },
+  "N15_optical_rudder": {
+    "requires": "no new physics \u2014 an engineered plasma along the whole line of sight",
+    "cases": {
+      "z=0.05 fake dmu=0.03": {
+        "delay_s": 316247857455220.0,
+        "DM_needed_pc_cm3": 1.9051075750314457e+28,
+        "real_IGM_DM_pc_cm3": 50.0,
+        "ratio_to_IGM": 3.8102151500628915e+26,
+        "signature": "dt ~ DM/nu^2: radio/optical/X-ray arrive at different times; multi-band SN + radio BAO disagree -> caught"
+      },
+      "z=1.0 fake dmu=0.1": {
+        "delay_s": 2.1083190497014668e+16,
+        "DM_needed_pc_cm3": 1.2700717166876307e+30,
+        "real_IGM_DM_pc_cm3": 1000.0,
+        "ratio_to_IGM": 1.2700717166876308e+27,
+        "signature": "dt ~ DM/nu^2: radio/optical/X-ray arrive at different times; multi-band SN + radio BAO disagree -> caught"
+      }
+    },
+    "verdict": "needs ~1e16x the IGM column with exactly the right z-dependence over 445 Mpc, and is frequency-dispersive: caught by multi-band/multi-tracer consistency (BAO, Ly-a AP, CMB all read the same geometry)"
+  }
+}

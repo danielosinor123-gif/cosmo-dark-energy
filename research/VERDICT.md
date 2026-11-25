@@ -77,6 +77,20 @@ resource — demonstrated against every mechanism we could invent.**
 Also §37: DESI's *own* published w0wa chains show the same w(0.25)>−1, w(1)≈−1.1…−1.4
 dip as our cert5 — the collaboration's data corroborate the one surviving feature.
 
+## The steering brief, answered (`research/STEERING_N14_N15.md`, §40)
+
+Best-case conceptual physical steering, built on the three theorem-cracks:
+**N14 Vacuum Rudder** — couple a device to the dark-sector field and locally modulate
+Λ_eff; *requires* the z~1 dip to be real phantom physics (NEC violation), then the
+phantom fraction is |1+w|=0.27 and the local lever is 8×10⁻²⁸ W/m³ with tilt bounded
+<0.9%/dex by our data — a lab-scale modulator at best, never the cosmological reading
+(needs coherence over 10⁷⁶ m³). **N15 Optical Rudder** — steer the reading through an
+engineered line-of-sight medium: needs 10¹⁶–10²⁶× the IGM column over 445 Mpc and
+betrays itself by frequency dispersion across bands/tracers. **Global Λ** is a
+boundary condition of the whole universe, excluded by z>0.1 + Lyα AP. **If DR3 kills
+the dip, Λ is unsteerable in principle; if the dip lives, we get a local phantom lever
+— and the universe's reading remains protected by multi-tracer averaging.**
+
 ## Pre-registered DR3 falsification plan (`dr3_plan.json`, §30)
 
 1. w0wa must reach BF>10 **with z<0.1 SNe excluded**.
