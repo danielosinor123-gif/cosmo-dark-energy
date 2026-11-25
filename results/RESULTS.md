@@ -948,6 +948,30 @@ piston theory 3.7×10⁵² W needs a shell at the horizon (unphysical), per m³ 
 acoustic forces; dark energy adds nothing. S2 remains milligram-scale; G1 remains the
 40 μm Λ gauge.**
 
+## 46. Universal "invisible hand" feasibility frontier — grab charge, not magnetism (`session33.py universal` → `universal_levitation.json`, `research/UNIVERSAL_LEVITATION.md`, `ASSISTIVE_SAFETY.md`)
+
+Every solid has electrons/nuclei → permittivity; electric fields act on **all**
+materials: conductors by induction (always attract), dielectrics by DEP (in air ε_p>1 →
+CM>0 → attract; repel via higher-ε medium CM<0 or a push field). Dark matter/energy are
+**not** handles: DM no known non-grav coupling; Λ pressure 5.25×10⁻¹⁰ Pa = 5×10⁻¹¹
+kg/m² and Λ-acceleration reaches g only at r=3×10³⁶ m (~2×10¹⁰× observable radius).
+
+Force frontier: electrostatic **air** at breakdown 3 MV/m → 39.8 Pa = **4.06 kg/m²**
+(1 kg needs 0.246 m²; hand pad 0.05 m² → 0.20 kg; panel 0.25 m² → 1.0 kg; 70 kg needs
+17 m²/300 kV). Oil (ε=3, 20 MV/m) → 541 kg/m² but not wearable. DEP air ε_p=3 → 15.9
+Pa. Acoustic safe: 120 dB→0.29 g/m², 140 dB→28.8 g/m²; 1 kg over 0.05 m² needs 168 dB,
+70 kg needs 184 dB — unsafe. Magnetic diamagnetic: 1 T→0.41 kg/m², 10 T→40.6, 16
+T→104 kg/m² (lab only); ferro needs iron. Ion wind power: 0.1 kg≈25 W real, 1 kg≈245 W,
+70 kg≈17 kW. Gravity: 1.5×10⁹ kg overhead at 10 cm for g.
+
+**Design UG-1 (assistive invisible hand):** electrode array grip (induction/DEP attract
+in air) + ultrasonic phased array for fine move/push/release + optional ion micro-jets;
+vision/LiDAR/IMU closed loop <100 ms; mouth-BCI is setpoint only with hard safety
+limits (payload/altitude/geofence/kill/auto-release, `ASSISTIVE_SAFETY.md`). Payload
+budget in air: handheld ~50–100 g (0.2 kg absolute), panel ~0.3–0.5 kg (1 kg
+absolute). Heavier → soft gripper/maglev track; human levitation not safe/possible
+with any field. Pre-registered tests in UNIVERSAL_LEVITATION.md.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

@@ -1,0 +1,154 @@
+{
+  "rho_Lambda_c2": 5.25322922603598e-10,
+  "note": "assistive invisible-hand feasibility; not a weapon; BCI is setpoint-only with hard safety limits",
+  "gravity": {
+    "r=0.05 m": {
+      "M_kg_for_g": 367454264.8667277
+    },
+    "r=0.1 m": {
+      "M_kg_for_g": 1469817059.4669108
+    },
+    "r=0.5 m": {
+      "M_kg_for_g": 36745426486.67277
+    },
+    "r=1 m": {
+      "M_kg_for_g": 146981705946.69107
+    },
+    "r=10 m": {
+      "M_kg_for_g": 14698170594669.107
+    }
+  },
+  "electrostatic_air": {
+    "E_bd_V_m": 3000000.0,
+    "P_Pa": 39.8438451576,
+    "load_kg_m2": 4.061554042568807,
+    "V_for_gap": {
+      "d=0.001 m": 3000.0,
+      "d=0.01 m": 30000.0,
+      "d=0.1 m": 300000.0
+    },
+    "area_for_mass_m2": {
+      "10 g": 0.0024621117668731816,
+      "100 g": 0.024621117668731818,
+      "1 kg": 0.24621117668731818,
+      "70 kg person": 17.234782368112274
+    },
+    "mass_hand_pad_0.05m2": 0.20307770212844037,
+    "mass_panel_0.25m2": 1.0153885106422018
+  },
+  "electrostatic_oil": {
+    "P_Pa": 5312.51268768,
+    "load_kg_m2": 541.5405390091744,
+    "mass_hand_pad_0.05m2": 27.07702695045872
+  },
+  "DEP": {
+    "air_plastic_eps3": [
+      0.4,
+      15.937538063040002
+    ],
+    "air_conductor_CM1": [
+      1.0,
+      39.8438451576
+    ],
+    "oil_eps2_in_eps3_REPULSIVE": [
+      -0.125,
+      -664.06408596
+    ],
+    "note": "in air all solids have eps>1 -> positive DEP = attraction to electrode; repulsion needs a higher-eps medium (negative CM) or a push mechanism (acoustic/ion)"
+  },
+  "acoustic": {
+    "120 dB": {
+      "p_Pa": 20.0,
+      "I_W_m2": 0.4859086491739553,
+      "P_Pa": 0.0028332865841046956,
+      "load_kg_m2": 0.00028881616555603417
+    },
+    "140 dB": {
+      "p_Pa": 200.00000000000003,
+      "I_W_m2": 48.59086491739555,
+      "P_Pa": 0.28332865841046967,
+      "load_kg_m2": 0.02888161655560343
+    },
+    "160 dB": {
+      "p_Pa": 2000.0000000000002,
+      "I_W_m2": 4859.086491739555,
+      "P_Pa": 28.332865841046967,
+      "load_kg_m2": 2.888161655560343
+    },
+    "183 dB": {
+      "p_Pa": 28250.75089245511,
+      "I_W_m2": 969515.216214229,
+      "P_Pa": 5653.149948771014,
+      "load_kg_m2": 576.2640110877691
+    }
+  },
+  "acoustic_SPL_needed": {
+    "m=0.001kg A=0.0001m2": {
+      "P_Pa": 98.10000000000001,
+      "SPL_dB": 165.3937850218515
+    },
+    "m=0.01kg A=0.001m2": {
+      "P_Pa": 98.10000000000001,
+      "SPL_dB": 165.3937850218515
+    },
+    "m=0.1kg A=0.01m2": {
+      "P_Pa": 98.10000000000001,
+      "SPL_dB": 165.3937850218515
+    },
+    "m=1kg A=0.05m2": {
+      "P_Pa": 196.2,
+      "SPL_dB": 168.4040849784913
+    },
+    "m=70kg A=0.1m2": {
+      "P_Pa": 6867.0,
+      "SPL_dB": 183.84476542199408
+    }
+  },
+  "magnetic_diamagnetic": {
+    "B=1 T": {
+      "P_Pa": 3.978873577297384,
+      "load_kg_m2": 0.40559363682949884,
+      "mass_pad_0.05m2": 0.020279681841474943
+    },
+    "B=10 T": {
+      "P_Pa": 397.88735772973837,
+      "load_kg_m2": 40.55936368294988,
+      "mass_pad_0.05m2": 2.027968184147494
+    },
+    "B=16 T": {
+      "P_Pa": 1018.5916357881302,
+      "load_kg_m2": 103.8319710283517,
+      "mass_pad_0.05m2": 5.191598551417585
+    }
+  },
+  "ion_wind": {
+    "m=0.01 kg": {
+      "thrust_N": 0.0981,
+      "P_ideal_W": 0.49050000000000005,
+      "P_real_eta0.2_W": 2.4525
+    },
+    "m=0.1 kg": {
+      "thrust_N": 0.9810000000000001,
+      "P_ideal_W": 4.905,
+      "P_real_eta0.2_W": 24.525
+    },
+    "m=1 kg": {
+      "thrust_N": 9.81,
+      "P_ideal_W": 49.050000000000004,
+      "P_real_eta0.2_W": 245.25
+    },
+    "m=70 kg": {
+      "thrust_N": 686.7,
+      "P_ideal_W": 3433.5,
+      "P_real_eta0.2_W": 17167.5
+    }
+  },
+  "dark_handles": {
+    "Lambda_accel_coeff": 3.2682048830395787e-36,
+    "r_for_g_m": 3.001647800879685e+36,
+    "Lambda_pressure_Pa": 5.25322922603598e-10,
+    "Lambda_load_kg_m2": 5.3549737268460546e-11,
+    "dark_matter": "no known non-gravitational coupling; cannot be localized/controlled; gravity-only => same weakness as gravity row",
+    "verdict": "dark matter/energy are NOT usable handles; universal handle = charge/polarizability (electric) and density (acoustic/gravity)"
+  }
+}
