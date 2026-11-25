@@ -221,6 +221,10 @@ of the live 3σ evolving-DE hint using only public data — and kill it or confi
   (means agree to 0.016); sample-robust, anchor-free; honest ~2s (shared systematics),
   naive ~3s. Strongest surviving non-Lambda feature; DR3 decides. NEW_PHYSICS.md N11
   (EW false-vacuum catalysis bound, f91687b).
+- S23 DONE (§35/§36): harvesting-civilization dipole/quadrupole in Pantheon+ residuals
+  NULL (dchi2~-0.05..-0.27 for 8 sky params, all slices); dip NOT a bin-edge artifact —
+  edge sets A/B/C give w(dip)= -1.246+-0.145 / -1.297+-0.219 / -1.326+-0.281 at z~1-1.75,
+  chi2 flat (1654-1656).
 
 ### S4+ candidates (open)
 - Lyα BAO vs Lyα full-shape tension (shape-vs-scale) — needs the DR2 Lyα full-shape likelihood.

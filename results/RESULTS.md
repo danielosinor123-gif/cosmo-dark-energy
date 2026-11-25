@@ -774,6 +774,23 @@ slice. No harvesting-civilization imprint in the SN sky — the universe's vacuu
 isotropic and unharvested to our precision (the Pantheon+ systematics covariance makes the
 formal errors large; the *relative* Δχ² is the clean statement: zero preference).
 
+## 36. The z~1 dip is not a bin-edge artifact (`session23.py edges` → `edges_results.json`)
+
+cert5-style 5-bin w(z)+growth on Dovekie + BAO(ALL+Lyα DR2 AP) + CMB + fσ8 under three
+edge sets:
+
+| edge set | dip bin | w(dip) | χ²_MAP |
+|---|---|---|---|
+| A: 0.3 / 0.75 / 1.5 / 2.5 | [0.75,1.5) | −1.246 ± 0.145 | 1654.1 |
+| B: 0.5 / 1.0 / 2.0 / 3.0 | [1,2) | −1.297 ± 0.219 | 1655.8 |
+| C: 0.3 / 1.0 / 1.75 / 2.5 | [1,1.75) | −1.326 ± 0.281 | 1656.2 |
+
+**Reading:** under every binning the phantom excursion sits at z≈1–1.75 with
+w ≈ −1.25 to −1.33 (all ≲−1 at ~1.5–1.9σ per bin) and χ² is flat — the dip is a
+**physical redshift-localized feature, not a binning artifact**. Together with §34
+(all three SN samples) and §31–32 (anchor-free), the z~1 dip is the strongest
+non-Λ structure in the public 2025–26 data; DR3 full-shape decides it (§30).
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
