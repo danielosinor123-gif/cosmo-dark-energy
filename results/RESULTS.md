@@ -914,6 +914,17 @@ Not a re-fit of a paper: a first-principles boundary/curvature derivation.
 
 **Theorem:** macroscopic redistribution of Λ is impossible; maximum redistribution output = expansion term 3Hρ_Λc² ≈ 3.4×10⁻²⁷ W/m³. Falsifiable: a macroscopic volume with volume-averaged Casimir density −ρ_Λ would show 5.25×10⁻¹⁰ Pa at ~40 μm (≈10⁹ below current force sensitivity) and ≥10⁹–10¹⁴× material cost; sky dipole in μ already null (§26).
 
+## 43. What the 40–90 μm redistribution channel can actually do (`session30.py apps` → `redist_apps.json`, `research/REDIST_APPLICATIONS.md`)
+
+- **Λ-pressure gauge:** at d*=39.7 μm, P=ρ_Λc²=5.253×10⁻¹⁰ Pa. Forces: 1 mm²→0.53 fN, 1 cm²→53 fN, 1 m²→0.53 nN, 1 km²→0.53 mN. Sensor area: 1 fN needs 1.9 mm², 1 pN 19 cm², 1 nN 1.9 m² — in principle measurable as a calibration of P(d)=K/d⁴ at the matching point.
+- **Negative-energy spring:** collapse gap d_eq→d gives W/A=(K/3)(1/d³−1/d_eq³): 4.3×10⁻¹⁰ J/m² (1 μm), 4.3×10⁻⁷ (100 nm), 4.33×10⁻⁴ J/m² (10 nm). 1 J needs 2307 m² of 10 nm gaps but material cost R=1.12×10¹⁴ → net −1.12×10¹⁴ J. Zero-sum by passivity; loss-making with matter.
+- **Expansion harvest only:** 3.44×10⁻²⁷ W/m³; 1 W needs 2.9×10²⁶ m³ (cube side 6.6×10⁸ m ≈ 1.3×10⁷ Moon volumes); per m³ per Hubble time ≈ 5×10⁻¹⁰ J.
+- **No propulsion/local gravity/macro shield:** canceling Λ over r=19.8 μm gives δg≈6.5×10⁻⁴¹ m/s²; a homogeneous Λ-free region would have H_local/H₀=√Ωm=0.56 but needs fill factor 1 at 40 μm (2.5×10⁴ m² plates/m³, R=7×10²⁴) — impossible.
+
+**So redistribution can: measure Λ (Casimir gauge at 40 μm), store/return negative
+energy in plates (zero/negative net), and harvest expansion at 10⁻²⁷ W/m³. It cannot
+power, push, shield, or alter the sky.**
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

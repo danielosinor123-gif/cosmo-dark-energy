@@ -1,0 +1,54 @@
+{
+  "rho_Lambda_c2_Jm3": 5.25322922603598e-10,
+  "d_eq_m": 3.966338302557784e-05,
+  "P_at_d_eq_Pa": 5.25322922603598e-10,
+  "force": {
+    "A=1e-06 m2": {
+      "F_N": 5.253229226035979e-16,
+      "F_fN": 0.5253229226035979
+    },
+    "A=0.0001 m2": {
+      "F_N": 5.25322922603598e-14,
+      "F_fN": 52.532292260359796
+    },
+    "A=1 m2": {
+      "F_N": 5.25322922603598e-10,
+      "F_fN": 525322.922603598
+    },
+    "A=1e+06 m2": {
+      "F_N": 0.000525322922603598,
+      "F_fN": 525322922603.5979
+    }
+  },
+  "sensor_area_for_threshold": {
+    "F=1 fN": 1.9035910236770447e-06,
+    "F=1 nN": 1.9035910236770448,
+    "F=1 pN": 0.0019035910236770445
+  },
+  "expansion_power": {
+    "W_per_m3": 3.442365321604584e-27,
+    "V_for_1W_m3": 2.904979299332099e+26,
+    "side_of_cube_for_1W_m": 662289211.6365039,
+    "moon_volumes_for_1W": 13204451.360600451,
+    "energy_per_m3_over_Hubble_time_J": 5.25322922603598e-10
+  },
+  "work_per_area_collapse_Jm2": {
+    "collapse_to_3.96634e-05": 0.0,
+    "collapse_to_1e-05": 4.2642989605213686e-13,
+    "collapse_to_1e-06": 4.333683121211541e-10,
+    "collapse_to_1e-07": 4.333752505372231e-07,
+    "collapse_to_1e-08": 0.000433375257475639
+  },
+  "one_joule_from_10nm_gap_collapse": {
+    "area_m2": 2307.469064627466,
+    "plate_mass_energy_ratio_R": 111987887665087.78,
+    "material_cost_J": 111987887665087.78,
+    "net_J": -111987887665086.78
+  },
+  "local_gravity_of_cancelled_Lambda": {
+    "r_m": 1.983169151278892e-05,
+    "delta_g_ms2": 6.481403104103132e-41,
+    "note": "acceleration from Lambda at the cavity radius; ~1e-40 m/s^2 \u2014 no propulsion"
+  },
+  "homogeneous_noLambda_local_H_ratio": 0.5612486080160912
+}

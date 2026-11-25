@@ -104,6 +104,14 @@ M=0.81 Moon) and radiates 10⁻¹³ W. Dynamical Casimir photons are paid by the
 **Macroscopic redistribution of Λ is impossible; the most any device can yield is the
 expansion term.**
 
+## What redistribution can do (`research/REDIST_APPLICATIONS.md`, §43)
+
+The 40–90 μm channel is real but microscopic: a **Λ-pressure gauge** at d*=39.7 μm
+(P=5.25×10⁻¹⁰ Pa; 53 fN on 1 cm², 0.53 nN on 1 m²), a **reversible negative-energy
+spring** (10 nm collapse gives 4.3×10⁻⁴ J/m² but 1 J costs ≥10¹⁴ J in plate mass), and
+expansion work only (**3.4×10⁻²⁷ W/m³**; 1 W ≈ 1.3×10⁷ Moon volumes). Local gravity
+lever δg≈6.5×10⁻⁴¹ m/s² — no propulsion, no macro shield, no sky effect.
+
 ## Pre-registered DR3 falsification plan (`dr3_plan.json`, §30) — bar raised to 5σ (2026-11-25)
 
 1. w0wa must reach BF>10 **with z<0.1 SNe excluded**, and the dip must reach
