@@ -112,6 +112,16 @@ spring** (10 nm collapse gives 4.3×10⁻⁴ J/m² but 1 J costs ≥10¹⁴ J in
 expansion work only (**3.4×10⁻²⁷ W/m³**; 1 W ≈ 1.3×10⁷ Moon volumes). Local gravity
 lever δg≈6.5×10⁻⁴¹ m/s² — no propulsion, no macro shield, no sky effect.
 
+## Concept designs (`research/CONCEPT_DESIGNS.md`, §44)
+
+**G1 Λ-gauge** at d\*=39.7 μm: 1 m² + 1 fN ⇒ ppm measurement of ρ_Λ normalization
+(patch budget <0.6 μV, gap 19 nm); not a drift monitor (yearly δρ/ρ~2e-11).
+**S2 levitator**: nm gaps carry kg/cm² (10 nm: 1.33×10⁴ kg/m²) but need repulsive
+Lifshitz/feedback; at d\* the load is 5×10⁻¹¹ kg/m² — dark energy is only the
+calibration point. **E3** expansion tether forces ≤10⁻¹³ N even at 1 Mpc; cap
+3.44×10⁻²⁷ W/m³ (1 W = 1.3×10⁷ Moon volumes). **P5** phantom rudder only if DR3 dip
+≥5σ, and even then 8×10⁻²⁸ W/m³. **N20** vacuum prism: θ~10⁻⁵² rad, dead.
+
 ## Pre-registered DR3 falsification plan (`dr3_plan.json`, §30) — bar raised to 5σ (2026-11-25)
 
 1. w0wa must reach BF>10 **with z<0.1 SNe excluded**, and the dip must reach

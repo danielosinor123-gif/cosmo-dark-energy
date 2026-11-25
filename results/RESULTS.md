@@ -925,6 +925,14 @@ Not a re-fit of a paper: a first-principles boundary/curvature derivation.
 energy in plates (zero/negative net), and harvest expansion at 10⁻²⁷ W/m³. It cannot
 power, push, shield, or alter the sky.**
 
+## 44. Concept designs with computed kill switches (`session31.py concepts` → `concept_designs.json`, `research/CONCEPT_DESIGNS.md`)
+
+- **G1 Λ-pressure gauge at d\*=39.7 μm:** P=5.253×10⁻¹⁰ Pa. With 1 m² plates and 1 fN noise, σ_ρ/ρ ≈ **1.9×10⁻⁶ (ppm)** (gap resolution 19 nm, patch budget <0.6 μV); 1 cm² gives 1.9%. Measures the *normalization* of ρ_Λ if QED K is trusted. Yearly cosmological drift is only ~2×10⁻¹¹ (w=−0.9) → one-shot gauge, not a drift monitor. Falsification: d\* off by >ppm after systematics ⇒ Λ≠Casimir normalization.
+- **S2 vacuum spring/levitator:** load=P/g=K/(g d⁴). 10 nm → 1.33×10⁴ kg/m² (1 kg on 0.75 cm²); 100 nm → 1.33 kg/m² (0.75 m²); at d\* → 5.4×10⁻¹¹ kg/m² (1 kg needs 1.9×10¹⁰ m²). Attractive Casimir unstable → need repulsive Lifshitz fluid/metamaterial/active feedback. At d\* the load is dark-energy-equal but useless; real levitation is nm-gap QED, not Λ.
+- **E3 expansion tether/harvest:** fixed-separation force on 1 kg = (8πGρ_Λ/3c²)r: 3.3×10⁻³⁶ N (1 m), 4.9×10⁻²⁵ N (1 AU), 1.0×10⁻¹³ N (1 Mpc). Cap 3.44×10⁻²⁷ W/m³; 1 W = 2.9×10²⁶ m³ (6.6×10⁸ m cube, 1.3×10⁷ Moons).
+- **P5 phantom rudder (DR3 ≥5σ gate):** 8.08×10⁻²⁸ W/m³; 1 W = 1.24×10²⁷ m³ (side 1.07×10⁹ m) — worse than expansion; probe only. Kills: DR3 cuts + host-mass tilt <0.01 mag/dex.
+- **N20 vacuum prism:** deflection θ~(8πG/c⁴)(ρ_Λc²)L ~1e-52 rad for L=1 m — dead by 52 orders + material cost R≥1e9.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
