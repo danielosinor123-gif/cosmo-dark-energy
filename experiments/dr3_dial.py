@@ -61,22 +61,38 @@ def read_mode():
     w = [e["w_bins_mean"][2] for e in dip["samples"].values()]
     s = [e["w_bins_std"][2] for e in dip["samples"].values()]
     dip_sig = abs(np.mean(w) + 1) / np.mean(s)
-    print(f"  dip z in [0.75,1.5]: w = {np.mean(w):.3f} +- {np.mean(s):.3f} "
-          f"-> |w+1|/sigma = {dip_sig:.2f} (DISCOVERY bar now >= 5; 3-5 = evidence tier)")
+    print(f"  per-sample dip z in [0.75,1.5]: w = {np.mean(w):.3f} +- {np.mean(s):.3f} "
+          f"-> |w+1|/sigma = {dip_sig:.2f} (conservative, rho=1-like)")
+    union = json.load(open(os.path.join(RESULTS, "union_dip_results.json"))) \
+        if os.path.exists(os.path.join(RESULTS, "union_dip_results.json")) else None
+    if union:
+        u = union["union_cert5"]
+        u_sig = u["dip_significance"]
+        best = max(r["significance"] for r in union["correlation_scan"])
+        worst = min(r["significance"] for r in union["correlation_scan"])
+        print(f"  union dedup cert5 (DESY5 {u['n_desy5']} + Pantheon+ nocal {u['n_pantheon_nocal_dedup']}): "
+              f"dip w = {u['dip_w']:+.3f} +- {u['dip_sigma']:.3f} -> {u_sig:.2f}s")
+        print(f"  correlation scan over 3 samples: {worst:.2f}s (rho=1, conservative) "
+              f"... {best:.2f}s (rho=0, independence)")
+        all_sig = [dip_sig, u_sig] + [r["significance"] for r in union["correlation_scan"]]
+    else:
+        u_sig, best, all_sig = dip_sig, dip_sig, [dip_sig]
+    print(f"  DISCOVERY bar now >= 5s (3-5 = evidence tier); best estimate here = {max(all_sig):.2f}s")
     print(f"  w0wa dchi2 (all data): ~ -6.3, BF 9-12; z>0.1 cut: -0.01 (s8/s29)")
     print(f"  capstone (anchors+dM+fs8 free): dchi2 = -0.26, wa = -0.07+-0.13 (s21)")
     print(f"  2pt: does not move wa (s20); Ly-a AP: LCDM-consistent alone, chi2=0.97/2 (s33)")
     print(f"  discovery thresholds (k=2): 3s={plan['thresholds']['3sigma_k2']}, "
           f"4s={plan['thresholds']['4sigma_k2']}, 5s={plan['thresholds']['5sigma_k2']}")
-    if dip_sig >= 5:
+    top = max(all_sig)
+    if top >= 5:
         verdict = "PHANTOM REAL at discovery bar -> N14 vacuum-rudder door OPEN"
-    elif dip_sig >= 3:
+    elif top >= 3:
         verdict = "evidence tier (3-5s) -> door NOT open; needs DR3 or more data"
     else:
         verdict = ("below 3s -> Lambda favored; door CLOSED unless DR3 pushes the "
                    "dip past 5s (then N14 opens)")
-    print(f"  DIAL VERDICT TODAY: dip at {dip_sig:.2f}s -> {verdict}")
-    print("  -> the dial turns when DR3 full-shape lands; watcher automation is set.")
+    print(f"  DIAL VERDICT TODAY: best dip estimate {top:.2f}s < 5 -> {verdict}")
+    print("  -> the dial turns when DR3 full-shape lands (checked manually at session time; no watcher).")
     print("DIAL READ DONE", flush=True)
 
 

@@ -881,6 +881,27 @@ the dip dies, all doors close in principle (Lovelock+NEC+passivity+QI). If it li
 we get a local lever — but the universe's reading stays unfakeable due to
 multi-tracer averaging.
 
+## 41. Bar raised to 5σ + strongest honest dip from public data (`session28.py union` → `union_dip_results.json`)
+
+Per request the discovery bar moved **3σ → 5σ** (Δχ²(k=2) ≥ 25.0; dip |w+1|/σ ≥ 5; 3–5σ = evidence tier only) and the passive DR3 watcher was removed (`dr3_plan.json`, `dr3_dial.py`).
+
+**(a) Union deduplicated cert5** — DESY5 (1829, HD form) + Pantheon+ non-calibrators **deduplicated by CID** (375 duplicate CIDs and all 77 calibrators removed → 1249 added), with BAO(ALL)+Lyα DR2 AP+CMB+fσ8, 5 bins edges A:
+
+w bins: −0.905±0.026 | −0.942±0.047 | **−1.331±0.166** | −0.690±0.271 | −1.122±0.927
+→ **dip z∈[0.75,1.5]: w = −1.331±0.166, |w+1|/σ = 2.00** (χ²_map=2852, acc 0.19)
+
+**(b) Inter-sample correlation scan** combining the three s22 per-sample dips over ρ∈[0,1]:
+
+| ρ | combined w | σ | significance |
+|---|---|---|---|
+| 0.00 (independent) | −1.268 | 0.086 | **3.10σ** |
+| 0.25 | −1.268 | 0.106 | 2.54σ |
+| 0.50 | −1.268 | 0.122 | 2.20σ |
+| 0.75 | −1.268 | 0.136 | 1.97σ |
+| 1.00 (fully shared systematics) | −1.268 | 0.149 | 1.80σ |
+
+**Reading against the raised bar:** even the most optimistic combination (ρ=0, assuming the three SN samples are statistically independent — they are not) reaches only **3.10σ**, and the honest union fit gives **2.00σ**. **Nothing reaches 5σ: the N14 phantom-rudder door stays CLOSED on current public data.** The dip remains the one live feature (anchor-free, all samples, DESI's own chains, bin-robust), but it is evidence-tier at best, not discovery.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

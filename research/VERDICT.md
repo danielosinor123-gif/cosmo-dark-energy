@@ -28,11 +28,13 @@ Code: `src/cosmo.py`, `src/models.py`, `experiments/session*.py`. Repo: cosmo-da
   confirm or kill. On the anchor-clean sample the quintom crossing (w=−1.19 at z=1,
   back to −0.93 at z=2) is still the best raw fit (Δχ²=−7.4, §32) — ~1.6σ, below the
   discovery bar but the strongest surviving candidate.
-- **2026 update — the dip is sample-robust:** with the DR2 Lyα AP included, the
-  z∈[0.75,1.5] bin is −1.268±0.162 (Dovekie), −1.260±0.143 (DESY5), −1.276±0.143
-  (Pantheon+ non-calibrator) — the same dip in all three independent SN pipelines (§34).
-  Naive combination ~3σ phantom; honest ~2σ given shared systematics. This is now the
-  one feature that justifies "keep looking," and DR3 decides it.
+- **2026 update — the dip is sample-robust but NOT at discovery level:** with the DR2
+  Lyα AP included, the z∈[0.75,1.5] bin is −1.268±0.162 (Dovekie), −1.260±0.143
+  (DESY5), −1.276±0.143 (Pantheon+ non-calibrator) (§34); the CID-deduplicated union
+  fit gives **−1.331±0.166 (2.00σ)**, and a correlation scan over the three samples
+  spans **1.80σ (ρ=1) to 3.10σ (ρ=0, independence)** (§41). **The discovery bar was
+  raised to 5σ on 2026-11-25: no estimator reaches it, so the N14 door stays CLOSED.**
+  This is now the one feature that justifies "keep looking," and DR3 decides it.
 
 **Verdict:** Λ is not dead, but the 3–4σ headline is, in our quantification, the H₀
 anchor (localized to the Cepheid calibrators) plus a +0.03 mag low-z SN step wearing a
@@ -91,13 +93,15 @@ boundary condition of the whole universe, excluded by z>0.1 + Lyα AP. **If DR3 
 the dip, Λ is unsteerable in principle; if the dip lives, we get a local phantom lever
 — and the universe's reading remains protected by multi-tracer averaging.**
 
-## Pre-registered DR3 falsification plan (`dr3_plan.json`, §30)
+## Pre-registered DR3 falsification plan (`dr3_plan.json`, §30) — bar raised to 5σ (2026-11-25)
 
-1. w0wa must reach BF>10 **with z<0.1 SNe excluded**.
+1. w0wa must reach BF>10 **with z<0.1 SNe excluded**, and the dip must reach
+   **|w+1|/σ ≥ 5** (Δχ²(k=2) ≥ 25.0) — 3–5σ counts as evidence only, not discovery (§41).
 2. Must survive TRGB/JAGB anchors and a free δM step.
-3. 5-bin w(z): dip at z~1 with σ<0.1 and double crossing of w=−1 → N2-class physics.
+3. 5-bin w(z): dip at z~1 with double crossing of w=−1 → N2-class physics.
 4. DR3 full-shape must *move* wₐ (Y3 2pt did not, §20).
 5. Precision needed to break the w0wa↔δM degeneracy at 3σ: **~3× BAO** (§30).
+   No passive watcher; DR3 is checked manually when sessions run.
 
 If 1–4 fail: the 2025–26 hint was calibration, Λ stands. If they pass: multi-field dark
 energy (N2) is real, and *then* the harnessing question reopens.

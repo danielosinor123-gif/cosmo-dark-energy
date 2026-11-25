@@ -14,7 +14,16 @@
   "dm_requirement": "w0wa preference must survive a free dM step at z<0.1 (now: 1.72s -> 0.00s, §16/§21)",
   "dial": {
     "meaning": "THE DIAL: the DR3 pre-registered decision procedure (experiments/dr3_dial.py). The z~1 dip significance |w+1|/sigma is the switch that opens/closes the N14 vacuum-rudder door (phantom sector).",
-    "current_reading_2026_11_25": {"dip_w_mean": -1.268, "dip_sigma_mean": 0.149, "dip_significance": 1.80, "per_sample": {"dovekie": [-1.268, 0.162], "desy5": [-1.260, 0.143], "pantheon_nocal": [-1.276, 0.143]}, "verdict": "below 3 -> door CLOSED pending DR3"},
+    "current_reading_2026_11_25": {
+      "per_sample_mean": {"dip_w": -1.268, "dip_sigma": 0.149, "significance": 1.80,
+                          "per_sample": {"dovekie": [-1.268, 0.162], "desy5": [-1.260, 0.143], "pantheon_nocal": [-1.276, 0.143]}},
+      "union_dedup_cert5_s28": {"n_desy5": 1829, "n_pantheon_nocal_dedup": 1249, "dropped_dup_cids": 375, "dropped_calibrators": 77,
+                                 "dip_w": -1.331, "dip_sigma": 0.166, "significance": 2.00,
+                                 "bins_mean": [-0.905, -0.942, -1.331, -0.690, -1.122]},
+      "correlation_scan_rho": {"0.0": 3.10, "0.25": 2.54, "0.5": 2.20, "0.75": 1.97, "1.0": 1.80},
+      "bar": 5.0,
+      "verdict": "best estimate 3.10s (rho=0, independence) / 2.00s union / 1.80s conservative all < 5 -> door CLOSED pending DR3; even the optimistic independence combination does not reach the raised bar"
+    },
     "run_when_dr3_lands": [
       "1. download DR3 BAO (data.desi.lbl.gov/public/dr3/...) into data/bao_data/desi_bao_dr3",
       "2. python experiments/dr3_dial.py run data/bao_data/desi_bao_dr3   (w0wa dchi2, all + z>0.1 cut)",
