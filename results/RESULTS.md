@@ -841,6 +841,25 @@ corroborate the dip; nobody's chain shows w(2.33) below −1 at >2.5σ (the new 
 **Reading:** the probe can be aimed by pre-registered choices of what to look at;
 it cannot be aimed by doing things to the vacuum. Λ reads the universe as it is.
 
+## 39. Why Λ cannot be steered physically — the full argument (`research/WHY_LAMBDA_IS_UNSTEERABLE.md`)
+
+- **Theorems:** Lovelock (Λ is a constant of nature, no adjustable material), NEC +
+  passivity (any field has w≥−1; the vacuum ground state is passive — 2nd law), QI
+  (sustained negative energy needs boundaries, which are zero-sum).
+- **Knobs quantified:** faking the low-z step needs δρ_Λ/ρ_Λ≈2.8% across the whole
+  445-Mpc z<0.1 sphere (N4 bound: <0.9%/dex host mass); local void/backreaction
+  (δH/H~2.5% → δμ≈0.054 mag) steers ONLY z≈0 — the anchor, not the dip (at z~1,
+  vpec gives δμ~0.002 mag); lensing σ_μ≈0.02 mag at z~1 vs dip signal ≈0.10 mag
+  coherent in 3 samples — 5× above noise, cannot be faked; Casimir at cosmic scale
+  needs 1.2×10²⁷× the observable universe in plates; global Λ change is a boundary
+  condition of the whole universe, excluded by z>0.1 + Lyα AP (χ²=0.97/2).
+- **Self-protection:** every tracer (BAO ratios, 3 SN samples, DESI's own chains,
+  CMB, Lyα AP) reads the same Λ and they agree (§29/§33/§34/§37) — no slack to steer.
+- **The one crack:** if the z~1 dip is real, w<−1 there (NEC violation, N2 phantom
+  field) — a local coupling becomes conceivable but is capped at 8×10⁻²⁸ W/m³ and
+  bounded by the <1%/dex tilt. DR3 decides if the vacuum is a moving field; even
+  then we read it, we can't turn it.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
