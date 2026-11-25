@@ -1,0 +1,101 @@
+{
+  "rho_Lambda_c2_Jm3": 5.25322922603598e-10,
+  "Casimir_coeff_K_Jm": 1.3001257724477533e-27,
+  "universal_scales": {
+    "parallel_plate_gap_full_cancel_m": 3.966338302557784e-05,
+    "curvature_radius_coeff1_m": 8.807803721592384e-05,
+    "note": "order 40-90 um: the ONLY length where boundary/curvature vacuum energy density equals Lambda; macroscopic volumes average it to ~0"
+  },
+  "black_hole_curvature_match": {
+    "Rs_m": 8.807803721592384e-05,
+    "mass_kg": 5.930254264925589e+22,
+    "mass_vs_moon": 0.8068373149558625,
+    "hawking_power_W": 1.0127475788954396e-13,
+    "lifetime_yr": 5.558469890725212e+44,
+    "note": "a horizon of ~90 um (mass ~0.8 Moon) is where curvature vacuum polarization ~ Lambda; Hawking power ~1e-13 W, lifetime ~1e45 yr \u2014 a redistributor in principle, useless in practice"
+  },
+  "gap_scan": [
+    {
+      "gap_m": 3e-10,
+      "pressure_Pa": 160509354623.1794,
+      "rho_C_Jm3": 160509354623.1794,
+      "fill_factor": 3.272849260635774e-21,
+      "plate_area_per_m3": 1.090949753545258e-11,
+      "plate_mass_energy_ratio_R": 3023672966.95737
+    },
+    {
+      "gap_m": 1e-09,
+      "pressure_Pa": 1300125772.447753,
+      "rho_C_Jm3": 1300125772.447753,
+      "fill_factor": 4.0405546427602156e-19,
+      "plate_area_per_m3": 4.0405546427602155e-10,
+      "plate_mass_energy_ratio_R": 111987887665.08778
+    },
+    {
+      "gap_m": 3e-09,
+      "pressure_Pa": 16050935.462317942,
+      "rho_C_Jm3": 16050935.462317942,
+      "fill_factor": 3.272849260635774e-17,
+      "plate_area_per_m3": 1.0909497535452579e-08,
+      "plate_mass_energy_ratio_R": 3023672966957.369
+    },
+    {
+      "gap_m": 1e-08,
+      "pressure_Pa": 130012.57724477533,
+      "rho_C_Jm3": 130012.57724477533,
+      "fill_factor": 4.0405546427602146e-15,
+      "plate_area_per_m3": 4.0405546427602145e-07,
+      "plate_mass_energy_ratio_R": 111987887665087.78
+    },
+    {
+      "gap_m": 1e-07,
+      "pressure_Pa": 13.001257724477535,
+      "rho_C_Jm3": 13.001257724477535,
+      "fill_factor": 4.0405546427602145e-11,
+      "plate_area_per_m3": 0.00040405546427602144,
+      "plate_mass_energy_ratio_R": 1.1198788766508774e+17
+    },
+    {
+      "gap_m": 1e-06,
+      "pressure_Pa": 0.0013001257724477536,
+      "rho_C_Jm3": 0.0013001257724477536,
+      "fill_factor": 4.040554642760214e-07,
+      "plate_area_per_m3": 0.4040554642760214,
+      "plate_mass_energy_ratio_R": 1.1198788766508774e+20
+    },
+    {
+      "gap_m": 1e-05,
+      "pressure_Pa": 1.3001257724477528e-07,
+      "rho_C_Jm3": 1.3001257724477528e-07,
+      "fill_factor": 0.004040554642760217,
+      "plate_area_per_m3": 404.0554642760216,
+      "plate_mass_energy_ratio_R": 1.1198788766508779e+23
+    },
+    {
+      "gap_m": 3.966338302557784e-05,
+      "pressure_Pa": 5.253229226035981e-10,
+      "rho_C_Jm3": 5.253229226035981e-10,
+      "fill_factor": 0.9999999999999998,
+      "plate_area_per_m3": 25212.171119017432,
+      "plate_mass_energy_ratio_R": 6.987797559249718e+24
+    },
+    {
+      "gap_m": 0.0001,
+      "pressure_Pa": 1.300125772447753e-11,
+      "rho_C_Jm3": 1.300125772447753e-11,
+      "fill_factor": 40.405546427602154,
+      "plate_area_per_m3": 404055.4642760215,
+      "plate_mass_energy_ratio_R": 1.1198788766508778e+26
+    }
+  ],
+  "material_cost_min": {
+    "R_at_atomic_contact": 3023672966.95737,
+    "meaning": "even with one-atom-thick plates at atomic gap, plate rest-energy is >= ~1e9 x the Lambda energy being canceled; for any mechanically stable gap (>=10 nm, pressure <= ~1 atm) R >= 1e14",
+    "conclusion": "material cost kills boundary redistribution independently of the zero-sum reset cost (passivity)"
+  },
+  "dynamical_casimir": {
+    "one_1eV_photon_min_drive_work_J": 1.602176634e-19,
+    "net_extractable_from_vacuum_J": 0.0,
+    "statement": "photon creation by moving boundaries is real (dynamical Casimir) but the vacuum is not the energy source; the actuator is. No redistribution of Lambda follows."
+  }
+}

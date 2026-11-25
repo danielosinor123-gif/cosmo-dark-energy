@@ -902,6 +902,18 @@ w bins: −0.905±0.026 | −0.942±0.047 | **−1.331±0.166** | −0.690±0.27
 
 **Reading against the raised bar:** even the most optimistic combination (ρ=0, assuming the three SN samples are statistically independent — they are not) reaches only **3.10σ**, and the honest union fit gives **2.00σ**. **Nothing reaches 5σ: the N14 phantom-rudder door stays CLOSED on current public data.** The dip remains the one live feature (anchor-free, all samples, DESI's own chains, bin-robust), but it is evidence-tier at best, not discovery.
 
+## 42. Redistribution derived to its end — universal 40–90 μm scale + material-cost theorem (`session29.py redist` → `redistribution_theorem.json`, `research/REDISTRIBUTION_THEOREM.md`)
+
+Not a re-fit of a paper: a first-principles boundary/curvature derivation.
+
+- **Universal scale:** matching boundary/curvature vacuum energy to ρ_Λc² = 5.253×10⁻¹⁰ J/m³ gives plate gap d*=(K/ρ_Λc²)¼ = **39.7 μm** (K=π²ħc/240) and curvature radius ℓ*=(ħc/ρ_Λc²)¼ = **88.1 μm**. Λ has one natural material scale, 40–90 μm; above it any redistribution is diluted below Λ.
+- **Killer A (passivity):** per cycle ∮p dV = 0; only expansion does net work, cap 3Hρ_Λc² = 3.4×10⁻²⁷ W/m³.
+- **Killer B (material cost, new):** to cancel Λ over volume V with plates (area A, gap d, thickness t), E_C=K A/d³=ρ_Λc²V but plate rest energy ratio R=2ρ_m c² t d³/K. Minimum over all gaps/thicknesses ≈ **3.0×10⁹** at atomic contact (0.3 nm); for any stable gap ≥10 nm (pressure ≤1.3×10⁵ Pa) R ≥ **1.1×10¹⁴**. At the full-cancel gap 39.7 μm, fill factor =1 and R=7×10²⁴. **No material pays for the Λ it moves.**
+- **Curvature/BH channel:** horizon radius 88 μm ↔ mass 5.93×10²² kg (0.81 Moon); Hawking power 1.0×10⁻¹³ W, lifetime ~5×10⁴⁴ yr — redistributes nothing.
+- **Dynamical Casimir:** moving mirrors make real photons but the actuator pays ≥ the photon energy (1 eV photon ⇒ ≥1 eV drive work); net extractable from vacuum = 0.
+
+**Theorem:** macroscopic redistribution of Λ is impossible; maximum redistribution output = expansion term 3Hρ_Λc² ≈ 3.4×10⁻²⁷ W/m³. Falsifiable: a macroscopic volume with volume-averaged Casimir density −ρ_Λ would show 5.25×10⁻¹⁰ Pa at ~40 μm (≈10⁹ below current force sensitivity) and ≥10⁹–10¹⁴× material cost; sky dipole in μ already null (§26).
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).

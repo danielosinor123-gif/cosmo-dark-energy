@@ -93,6 +93,17 @@ boundary condition of the whole universe, excluded by z>0.1 + Lyα AP. **If DR3 
 the dip, Λ is unsteerable in principle; if the dip lives, we get a local phantom lever
 — and the universe's reading remains protected by multi-tracer averaging.**
 
+## Redistribution, derived not fitted (`research/REDISTRIBUTION_THEOREM.md`, §42)
+
+The redistribution channel has a universal micro-scale (40–90 μm where boundary/curvature
+vacuum energy equals ρ_Λ) and dies twice: **passivity** (∮p dV=0 per cycle; only
+expansion works, cap 3.4×10⁻²⁷ W/m³) and **material cost** — plate rest energy exceeds
+the canceled Λ energy by R=2ρ_m c²td³/K ≥ 3×10⁹ (atomic contact) and ≥10¹⁴ for any
+stable ≥10 nm gap. A black hole is the only Λ-scale curvature object (R_s=88 μm,
+M=0.81 Moon) and radiates 10⁻¹³ W. Dynamical Casimir photons are paid by the actuator.
+**Macroscopic redistribution of Λ is impossible; the most any device can yield is the
+expansion term.**
+
 ## Pre-registered DR3 falsification plan (`dr3_plan.json`, §30) — bar raised to 5σ (2026-11-25)
 
 1. w0wa must reach BF>10 **with z<0.1 SNe excluded**, and the dip must reach
