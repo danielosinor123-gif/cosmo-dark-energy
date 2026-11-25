@@ -1,0 +1,39 @@
+{
+  "H0_kmsMpc": 67.4,
+  "rho_Lambda_c2_Jm3": 5.25322922603598e-10,
+  "continuous_cap_Wm3_H0rho": 1.1474551072015278e-27,
+  "one_shot_full_Jm3": 5.25322922603598e-10,
+  "phantom_turbine": {
+    "w_bin_0.75_1.5_mean": -1.267583033680843,
+    "w_bin_std": 0.16192959661875272,
+    "P_Wm3_mean": 8.082320983263925e-28,
+    "P_Wm3_p16": 5.454548471709918e-28,
+    "P_Wm3_p84": 1.0238612366171813e-27,
+    "note": "power density if the z~1 phantom dip is real: d(rho c^2)/dt = -3H(1+w) rho c^2 > 0"
+  },
+  "casimir": {
+    "rho_at_10nm_Jm3": -130012.57724477533,
+    "gap_d_for_full_cancel_m": 3.966338302557784e-05,
+    "pressure_at_d_eq_Pa": 5.25322922603598e-10,
+    "plate_area_for_1m3_shield_m2": 25212.171119017436,
+    "one_shot_per_collapse_J_per_m3": 5.25322922603598e-10,
+    "note": "resetting the cavity costs the same Casimir binding energy -> net zero; only expansion (3H rho c^2) is net-positive"
+  },
+  "unruh_bath": {
+    "a_for_T1K_ms2": 2.4660830214026107e+20,
+    "flux_1K_1m2_W": 5.670374419e-08,
+    "note": "radiation is paid for by the accelerating agent (2nd law); no gain"
+  },
+  "desitter_horizon": {
+    "T_dS_K": 2.6553535952824308e-30,
+    "flux_Wm2": 2.8190396338122888e-126,
+    "total_power_W": 6.673193969181865e-73
+  },
+  "alcubierre": {
+    "R_m": 100.0,
+    "rho_needed_Jm3": 4.815453886722422e+38,
+    "vs_casimir_10nm_ratio": 3.7038369585246687e+49,
+    "note": "warp needs ~1e33x more negative density than the best Casimir gap"
+  },
+  "expansion_piston_Wm3": 3.442365321604584e-27
+}

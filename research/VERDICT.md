@@ -61,6 +61,22 @@ w(z) costume. A real z~1 dip remains possible and is pre-registered for DR3.
 **Verdict: dark energy is a probe, not a resource.** The lever we actually have is the
 H₀ anchor decision + DR3 full-shape.
 
+## The harnessing brief, answered (`research/HARNESS_N12_N13.md`, §37)
+
+We built the two craziest coherent machines and computed every ceiling (§37):
+**N12 Λ-shield** (Casimir cavity at d≈40 μm locally cancels Λ — real redistribution,
+but zero-sum: reset costs the binding energy; ceiling one-shot 5.3×10⁻¹⁰ J/m³,
+continuous 3.4×10⁻²⁷ W/m³ = the expansion itself) and **N13 phantom-dip turbine**
+(if the z~1 dip is real, the vacuum *grows* at z~1 — NEC violation — tap ceiling
+8×10⁻²⁸ W/m³). Dead-end analogies quantified: Unruh bath (agent pays, 2nd law),
+de Sitter horizon engine (6.7×10⁻⁷³ W total), Alcubierre warp (49 orders short of
+any negative-energy source), EW bubble (N11). Every road ends at the same cap:
+**~10⁻²⁷ W/m³ continuous, 5×10⁻¹⁰ J/m³ one-shot. Dark energy is a probe, not a
+resource — demonstrated against every mechanism we could invent.**
+
+Also §37: DESI's *own* published w0wa chains show the same w(0.25)>−1, w(1)≈−1.1…−1.4
+dip as our cert5 — the collaboration's data corroborate the one surviving feature.
+
 ## Pre-registered DR3 falsification plan (`dr3_plan.json`, §30)
 
 1. w0wa must reach BF>10 **with z<0.1 SNe excluded**.

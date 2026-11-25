@@ -791,6 +791,40 @@ w ≈ −1.25 to −1.33 (all ≲−1 at ~1.5–1.9σ per bin) and χ² is flat 
 (all three SN samples) and §31–32 (anchor-free), the z~1 dip is the strongest
 non-Λ structure in the public 2025–26 data; DR3 full-shape decides it (§30).
 
+## 37. Harnessing ceilings computed + DESI's own chains see the dip (`session24.py caps|desichain` → `harness_caps.json`, `desichain_wz.json`)
+
+**(a) The machine ceilings** (H₀=67.4, Ωm=0.315; proposals N12/N13 in `research/HARNESS_N12_N13.md`):
+
+| machine | number |
+|---|---|
+| ρ_Λc² (one-shot full release) | 5.25×10⁻¹⁰ J/m³ |
+| continuous cap H₀ρ_Λc² | 1.15×10⁻²⁷ W/m³ |
+| expansion piston 3Hρ_Λc² | 3.44×10⁻²⁷ W/m³ |
+| **phantom-dip turbine** 3H(z=1)\|1+w\|ρc² (posterior, w=−1.268±0.162) | **8.1×10⁻²⁸ W/m³** (5.5–10.2×10⁻²⁸, 68%) |
+| Casimir gap for full local Λ-cancel (N12 shield) | d = 39.7 μm; pressure 5.3×10⁻¹⁰ Pa; 2.5×10⁴ m² plates per m³ shielded |
+| Unruh bath (accelerated detector) | T=1 K needs a=2.5×10²⁰ m/s²; 5.7×10⁻⁸ W/m² but paid by the agent (2nd law) |
+| de Sitter horizon heat engine | T_dS=2.7×10⁻³⁰ K; total power 6.7×10⁻⁷³ W |
+| Alcubierre warp at R=100 m | needs −4.8×10³⁸ J/m³ = 3.7×10⁴⁹× the best Casimir gap (10 nm) |
+
+Every mechanism ends at one-shot ≤5.3×10⁻¹⁰ J/m³ / continuous ≤~10⁻²⁷ W/m³.
+
+**(b) DESI's own published w0wa chains, w(z)=w0+wa·z/(1+z) posterior:**
+
+| chain | w(0.25) | w(0.5) | w(0.75) | w(1.0) | w(1.5) | w(2.33) |
+|---|---|---|---|---|---|---|
+| bao-all | −0.81±0.10 (+1.9σ) | −1.03±0.10 | −1.19±0.18 | **−1.31±0.24** | −1.47±0.34 | −1.64±0.44 |
+| bao-all+desy5sn | −0.92±0.05 (+1.5σ) | −1.02±0.10 | −1.09±0.15 | **−1.14±0.18** | −1.21±0.23 | −1.28±0.27 |
+| bao-all+desy5sn+2pt | −0.94±0.04 (+1.8σ) | −1.05±0.07 | −1.12±0.10 | **−1.18±0.12** | −1.27±0.16 | −1.35±0.19 |
+| bao-all+pantheonplus+2pt | −0.96±0.04 (+1.0σ) | −1.03±0.06 | −1.07±0.09 | **−1.10±0.11** | −1.15±0.14 | −1.20±0.17 |
+| bao-all+2pt | −0.79±0.09 (+2.3σ) | −1.04±0.07 | −1.22±0.12 | **−1.36±0.17** | −1.55±0.23 | −1.74±0.30 |
+| union3+2pt | −0.90±0.05 (+2.2σ) | −1.04±0.07 | −1.15±0.11 | **−1.23±0.14** | −1.34±0.18 | −1.45±0.22 |
+
+**Reading:** DESI's own chains independently show **both** of our features: w(0.25) ≈
+−0.8…−0.96 (above −1, +1–2.3σ) and w(1) ≈ −1.1…−1.4 (below −1, 0.8–2.2σ) — the same
+"w(0)>−1, dip at z~1" shape as our cert5 (§24/§34/§36). The collaboration's data
+corroborate the dip; nobody's chain shows w(2.33) below −1 at >2.5σ (the new Lyα AP,
+§33, sits at w=−1). DR3 full-shape remains the arbiter.
+
 ## Caveats
 - Diagonal (R, ω_b) CMB prior instead of full Planck / PR4 compressed triple.
 - r_s from EH98 z_drag + numerical integral (~2–3% vs CAMB) — only enters via optional ℓ_A (off by default).
